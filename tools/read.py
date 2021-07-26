@@ -7,7 +7,7 @@ import pandas as pd
 rootdir = Path().cwd()
 jsonpath = rootdir.joinpath('localization-resources.assets-99-TextAsset.json').expanduser()
 excelpath = rootdir.joinpath('l10n.xlsx').expanduser()
-csvpath = rootdir.joinpath('l10n-origin.csv').expanduser()
+csvpath = rootdir.joinpath('l10n-native.csv').expanduser()
 
 with jsonpath.open("r") as f:
     l10n = json.load(f)
