@@ -11,7 +11,7 @@ csvpath = rootdir.cwd().joinpath('l10n-mod.csv').expanduser()
 txtpath = rootdir.cwd().joinpath('l10n-mod.txt').expanduser()
 
 tab_l10n = pd.read_excel(excelpath).fillna('')
-# export CSV to compare the previous one
+# export CSV to compare the native text
 tab_l10n.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 
 l10n_data = tab_l10n.to_csv(index=False, encoding="utf-8", quoting=1, line_terminator=r"\n")
