@@ -34,4 +34,6 @@ tab_l10n = tab_l10n.assign(
 tab_l10n.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 # 手動編集の簡易さからエクセルに書く
 # TODO: libre が重すぎるので PO ファイルとして出力したほうがいいか?
-tab_l10n.to_excel(excelpath, index=False)
+with pd.ExcelWriter(excelpath) as writer:  
+    tab_l10n.to_excel(writer, sheet_name = "mod", index=False)
+    tab_l10n.to_excel(writer, sheet_name = "v0.156.2", index=False)
