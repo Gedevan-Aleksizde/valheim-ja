@@ -17,11 +17,6 @@ tab_l10n = pd.read_excel(excelpath, sheet_name='mod').fillna('')
 # export CSV to compare the native text
 tab_l10n.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 
-tab_l10n.loc[
-    lambda d: [Path(x).with_suffix('').name==Path('localization_extra-resources.assets-100-TextAsset.txt').with_suffix('') for x in d['OriginalFileName']]
-    ].drop(columns=[['OriginalFileName', 'editted']])
-[Path(x).with_suffix('').name for x in tab_l10n.OriginalFileName[1:10]]
-
 for out_entry, out_path in outputname.items():
     tmp = tab_l10n.loc[lambda d: [Path(out_path).with_suffix('').name==Path(x).with_suffix('').name for x in d['OriginalFileName']]].drop(columns=['OriginalFileName', 'Editted'])
     print(f'{out_entry} has {tmp.shape[0]} entries.')
