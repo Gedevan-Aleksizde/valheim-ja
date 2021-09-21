@@ -24,7 +24,7 @@ tab_l10n = pd.read_excel(excelpath, sheet_name='mod').fillna('')
 # export CSV to compare the native text
 tab_l10n.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 
-outputname = {x.split('.')[0].split('-')[0] : outputdir.joinpath(x).expanduser() for x in tab_l10n.OriginalFileName.unique()}
+outputname = {x.split('.')[0].split('-')[0] : outputdir.joinpath(x).expanduser().with_suffix('.txt') for x in tab_l10n.OriginalFileName.unique()}
     
 
 for out_entry, out_path in outputname.items():
