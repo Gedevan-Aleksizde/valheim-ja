@@ -1,5 +1,4 @@
-# Valheim Corrected Japanese Text
-
+# Corrected Japanese Text of Valheim
 
 ## Installation
 
