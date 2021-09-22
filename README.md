@@ -11,3 +11,4 @@ If you want to edit the text on your own, you need the following programs:
 
 * [UABE](https://github.com/DerPopo/UABE) or [UAAE](https://github.com/Igor55x/UAAE)
 * Python >3.8
+* pandas
