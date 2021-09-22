@@ -1,0 +1,7 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+l10n.xlsx
+original-text/*
+output/*
