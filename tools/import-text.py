@@ -6,14 +6,14 @@ from io import StringIO
 import pandas as pd
 import argparse
 
-# TODO: how to extract localization texts from `resources.assets`
+# TODO: how to automatically extract and overwite localization texts from `resources.assets`
 
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--filenames', type=Path, nargs='+', help='file path(s) to parse', default=None)
 parser.add_argument('--outdir', type=Path, help='output directory', default=None)
 args = parser.parse_args(None if __name__ == '__main__' else '')
 rootdir = Path().cwd()
-l10n_jsonpath = [rootdir.joinpath(x).expanduser() for x in [
+l10n_jsonpath = [rootdir.joinpath(f'original-text/{x}').expanduser() for x in [
     'localization-resources.assets-99-TextAsset.json',
     'localization_extra-resources.assets-100-TextAsset.json'
     ]
@@ -33,7 +33,7 @@ for x in l10n_jsonpath:
 
 tab_l10n = pd.concat(csvs)
 if(tab_l10n.shape[0] > 0):
-    tab_l10n = (
+    tab_l10n_blank = (
         tab_l10n.assign(Japanese = lambda d: d['Japanese'].str.replace('(\$[0-9a-zA-Z]+)', ' \\1 ', regex=True).
         str.replace('^\s', '', regex=True).
         str.replace('\s$', '', regex = True).
@@ -41,9 +41,9 @@ if(tab_l10n.shape[0] > 0):
         )
     )
 # quoting=1: csv.QUOTE_ALL
-tab_l10n.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
+tab_l10n_blank.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 # 手動編集の簡易さからエクセルに書く
 # TODO: libre が重すぎるので PO ファイルとして出力したほうがいいか?
 with pd.ExcelWriter(excelpath) as writer:  
-    tab_l10n.to_excel(writer, sheet_name = "mod", index=False)
+    tab_l10n_blank.to_excel(writer, sheet_name = "mod", index=False)
     tab_l10n.to_excel(writer, sheet_name = "v0.202.19", index=False)
