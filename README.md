@@ -1,5 +1,7 @@
 # Corrected Japanese Text of Valheim
 
+https://www.nexusmods.com/valheim/mods/1511/
+
 ## Installation
 
 1. Download the latest `resources.assets` file from [Release page](https://github.com/Gedevan-Aleksizde/valheim-ja/releases)
