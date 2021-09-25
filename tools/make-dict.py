@@ -21,4 +21,4 @@ correct = mod.loc[lambda d: d['Japanese']!=original['Japanese']]
 d = {x[0]: {'Japanese': x[1], 'OriginalFileName': x[2]} for i, x in correct.iterrows()}
 
 with output.open('w', encoding='utf-8') as j:
-    json.dump(d, j, ensure_ascii=False)
+    json.dump(d, j, ensure_ascii=False, indent=2)
