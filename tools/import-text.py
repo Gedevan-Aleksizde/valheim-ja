@@ -8,6 +8,10 @@ import argparse
 
 # TODO: how to automatically extract and overwite localization texts from `resources.assets`
 
+
+with Path(__file__).parent.joinpath('params.json').open('r') as fp:
+    params = json.load(fp)
+
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--filenames', type=Path, nargs='+', help='file path(s) to parse', default=None)
 parser.add_argument('--outdir', type=Path, help='output directory', default=None)
@@ -44,6 +48,7 @@ if(tab_l10n.shape[0] > 0):
 tab_l10n_blank.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 # 手動編集の簡易さからエクセルに書く
 # TODO: libre が重すぎるので PO ファイルとして出力したほうがいいか?
-with pd.ExcelWriter(excelpath) as writer:  
+with pd.ExcelWriter(excelpath) as writer: 
+    tab_l10n.to_excel(writer, sheet_name = f"v{params['VALHEIM_VERSION']}", index=False)
     tab_l10n_blank.to_excel(writer, sheet_name = "mod", index=False)
-    tab_l10n.to_excel(writer, sheet_name = "v0.202.19", index=False)
+    
