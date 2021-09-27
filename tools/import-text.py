@@ -1,5 +1,7 @@
 #! /usr/bin/env python 
 
+# read localization TextAsset(s) dump file (extracted by UABE or UAAE) and export as .xlsx 
+
 import json
 from pathlib import Path
 from io import StringIO
@@ -9,8 +11,9 @@ import argparse
 # TODO: how to automatically extract and overwite localization texts from `resources.assets`
 
 
-with Path(__file__).parent.joinpath('params.json').open('r') as fp:
+with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath('tools')).joinpath('params.json').open('r') as fp:
     params = json.load(fp)
+    print("""Valheim version: {VALHEIM_VERSION}\r\nTarget Language: {LANG}""".format(**params))
 
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--filenames', type=Path, nargs='+', help='file path(s) to parse', default=None)

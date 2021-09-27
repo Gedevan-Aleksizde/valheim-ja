@@ -19,7 +19,8 @@ if not output.parent.exists():
 original = pd.read_excel(input, sheet_name=0)[[' ', 'Japanese', 'OriginalFileName']].fillna('')
 mod = pd.read_excel(input, sheet_name=args.sheet)[[' ', 'Japanese', 'OriginalFileName']].fillna('')
 correct = mod.loc[lambda d: d['Japanese']!=original['Japanese']]
-d = {x[0]: {'Japanese': x[1], 'OriginalFileName': x[2]} for i, x in correct.iterrows()}
+d = {f: {x[0]: {'Japanese': x[1]} for i, x in correct.loc[lambda d: d['OriginalFileName']==f].iterrows()} for f in correct['OriginalFileName'].unique()}
+
 
 with output.open('w', encoding='utf-8') as j:
     json.dump(d, j, ensure_ascii=False, indent=2)

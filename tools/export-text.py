@@ -1,5 +1,5 @@
 #! /usr/bin/env python 
-# convert xlsx to json
+# udpate TextAsset(s) dump file with corrected dictionary (json) and export them as new dump files.
 import json
 from pathlib import Path
 from io import StringIO
@@ -12,6 +12,10 @@ parser.add_argument('--textdir', type=Path, help='file path(s) to parse', defaul
 parser.add_argument('--dictdir', type=Path, help='file path(s) to parse', default=None)
 parser.add_argument('--outdir', type=Path, help='output directory', default=None)
 args = parser.parse_args(None if __name__ == '__main__' else '')
+
+with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath('tools')).joinpath('params.json').open('r') as fp:
+    params = json.load(fp)
+    print("""Valheim version: {VALHEIM_VERSION}\r\nTarget Language: {LANG}""".format(**params))
 
 rootdir = Path().cwd()
 textfiles = rootdir.glob('original-text/*.json') if args.textdir is None else Path(args.dictdir).glob('*.json')
@@ -42,9 +46,9 @@ for x in textfiles:
             str.replace('\s{2,}', ' ', regex=True)
             )
         )
-        tmp_dict = pd.DataFrame([(k, v['Japanese']) for k, v in dicts.items() if v['OriginalFileName']==x.name], columns=[' ', 'Japanese']).set_index(' ')
         tmp = tmp.set_index(' ')
-        tmp.Japanese.update(tmp_dict.Japanese)
+        tmp_dict = pd.DataFrame([(k, v[params['LANG']]) for k, v in dicts[x.name].items()], columns=[' ', params['LANG']]).set_index(' ')
+        tmp[params['LANG']].update(tmp_dict[params['LANG']])
         tmp = tmp.reset_index() # What a messy API!
         if out_entry=='localization_extra':
             tmp = tmp.rename(columns={' ': 'Content'})
