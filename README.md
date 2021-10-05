@@ -9,7 +9,7 @@ https://www.nexusmods.com/valheim/mods/1511/
 
 ## Changelog
 
-* v0.3.1 (Update for v0.203.19)
+* v0.3.1 (Update for v0.203.11)
     * some linebreaks added to avoid display text as very small size
     * some subtle correction to improve the immersion
 
