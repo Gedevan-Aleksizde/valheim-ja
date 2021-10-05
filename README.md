@@ -4,6 +4,8 @@ https://www.nexusmods.com/valheim/mods/1511/
 
 ## Installation
 
+Go to the above link or read the followings
+
 1. Download the latest `resources.assets` file from [Release page](https://github.com/Gedevan-Aleksizde/valheim-ja/releases)
 2. Overwrite the file with the downloaded one in  `valheim_Data` in your Valheim installed directory.
 
