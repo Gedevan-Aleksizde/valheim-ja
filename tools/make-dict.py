@@ -1,4 +1,8 @@
 #! /usr/bin/env python 
+#
+# l10n.xlsx のオリジナルテキストのシートと, mod シートを比べ, 変更のあるものを抜き出しjsonにする
+#
+
 import json
 from pathlib import Path
 import pandas as pd
@@ -16,10 +20,14 @@ output = Path().cwd().joinpath('dict/correction.json') if args.output is None el
 if not output.parent.exists():
     output.parent.mkdir(parents=True, exist_ok=True)
 
-original = pd.read_excel(input, sheet_name=0)[[' ', 'Japanese', 'OriginalFileName']].fillna('')
-mod = pd.read_excel(input, sheet_name=args.sheet)[[' ', 'Japanese', 'OriginalFileName']].fillna('')
-correct = mod.loc[lambda d: d['Japanese']!=original['Japanese']]
-d = {f: {x[0]: {'Japanese': x[1]} for i, x in correct.loc[lambda d: d['OriginalFileName']==f].iterrows()} for f in correct['OriginalFileName'].unique()}
+with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath('tools')).joinpath('params.json').open('r') as fp:
+    params = json.load(fp)
+    print("""Valheim version: {VALHEIM_VERSION}\r\nTarget Language: {LANG}""".format(**params))
+
+original = pd.read_excel(input, sheet_name=f"""v{params['VALHEIM_VERSION']}""")[[' ', params['LANG'], 'OriginalFileName']].fillna('')
+mod = pd.read_excel(input, sheet_name=args.sheet)[[' ', params['LANG'], 'OriginalFileName']].fillna('')
+correct = mod.loc[lambda d: d[params['LANG']]!=original[params['LANG']]]
+d = {f: {x[0]: {params['LANG']: x[1]} for i, x in correct.loc[lambda d: d['OriginalFileName']==f].iterrows()} for f in correct['OriginalFileName'].unique()}
 
 
 with output.open('w', encoding='utf-8') as j:
