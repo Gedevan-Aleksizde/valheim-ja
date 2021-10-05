@@ -1,5 +1,6 @@
 #! /usr/bin/env python 
 # udpate TextAsset(s) dump file with corrected dictionary (json) and export them as new dump files.
+# correctio.json の修正リストから UABE で上書きできるようなテキスト形式のファイルをエクスポートする
 import json
 from pathlib import Path
 from io import StringIO
