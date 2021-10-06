@@ -48,7 +48,7 @@ for x in textfiles:
             )
         )
         tmp = tmp.set_index(' ')
-        tmp_dict = pd.DataFrame([(k, v[params['LANG']['text']]) for k, v in dicts[x.name].items()], columns=[' ', params['LANG']]).set_index(' ')
+        tmp_dict = pd.DataFrame([(k, v[params['LANG']]['text']) for k, v in dicts[x.name].items()], columns=[' ', params['LANG']]).set_index(' ')
         tmp[params['LANG']].update(tmp_dict[params['LANG']])
         tmp = tmp.reset_index() # What a messy API!
         if out_entry=='localization_extra':
