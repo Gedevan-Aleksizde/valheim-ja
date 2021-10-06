@@ -26,10 +26,21 @@ with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath
     print("""Valheim version: {VALHEIM_VERSION}\r\nTarget Language: {LANG}""".format(**params))
 
 original = pd.read_excel(input, sheet_name=f"""v{params['VALHEIM_VERSION']}""")[[' ', params['LANG'], 'OriginalFileName']].fillna('')
-mod = pd.read_excel(input, sheet_name=args.sheet)[[' ', params['LANG'], 'OriginalFileName']].fillna('')
+mod = pd.read_excel(input, sheet_name=args.sheet)[[' ', params['LANG'], 'OriginalFileName', 'SYSTEM', 'CORRECTION', 'MISSING', 'CONSISTENCY', 'ADJUST', 'IMMERSION']]
+mod[params['LANG']] = mod[params['LANG']].fillna('')
 correct = mod.loc[lambda d: d[params['LANG']]!=original[params['LANG']]]
-d = {f: {x[0]: {params['LANG']: x[1]} for i, x in correct.loc[lambda d: d['OriginalFileName']==f].iterrows()} for f in correct['OriginalFileName'].unique()}
-
+d = {
+        f: {
+            x[0]: {
+                params['LANG']:
+                {
+                    'text': x[params['LANG']]
+                } | {
+                    col.lower(): bool(x[col]) for col in x.index if col != params['LANG'] and x.get(col) == 1
+                }
+            } for i, x in correct.loc[lambda d: d['OriginalFileName']==f].iterrows()
+        } for f in correct['OriginalFileName'].unique()
+    }
 
 with output.open('w', encoding='utf-8') as j:
     json.dump(d, j, ensure_ascii=False, indent=2)
