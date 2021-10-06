@@ -1,969 +1,1885 @@
 {
   "localization-resources.assets-99-TextAsset.json": {
     "menu_startgame": {
-      "Japanese": "ゲーム開始"
+      "Japanese": {
+        "text": "ゲーム開始",
+        "system": true
+      }
     },
     "menu_new": {
-      "Japanese": "新規"
+      "Japanese": {
+        "text": "新規",
+        "adjust": true
+      }
     },
     "menu_characterexist": {
-      "Japanese": "その名前のキャラクターが既に存在します。"
+      "Japanese": {
+        "text": "同名のキャラクターが既に存在します。 ",
+        "adjust": true
+      }
     },
     "menu_seed": {
-      "Japanese": "シード値"
+      "Japanese": {
+        "text": "シード値",
+        "adjust": true
+      }
     },
     "menu_enterseed": {
-      "Japanese": "シード値を入力"
+      "Japanese": {
+        "text": "シード値を入力"
+      }
     },
     "menu_closemenu": {
-      "Japanese": "閉じる"
+      "Japanese": {
+        "text": "閉じる",
+        "system": true
+      }
     },
     "menu_ndaaccept": {
-      "Japanese": "了解"
+      "Japanese": {
+        "text": "了解",
+        "adjust": true
+      }
     },
     "error_incompatibleversion": {
-      "Japanese": "バージョンが違います"
+      "Japanese": {
+        "text": "バージョンが違います",
+        "adjust": true
+      }
     },
     "settings_secondaryattack": {
-      "Japanese": "サブ攻撃"
+      "Japanese": {
+        "text": "サブ攻撃",
+        "adjust": true
+      }
     },
     "settings_block": {
-      "Japanese": "防御"
+      "Japanese": {
+        "text": "防御",
+        "adjust": true
+      }
     },
     "settings_shipcameratilt": {
-      "Japanese": "没入感のある船カメラ"
+      "Japanese": {
+        "text": "没入感のある船カメラ",
+        "adjust": true
+      }
     },
     "chat_kill": {
-      "Japanese": "自害せよ"
+      "Japanese": {
+        "text": "自害せよ",
+        "adjust": true
+      }
     },
     "hud_tame": {
-      "Japanese": "飼育中"
+      "Japanese": {
+        "text": "飼育中",
+        "system": true
+      }
     },
     "hud_tamecheck": {
-      "Japanese": "確認"
+      "Japanese": {
+        "text": "確認",
+        "system": true
+      }
     },
     "hud_tamefollow": {
-      "Japanese": "着いてきている"
+      "Japanese": {
+        "text": "着いてきている",
+        "system": true
+      }
     },
     "hud_tamestay": {
-      "Japanese": "「待て」している"
+      "Japanese": {
+        "text": "「待て」している",
+        "system": true
+      }
     },
     "hud_tamefrightened": {
-      "Japanese": "怯えている"
+      "Japanese": {
+        "text": "怯えている",
+        "system": true
+      }
     },
     "hud_tamehungry": {
-      "Japanese": "空腹"
+      "Japanese": {
+        "text": "空腹",
+        "system": true
+      }
     },
     "hud_tameinprogress": {
-      "Japanese": "慣れてきている"
+      "Japanese": {
+        "text": "慣れてきている",
+        "system": true
+      }
     },
     "hud_tamedone": {
-      "Japanese": "懐いている"
+      "Japanese": {
+        "text": "懐いている",
+        "system": true
+      }
     },
     "hud_tamehappy": {
-      "Japanese": "満足"
+      "Japanese": {
+        "text": "満足",
+        "system": true
+      }
     },
     "inventory_upgrade": {
-      "Japanese": "$1 の品質を $2 にアップグレード"
+      "Japanese": {
+        "text": "$1 の品質を $2 にアップグレード",
+        "system": true
+      }
     },
     "inventory_blunt": {
-      "Japanese": "打撃"
+      "Japanese": {
+        "text": "打撃",
+        "adjust": true
+      }
     },
     "inventory_slash": {
-      "Japanese": "斬撃"
+      "Japanese": {
+        "text": "斬撃",
+        "adjust": true
+      }
     },
     "inventory_pierce": {
-      "Japanese": "刺突"
+      "Japanese": {
+        "text": "刺突",
+        "adjust": true
+      }
     },
     "inventory_chop": {
-      "Japanese": "切断"
+      "Japanese": {
+        "text": "切断",
+        "adjust": true
+      }
     },
     "inventory_dmgmod": {
-      "Japanese": "ダメージ変化"
+      "Japanese": {
+        "text": "ダメージ変化",
+        "adjust": true
+      }
     },
     "inventory_selectedgp": {
-      "Japanese": "選択中の〈見捨てられしもの〉の力"
+      "Japanese": {
+        "text": "選択中の〈見捨てられしもの〉の力",
+        "immersion": true
+      }
     },
     "msg_invalidplacement": {
-      "Japanese": "そこには配置できない"
+      "Japanese": {
+        "text": "そこには配置できない",
+        "adjust": true
+      }
     },
     "msg_needcultivated": {
-      "Japanese": "耕した土地が必要だ"
+      "Japanese": {
+        "text": "耕した土地が必要だ",
+        "adjust": true
+      }
     },
     "msg_repaired": {
-      "Japanese": "$1 を修理した"
+      "Japanese": {
+        "text": "$1 を修理した",
+        "system": true
+      }
     },
     "msg_nomore": {
-      "Japanese": "これ以上 $1 を食べられない"
+      "Japanese": {
+        "text": "これ以上 $1 を食べられない",
+        "system": true
+      }
     },
     "msg_added": {
-      "Japanese": "追加:"
+      "Japanese": {
+        "text": "追加:",
+        "system": true
+      }
     },
     "msg_outof": {
-      "Japanese": "足りない: "
+      "Japanese": {
+        "text": "足りない: ",
+        "system": true
+      }
     },
     "msg_dropped": {
-      "Japanese": "落とした: "
+      "Japanese": {
+        "text": "落とした: ",
+        "system": true
+      }
     },
     "msg_cantuseon": {
-      "Japanese": "$1 は $2 には使えない"
+      "Japanese": {
+        "text": "$1 は $2 には使えない",
+        "system": true
+      }
     },
     "msg_useonwhat": {
-      "Japanese": "$1 を何に使う？"
+      "Japanese": {
+        "text": "$1 を何に使う？",
+        "system": true
+      }
     },
     "msg_spawnpointset": {
-      "Japanese": "スポーン地点に設定"
+      "Japanese": {
+        "text": "スポーン地点に設定",
+        "adjust": true
+      }
     },
     "msg_cantaddmore": {
-      "Japanese": "これ以上 $1 を追加できない"
+      "Japanese": {
+        "text": "これ以上 $1 を追加できない",
+        "system": true
+      }
     },
     "msg_fireadding": {
-      "Japanese": "火に $1 を加えた"
+      "Japanese": {
+        "text": "火に $1 を加えた",
+        "system": true
+      }
     },
     "msg_throwinfire": {
-      "Japanese": "$1 を火にくべた"
+      "Japanese": {
+        "text": "$1 を火にくべた",
+        "system": true
+      }
     },
     "msg_donthaveany": {
-      "Japanese": "アイテムが足りない: "
+      "Japanese": {
+        "text": "アイテムが足りない: ",
+        "system": true
+      }
     },
     "msg_food_done": {
-      "Japanese": "また何か食べたくなった"
+      "Japanese": {
+        "text": "また何か食べたくなった",
+        "correction": true
+      }
     },
     "msg_door_needkey": {
-      "Japanese": "カギが必要だ: $1"
+      "Japanese": {
+        "text": "カギが必要だ: $1",
+        "system": true
+      }
     },
     "msg_door_usingkey": {
-      "Japanese": "カギを使用中: $1"
+      "Japanese": {
+        "text": "カギを使用中: $1",
+        "system": true
+      }
     },
     "msg_biome_found": {
-      "Japanese": "$1 を見つけた"
+      "Japanese": {
+        "text": "$1 を見つけた",
+        "system": true
+      }
     },
     "msg_sold": {
-      "Japanese": "$1 を $2 で売った"
+      "Japanese": {
+        "text": "$1 を $2 で売った",
+        "system": true
+      }
     },
     "msg_newday": {
-      "Japanese": "$1 日目"
+      "Japanese": {
+        "text": "$1 日目",
+        "system": true
+      }
     },
     "msg_newtext": {
-      "Japanese": "コンペンディウムに $1 が追加された"
+      "Japanese": {
+        "text": "コンペンディウムに $1 が追加された",
+        "system": true
+      }
     },
     "msg_broke": {
-      "Japanese": "$1 が壊れた"
+      "Japanese": {
+        "text": "$1 が壊れた",
+        "system": true
+      }
     },
     "location_exit": {
-      "Japanese": "出る"
+      "Japanese": {
+        "text": "出る",
+        "correction": true
+      }
     },
     "piece_cstand_cook": {
-      "Japanese": "調理"
+      "Japanese": {
+        "text": "調理",
+        "system": true
+      }
     },
     "piece_guardstone_owner": {
-      "Japanese": "所有者: "
+      "Japanese": {
+        "text": "所有者: ",
+        "system": true
+      }
     },
     "piece_beehive_area": {
-      "Japanese": "ハチはこの気候を好まない"
+      "Japanese": {
+        "text": "ハチはこの気候を好まない",
+        "immersion": true
+      }
     },
     "piece_beehive_freespace": {
-      "Japanese": "ハチにはもっと開けた空間が必要だ"
+      "Japanese": {
+        "text": "ハチにはもっと開けた空間が必要だ",
+        "adjust": true
+      }
     },
     "piece_beehive_extract": {
-      "Japanese": "取り出す"
+      "Japanese": {
+        "text": "取り出す",
+        "adjust": true
+      }
     },
     "piece_beehive_check": {
-      "Japanese": "ハチの様子を見る"
+      "Japanese": {
+        "text": "ハチの様子を見る",
+        "adjust": true
+      }
     },
     "piece_smelter_add": {
-      "Japanese": "入れる"
+      "Japanese": {
+        "text": "入れる",
+        "adjust": true
+      }
     },
     "piece_smelter_additem": {
-      "Japanese": "アイテムを入れる"
+      "Japanese": {
+        "text": "アイテムを入れる",
+        "adjust": true
+      }
     },
     "piece_plant_healthy": {
-      "Japanese": "育っている"
+      "Japanese": {
+        "text": "育っている",
+        "correction": true
+      }
     },
     "piece_plant_nosun": {
-      "Japanese": "上空が開けている必要がある"
+      "Japanese": {
+        "text": "上空が開けている必要がある",
+        "adjust": true
+      }
     },
     "piece_plant_nospace": {
-      "Japanese": "育てるにはもっと空間が必要だ"
+      "Japanese": {
+        "text": "育てるにはもっと空間が必要だ",
+        "adjust": true
+      }
     },
     "piece_fermenter": {
-      "Japanese": "醸造樽"
+      "Japanese": {
+        "text": "醸造樽",
+        "adjust": true
+      }
     },
     "piece_fermenter_add": {
-      "Japanese": "アイテムを入れる"
+      "Japanese": {
+        "text": "アイテムを入れる",
+        "adjust": true
+      }
     },
     "piece_ship_rudder": {
-      "Japanese": "舵を取る"
+      "Japanese": {
+        "text": "舵を取る",
+        "adjust": true
+      }
     },
     "piece_cultivate": {
-      "Japanese": "耕す"
+      "Japanese": {
+        "text": "耕す",
+        "adjust": true
+      }
     },
     "piece_forge_ext5": {
-      "Japanese": "鍛冶場の冷却槽"
+      "Japanese": {
+        "text": "鍛冶場の冷却槽",
+        "adjust": true
+      }
     },
     "piece_forge_ext6": {
-      "Japanese": "鍛冶場の道具掛け"
+      "Japanese": {
+        "text": "鍛冶場の道具掛け",
+        "adjust": true
+      }
     },
     "piece_guardstone_description": {
-      "Japanese": "周辺に魔法の封印を発し、他のプレイヤーが建築したり、ドアを開けたりすることを防ぐ。"
+      "Japanese": {
+        "text": "周辺に魔法の封印を発し、他のプレイヤーが建築したり、ドアを開けたりすることを防ぐ。",
+        "adjust": true
+      }
     },
     "piece_hearth": {
-      "Japanese": "暖炉"
+      "Japanese": {
+        "text": "暖炉",
+        "immersion": true
+      }
     },
     "piece_chest": {
-      "Japanese": "強化チェスト"
+      "Japanese": {
+        "text": "強化チェスト",
+        "adjust": true
+      }
     },
     "piece_artisanstation": {
-      "Japanese": "職人の机"
-    },
-    "piece_portal_description": {
-      "Japanese": "同種の、またはタグのない別のポータルと接続する。"
+      "Japanese": {
+        "text": "職人の机",
+        "adjust": true
+      }
     },
     "piece_sapling_seedturnip": {
-      "Japanese": "カブの種"
+      "Japanese": {
+        "text": "カブの種",
+        "adjust": true
+      }
     },
     "piece_sapling_seedcarrot": {
-      "Japanese": "ニンジンの種"
+      "Japanese": {
+        "text": "ニンジンの種",
+        "adjust": true
+      }
     },
     "piece_smelter": {
-      "Japanese": "溶鉱炉"
+      "Japanese": {
+        "text": "溶鉱炉",
+        "adjust": true
+      }
     },
     "piece_blastfurnace": {
-      "Japanese": "高炉"
+      "Japanese": {
+        "text": "高炉",
+        "adjust": true
+      }
     },
     "piece_wooddragon": {
-      "Japanese": "木彫りのドラゴン"
+      "Japanese": {
+        "text": "木彫りのドラゴン",
+        "adjust": true
+      }
     },
     "piece_woodpole": {
-      "Japanese": "木の柱1m"
+      "Japanese": {
+        "text": "木の柱1m",
+        "correction": true
+      }
     },
     "piece_woodpole2": {
-      "Japanese": "木の柱2m"
+      "Japanese": {
+        "text": "木の柱2m",
+        "correction": true
+      }
     },
     "piece_woodstack": {
-      "Japanese": "積み上げた木"
+      "Japanese": {
+        "text": "積み上げた木",
+        "adjust": true
+      }
     },
     "piece_woodwallhalf": {
-      "Japanese": "木の低い壁"
+      "Japanese": {
+        "text": "木の低い壁",
+        "adjust": true
+      }
     },
     "piece_woodironbeam": {
-      "Japanese": "木と鉄の梁"
+      "Japanese": {
+        "text": "木と鉄の梁",
+        "correction": true
+      }
     },
     "piece_woodironpole": {
-      "Japanese": "木と鉄の柱"
+      "Japanese": {
+        "text": "木と鉄の柱",
+        "correction": true
+      }
     },
     "piece_logpole2": {
-      "Japanese": "丸太の柱2m"
+      "Japanese": {
+        "text": "丸太の柱2m",
+        "correction": true
+      }
     },
     "piece_logpole4": {
-      "Japanese": "丸太の柱4m"
+      "Japanese": {
+        "text": "丸太の柱4m",
+        "correction": true
+      }
     },
     "piece_stonepile": {
-      "Japanese": "積み上げた石"
+      "Japanese": {
+        "text": "積み上げた石",
+        "adjust": true
+      }
     },
     "piece_sharpstakes": {
-      "Japanese": "逆茂木"
+      "Japanese": {
+        "text": "逆茂木",
+        "adjust": true
+      }
     },
     "item_armor": {
-      "Japanese": "装甲"
+      "Japanese": {
+        "text": "装甲",
+        "adjust": true
+      }
     },
     "item_blockpower": {
-      "Japanese": "防御力"
+      "Japanese": {
+        "text": "防御力",
+        "adjust": true
+      }
     },
     "item_deflection": {
-      "Japanese": "パリィ"
+      "Japanese": {
+        "text": "パリィ",
+        "consistency": true
+      }
     },
     "item_parrybonus": {
-      "Japanese": "パリィボーナス"
+      "Japanese": {
+        "text": "パリィボーナス",
+        "consistency": true
+      }
     },
     "item_food_duration": {
-      "Japanese": "持続時間"
+      "Japanese": {
+        "text": "持続時間",
+        "adjust": true
+      }
     },
     "item_food_regen": {
-      "Japanese": "回復量"
+      "Japanese": {
+        "text": "回復量",
+        "adjust": true
+      }
     },
     "item_crafter": {
-      "Japanese": "作成者: "
+      "Japanese": {
+        "text": "作成者: ",
+        "adjust": true
+      }
     },
     "item_trophy_goblinking_description": {
-      "Japanese": "死せる王、冠なき頭。 "
+      "Japanese": {
+        "text": "死せる王、冠なき頭。 ",
+        "immersion": true
+      }
     },
     "item_trophy_neck_description": {
-      "Japanese": "小さな目と鋭い歯が、この小さなトカゲのおとなしさは表面的なものに過ぎないことを物語っている。 "
+      "Japanese": {
+        "text": "小さな目と鋭い歯が、この小さなトカゲのおとなしさは表面的なものに過ぎないことを物語っている。 ",
+        "correction": true
+      }
     },
     "item_trophy_neck_lore": {
-      "Japanese": "小さな目と鋭い歯が、この小さなトカゲのおとなしさは表面的なものに過ぎないことを物語っている。 "
+      "Japanese": {
+        "text": "小さな目と鋭い歯が、この小さなトカゲのおとなしさは表面的なものに過ぎないことを物語っている。 ",
+        "correction": true
+      }
     },
     "item_trophy_deer_description": {
-      "Japanese": "見事なはく製だが、鹿を殺した程度ではヴァルハラには入れない。 "
+      "Japanese": {
+        "text": "見事な剥製だが、鹿を殺した程度ではヴァルハラには入れない。 ",
+        "correction": true
+      }
     },
     "item_trophy_deer_lore": {
-      "Japanese": "見事なはく製だが、鹿を殺した程度ではヴァルハラには入れない。 "
+      "Japanese": {
+        "text": "見事な剥製だが、鹿を殺した程度ではヴァルハラには入れない。 ",
+        "correction": true
+      }
     },
     "item_trophy_foresttroll_description": {
-      "Japanese": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 "
+      "Japanese": {
+        "text": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 ",
+        "adjust": true
+      }
     },
     "item_trophy_foresttroll_lore": {
-      "Japanese": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 "
+      "Japanese": {
+        "text": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 ",
+        "adjust": true
+      }
     },
     "item_trophy_troll_description": {
-      "Japanese": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 "
+      "Japanese": {
+        "text": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 ",
+        "adjust": true
+      }
     },
     "item_trophy_troll_lore": {
-      "Japanese": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 "
+      "Japanese": {
+        "text": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 ",
+        "adjust": true
+      }
     },
     "item_trophy_skeleton_description": {
-      "Japanese": "この頭蓋骨の生気を感じない笑顔は、死が避けられないものであることを思い出させてくれる。 "
+      "Japanese": {
+        "text": "この頭蓋骨の生気を感じない笑顔は、死が避けられないものであることを思い出させてくれる。 ",
+        "adjust": true
+      }
     },
     "item_trophy_skeleton_lore": {
-      "Japanese": "この頭蓋骨の生気を感じない笑顔は、死が避けられないものであることを思い出させてくれる。 "
+      "Japanese": {
+        "text": "この頭蓋骨の生気を感じない笑顔は、死が避けられないものであることを思い出させてくれる。 ",
+        "adjust": true
+      }
     },
     "item_trophy_skeletonpoison": {
-      "Japanese": "腐敗した骸のトロフィー"
+      "Japanese": {
+        "text": "腐敗した骸のトロフィー",
+        "adjust": true
+      }
     },
     "item_trophy_blob": {
-      "Japanese": "ブロブのトロフィー"
+      "Japanese": {
+        "text": "ブロブのトロフィー",
+        "immersion": true
+      }
     },
     "item_trophy_draugrelite": {
-      "Japanese": "ドラウグルの精鋭のトロフィー"
+      "Japanese": {
+        "text": "ドラウグルの精鋭のトロフィー",
+        "consistency": true
+      }
     },
     "item_trophy_goblinbrute": {
-      "Japanese": "フューリングのベルセルクのトロフィー"
+      "Japanese": {
+        "text": "フューリングのベルセルクのトロフィー",
+        "immersion": true
+      }
     },
     "item_trophy_serpent": {
-      "Japanese": "大海蛇のトロフィー"
+      "Japanese": {
+        "text": "大海蛇のトロフィー",
+        "correction": true
+      }
     },
     "item_trophy_goblinshaman": {
-      "Japanese": "フューリングのシャーマンのトロフィー"
+      "Japanese": {
+        "text": "フューリングのシャーマンのトロフィー",
+        "consistency": true
+      }
     },
     "item_arrow_bronze_description": {
-      "Japanese": "火打石よりも鋭利で、瀟洒に死を告げる者。 "
+      "Japanese": {
+        "text": "火打石よりも鋭利で、瀟洒に死を告げる者。 ",
+        "adjust": true
+      }
     },
     "item_arrow_poison_description": {
-      "Japanese": "彼方から襲い掛かる、苦い一刺し。 "
+      "Japanese": {
+        "text": "彼方から襲い掛かる、苦い一刺し。 ",
+        "adjust": true
+      }
     },
     "item_atgeir_iron_description": {
-      "Japanese": "血を呑みしもの、脳天を砕きしもの、死をもたらすもの。 "
+      "Japanese": {
+        "text": "血を呑みしもの、脳天を砕きしもの、死をもたらすもの。 ",
+        "adjust": true
+      }
     },
     "item_bow_description": {
-      "Japanese": "粗雑だが機能的な弓。"
+      "Japanese": {
+        "text": "粗雑だが機能的な弓。",
+        "adjust": true
+      }
     },
     "item_knife_chitin_description": {
-      "Japanese": "深みからもたらされた刃物。"
+      "Japanese": {
+        "text": "深みからもたらされた刃物。",
+        "immersion": true
+      }
     },
     "item_sword_iron_description": {
-      "Japanese": "生と死とを分かつ直線が、この刀身の縁に沿って走っている。 "
+      "Japanese": {
+        "text": "生と死とを分かつ直線が、この刀身の縁に沿って走っている。 ",
+        "immersion": true
+      }
     },
     "item_spear_flint_description": {
-      "Japanese": "その目が見たものに死の印を刻むなら、それを送り出すのは腕だ。 "
+      "Japanese": {
+        "text": "その目が見たものに死の印を刻むなら、それを送り出すのは腕だ。 ",
+        "adjust": true
+      }
     },
     "item_spear_wolffang_description": {
-      "Japanese": "死せる狼、その牙はなおも肉を切り裂く。 "
-    },
-    "item_spear_chitin_description": {
-      "Japanese": "海の怒り。"
+      "Japanese": {
+        "text": "死せる狼、その牙はなおも肉を切り裂く。 ",
+        "immersion": true
+      }
     },
     "item_spear_ancientbark_description": {
-      "Japanese": "見かけはごつごつしているが、この槍は強く、完璧に均整がとれている。 "
+      "Japanese": {
+        "text": "見かけはごつごつしているが、この槍は強く、完璧に均整がとれている。 ",
+        "adjust": true
+      }
     },
     "item_oozebomb": {
-      "Japanese": "ウーズ爆弾"
+      "Japanese": {
+        "text": "ウーズ爆弾",
+        "immersion": true
+      }
     },
     "item_battleaxe_description": {
-      "Japanese": "頭蓋を砕くは戦士の喜び。 "
+      "Japanese": {
+        "text": "頭蓋を砕くは戦士の喜び。 ",
+        "immersion": true
+      }
     },
     "item_mace_bronze_description": {
-      "Japanese": "棒の先に頭痛がくっついている。 "
+      "Japanese": {
+        "text": "棒の先に頭痛がくっついている。 ",
+        "immersion": true
+      }
     },
     "item_shield_banded": {
-      "Japanese": "縁取りのある盾"
+      "Japanese": {
+        "text": "縁取りのある盾",
+        "adjust": true
+      }
     },
     "item_shield_serpentscale": {
-      "Japanese": "大海蛇の鱗の盾"
+      "Japanese": {
+        "text": "大海蛇の鱗の盾",
+        "correction": true
+      }
     },
     "item_helmet_bronze_description": {
-      "Japanese": "頭蓋骨から脳ミソをこぼさないようにするのに便利。 "
+      "Japanese": {
+        "text": "頭蓋骨から脳ミソをこぼさないようにするのに便利。 ",
+        "immersion": true
+      }
     },
     "item_helmet_yule": {
-      "Japanese": "ユールの帽子"
+      "Japanese": {
+        "text": "ユールの帽子",
+        "correction": true
+      }
     },
     "item_helmet_yule_description": {
-      "Japanese": "家小人スタイルの赤い帽子。"
+      "Japanese": {
+        "text": "家小人風の赤い帽子。 ",
+        "immersion": true
+      }
     },
     "item_helmet_dverger": {
-      "Japanese": "ドヴェルグのサークレット"
+      "Japanese": {
+        "text": "ドヴェルグのサークレット",
+        "correction": true
+      }
     },
     "item_meat_raw_description": {
-      "Japanese": "生肉のかたまり、調理すると美味しく食べられる。 "
+      "Japanese": {
+        "text": "生肉のかたまり、調理すると美味しく食べられる。 ",
+        "correction": true
+      }
     },
     "item_meat_cooked_description": {
-      "Japanese": "骨付きのロースト。ごちそうだ。 "
+      "Japanese": {
+        "text": "骨付きのロースト。ごちそうだ。 ",
+        "adjust": true
+      }
     },
     "item_meadbasetasty": {
-      "Japanese": "蜂蜜酒主成分: 美味"
+      "Japanese": {
+        "text": "蜂蜜酒主成分: 美味",
+        "system": true
+      }
     },
     "item_meadbasehealth": {
-      "Japanese": "蜂蜜酒主成分: 健康的"
+      "Japanese": {
+        "text": "蜂蜜酒主成分: 健康的",
+        "system": true
+      }
     },
     "item_meadbasehealth_medium": {
-      "Japanese": "蜂蜜酒主成分: 超健康的"
+      "Japanese": {
+        "text": "蜂蜜酒主成分: 超健康的",
+        "system": true
+      }
     },
     "item_meadbasestamina": {
-      "Japanese": "蜂蜜酒主成分: スタミナ"
+      "Japanese": {
+        "text": "蜂蜜酒主成分: スタミナ",
+        "system": true
+      }
     },
     "item_meadbasestamina_medium": {
-      "Japanese": "蜂蜜酒主成分: 中スタミナ"
+      "Japanese": {
+        "text": "蜂蜜酒主成分: 中スタミナ",
+        "system": true
+      }
     },
     "item_meadbasepoisonresist": {
-      "Japanese": "蜂蜜酒主成分: 毒耐性"
+      "Japanese": {
+        "text": "蜂蜜酒主成分: 毒耐性",
+        "system": true
+      }
     },
     "item_meadbasefrostresist": {
-      "Japanese": "蜂蜜酒主成分: 凍結耐性"
+      "Japanese": {
+        "text": "蜂蜜酒主成分: 凍結耐性",
+        "system": true
+      }
     },
     "item_barleywinebase": {
-      "Japanese": "大麦ワイン主成分: 火耐性"
+      "Japanese": {
+        "text": "大麦ワイン主成分: 火耐性",
+        "system": true
+      }
     },
     "item_turnipstew_description": {
-      "Japanese": "栄養たっぷりで元気になる。 "
+      "Japanese": {
+        "text": "栄養たっぷりで元気になる。 ",
+        "adjust": true
+      }
     },
     "item_serpentstew": {
-      "Japanese": "大海蛇のシチュー"
+      "Japanese": {
+        "text": "大海蛇のシチュー",
+        "correction": true
+      }
     },
     "item_chest_bronze": {
-      "Japanese": "青銅板の胴鎧"
+      "Japanese": {
+        "text": "青銅板の胴鎧",
+        "immersion": true
+      }
     },
     "item_chest_pcuirass": {
-      "Japanese": "詰め物付きの胴鎧"
+      "Japanese": {
+        "text": "詰め物付きの胴鎧",
+        "immersion": true
+      }
     },
     "item_legs_pgreaves_description": {
-      "Japanese": "匠の技で作られた脚の守り。 "
+      "Japanese": {
+        "text": "匠の技で作られた脚の守り。 ",
+        "adjust": true
+      }
     },
     "item_coin_description": {
-      "Japanese": "金貨だ。 "
+      "Japanese": {
+        "text": "金貨だ。 ",
+        "adjust": true
+      }
     },
     "item_copperore_description": {
-      "Japanese": "未精錬の銅。 溶鉱炉で製錬する必要がある。 "
+      "Japanese": {
+        "text": "未精錬の銅。 溶鉱炉で製錬する必要がある。 ",
+        "adjust": true
+      }
     },
     "item_dandelion_description": {
-      "Japanese": "タンポポだ。 "
+      "Japanese": {
+        "text": "タンポポだ。 ",
+        "adjust": true
+      }
     },
     "item_guck_description": {
-      "Japanese": "シュールストレミングのような臭いがする。 "
+      "Japanese": {
+        "text": "シュールストレミングのような臭いがする。 ",
+        "immersion": true
+      }
     },
     "item_ironore_description": {
-      "Japanese": "未製錬の鉄。 溶鉱炉で製錬する必要がある。 "
+      "Japanese": {
+        "text": "未製錬の鉄。 溶鉱炉で製錬する必要がある。 ",
+        "adjust": true
+      }
     },
     "item_sharpeningstone": {
-      "Japanese": "丸砥石"
+      "Japanese": {
+        "text": "丸砥石",
+        "adjust": true
+      }
     },
     "item_wolffang_description": {
-      "Japanese": "鋭さは失われていない。 "
+      "Japanese": {
+        "text": "鋭さは失われていない。 ",
+        "immersion": true
+      }
     },
     "item_hardantler_description": {
-      "Japanese": "非常に硬い鹿の角の一部。 "
+      "Japanese": {
+        "text": "非常に硬い鹿の角の一部。 ",
+        "adjust": true
+      }
     },
     "item_cryptkey": {
-      "Japanese": "沼の鍵"
+      "Japanese": {
+        "text": "沼の鍵",
+        "correction": true
+      }
     },
     "item_obsidian_description": {
-      "Japanese": "黒い火山ガラス。 "
+      "Japanese": {
+        "text": "黒い火山ガラス。 ",
+        "adjust": true
+      }
     },
     "item_serpentscale": {
-      "Japanese": "大海の鱗"
+      "Japanese": {
+        "text": "大海の鱗",
+        "correction": true
+      }
     },
     "item_serpentscale_description": {
-      "Japanese": "大海蛇から採られた、金属のように輝く鱗。 "
+      "Japanese": {
+        "text": "大海蛇から採られた、金属のように輝く鱗。 ",
+        "correction": true
+      }
     },
     "item_serpentmeat": {
-      "Japanese": "大海蛇の肉"
+      "Japanese": {
+        "text": "大海蛇の肉",
+        "correction": true
+      }
     },
     "item_serpentmeat_description": {
-      "Japanese": "大海蛇の肉の切り身。 魚臭い。 "
+      "Japanese": {
+        "text": "大海蛇の肉の切り身。 魚臭い。 ",
+        "correction": true
+      }
     },
     "item_serpentmeatcooked": {
-      "Japanese": "焼いた大海蛇の肉"
+      "Japanese": {
+        "text": "焼いた大海蛇の肉",
+        "correction": true
+      }
     },
     "item_serpentmeatcooked_description": {
-      "Japanese": "大海蛇の肉の切り身を調理したもの。 美味しそうな匂いがする。 "
+      "Japanese": {
+        "text": "大海蛇の肉の切り身を調理したもの。 美味しそうな匂いがする。 ",
+        "correction": true
+      }
     },
     "item_ymirremains_description": {
-      "Japanese": "大地となった巨人ユミルの血肉。 "
+      "Japanese": {
+        "text": "大地となった巨人ユミルの血肉。 ",
+        "correction": true
+      }
     },
     "item_goblintotem_description": {
-      "Japanese": "ヤグルスの太古の力が伝わってくる。 "
+      "Japanese": {
+        "text": "ヤグルスの太古の力が伝わってくる。 ",
+        "immersion": true
+      }
     },
     "item_fishingbait_description": {
-      "Japanese": "ありふれたのドヴェルグの釣り餌。 釣り竿は別売り。 "
+      "Japanese": {
+        "text": "ありふれたのドヴェルグの釣り餌。 釣り竿は別売り。 ",
+        "immersion": true
+      }
     },
     "item_fishingrod_description": {
-      "Japanese": "普通のドヴェルグの釣り竿。 "
+      "Japanese": {
+        "text": "普通のドヴェルグの釣り竿。 ",
+        "immersion": true
+      }
     },
     "item_needle_description": {
-      "Japanese": "デスキートの尖ったくちばし。 "
+      "Japanese": {
+        "text": "デスキートの尖ったくちばし。 ",
+        "adjust": true
+      }
     },
     "se_burning_start": {
-      "Japanese": "自分に火が燃え移っている"
+      "Japanese": {
+        "text": "自分に火が燃え移っている",
+        "adjust": true
+      }
     },
     "se_rested_start": {
-      "Japanese": "安らぎを感じる"
+      "Japanese": {
+        "text": "安らぎを感じる",
+        "adjust": true
+      }
     },
     "se_rested_stop": {
-      "Japanese": "もう長いこと休んでいない"
+      "Japanese": {
+        "text": "もう長いこと休んでいない",
+        "correction": true
+      }
     },
     "se_rested_comfort": {
-      "Japanese": "快適度"
+      "Japanese": {
+        "text": "快適度",
+        "adjust": true
+      }
     },
     "se_frost_tooltip": {
-      "Japanese": "体温の低下に苦しんでいる。 "
+      "Japanese": {
+        "text": "体温の低下に苦しんでいる。 ",
+        "adjust": true
+      }
     },
     "se_healthpotionmedium_name": {
-      "Japanese": "回復のポーション"
+      "Japanese": {
+        "text": "回復のポーション",
+        "consistency": true
+      }
     },
     "se_healthpotionminor_name": {
-      "Japanese": "小回復のポーション"
+      "Japanese": {
+        "text": "小回復のポーション",
+        "consistency": true
+      }
     },
     "se_staminapotion_name": {
-      "Japanese": "スタミナのポーション"
+      "Japanese": {
+        "text": "スタミナのポーション",
+        "consistency": true
+      }
     },
     "se_rested_name": {
-      "Japanese": "休息"
+      "Japanese": {
+        "text": "休息",
+        "adjust": true
+      }
     },
     "se_rested_tooltip": {
-      "Japanese": "十分に休息を感じている。 体力とスタミナの回復が大きくなる。 "
+      "Japanese": {
+        "text": "十分に休息を感じている。 体力とスタミナの回復が大きくなる。 ",
+        "adjust": true
+      }
     },
     "se_resting_tooltip": {
-      "Japanese": "今あなたは休息している。 体力とスタミナの回復がかなり大きくなる。 "
+      "Japanese": {
+        "text": "今あなたは休息している。 体力とスタミナの回復がかなり大きくなる。 ",
+        "adjust": true
+      }
     },
     "se_shelter_name": {
-      "Japanese": "雨風からの保護"
+      "Japanese": {
+        "text": "雨風からの保護",
+        "adjust": true
+      }
     },
     "se_eikthyr_start": {
-      "Japanese": "エイクスュルの力を発動した。 "
+      "Japanese": {
+        "text": "エイクスュルの力を発動した。 ",
+        "immersion": true
+      }
     },
     "se_theelder_start": {
-      "Japanese": "長老の力が身体に迸る。 "
+      "Japanese": {
+        "text": "長老の力が身体に迸る。 ",
+        "immersion": true
+      }
     },
     "se_bonemass_start": {
-      "Japanese": "大骨の霊魂が肉体に宿る。 "
+      "Japanese": {
+        "text": "大骨の霊魂が肉体に宿る。 ",
+        "immersion": true
+      }
     },
     "se_moder_start": {
-      "Japanese": "死してなおモデルは吼えたける。 "
+      "Japanese": {
+        "text": "死してなおモデルは吼えたける。 ",
+        "immersion": true
+      }
     },
     "se_jumpstamina": {
-      "Japanese": "ジャンプのスタミナ消費"
+      "Japanese": {
+        "text": "ジャンプのスタミナ消費",
+        "adjust": true
+      }
     },
     "se_runstamina": {
-      "Japanese": "走行のスタミナ消費"
+      "Japanese": {
+        "text": "走行のスタミナ消費",
+        "adjust": true
+      }
     },
     "se_corpserun_name": {
-      "Japanese": "死者の走り"
+      "Japanese": {
+        "text": "死者の走り",
+        "adjust": true
+      }
     },
     "event_wolves_start": {
-      "Japanese": "あなたは狩りの獲物だ…"
+      "Japanese": {
+        "text": "あなたは狩りの獲物だ…",
+        "immersion": true
+      }
     },
     "event_foresttrolls_start": {
-      "Japanese": "大地が揺れている"
+      "Japanese": {
+        "text": "大地が揺れている",
+        "immersion": true
+      }
     },
     "event_goblinarmy_start": {
-      "Japanese": "軍勢が攻撃を仕掛けている"
+      "Japanese": {
+        "text": "軍勢が攻撃を仕掛けている",
+        "immersion": true
+      }
     },
     "event_goblinarmy_end": {
-      "Japanese": "軍勢が撤退している"
+      "Japanese": {
+        "text": "軍勢が撤退している",
+        "immersion": true
+      }
     },
     "skill_unarmed": {
-      "Japanese": "素手"
-    },
-    "skill_swords_description": {
-      "Japanese": "剣のダメージ。"
-    },
-    "skill_knives_description": {
-      "Japanese": "ナイフのダメージ。"
-    },
-    "skill_clubs_description": {
-      "Japanese": "棍棒のダメージ。"
-    },
-    "skill_polearms_description": {
-      "Japanese": "長柄武器のダメージ。"
-    },
-    "skill_spears_description": {
-      "Japanese": "槍のダメージ。"
+      "Japanese": {
+        "text": "素手",
+        "adjust": true
+      }
     },
     "skill_unarmed_description": {
-      "Japanese": "素手のダメージ。 "
-    },
-    "skill_pickaxes_description": {
-      "Japanese": "つるはしのダメージ。"
+      "Japanese": {
+        "text": "素手のダメージ。 ",
+        "adjust": true
+      }
     },
     "ship_holdfast": {
-      "Japanese": "しっかり掴まる"
+      "Japanese": {
+        "text": "しっかり掴まる",
+        "adjust": true
+      }
     },
     "tutorial_start_label": {
-      "Japanese": "フギン: ヒント"
+      "Japanese": {
+        "text": "フギン: ヒント",
+        "system": true
+      }
     },
     "tutorial_stemple1_label": {
-      "Japanese": "フギン: 歓迎"
+      "Japanese": {
+        "text": "フギン: 歓迎",
+        "system": true
+      }
     },
     "tutorial_stemple1_topic": {
-      "Japanese": "〈第十の世界〉へようこそ、戦士よ"
+      "Japanese": {
+        "text": "〈第十の世界〉へようこそ、戦士よ",
+        "immersion": true
+      }
     },
     "tutorial_stemple1_text": {
-      "Japanese": "私はフギン。 あなたの旅の案内をするために送り込まれた。 \n\nまわりの巨石は犠牲の石だ。 これらは〈見捨てられしもの〉たちを表している。 ヴァルハラに昇るために殺さなければならない相手だ。 "
+      "Japanese": {
+        "text": "私はフギン。 あなたの旅の案内をするために送り込まれた。 \n\nまわりの巨石は犠牲の石だ。 これらは〈見捨てられしもの〉たちを表している。 ヴァルハラに昇るために殺さなければならない相手だ。 ",
+        "immersion": true
+      }
     },
     "tutorial_stemple2_label": {
-      "Japanese": "フギン: ヴェグヴィシル"
+      "Japanese": {
+        "text": "フギン: ヴェグヴィシル",
+        "system": true
+      }
     },
     "tutorial_stemple2_text": {
-      "Japanese": "これらの魔法の石は、〈見捨てられしもの〉の儀式の場所を示す目印として、オーディンが各地にばらまいたものだ。 \n\nよく見ると、これはエイクスュルを召喚する場所を表していることがわかる。 \n\nあなたの<color=yellow>最初の獲物</color>だ。 彼は強い獣だ。 倒そうと思うなら、まず正しく武装する必要がある。 "
+      "Japanese": {
+        "text": "これらの魔法の石は、〈見捨てられしもの〉の儀式の場所を示す目印として、オーディンが各地にばらまいたものだ。 \n\nよく見ると、これはエイクスュルを召喚する場所を表していることがわかる。 \n\nあなたの<color=yellow>最初の獲物</color>だ。 彼は強い獣だ。 倒そうと思うなら、まず正しく武装する必要がある。 ",
+        "system": true,
+        "immersion": true
+      }
     },
     "tutorial_stemple4_label": {
-      "Japanese": "フギン: エイクスュルが倒れた"
+      "Japanese": {
+        "text": "フギン: エイクスュルが倒れた",
+        "system": true
+      }
     },
     "tutorial_death_label": {
-      "Japanese": "フギン: 死"
+      "Japanese": {
+        "text": "フギン: 死",
+        "system": true
+      }
     },
     "tutorial_inventory_label": {
-      "Japanese": "フギン: インベントリー"
+      "Japanese": {
+        "text": "フギン: インベントリー",
+        "system": true
+      }
     },
     "tutorial_weight_label": {
-      "Japanese": "フギン: 重量超過"
+      "Japanese": {
+        "text": "フギン: 重量超過",
+        "system": true
+      }
     },
     "tutorial_cold_label": {
-      "Japanese": "フギン: 寒さ"
+      "Japanese": {
+        "text": "フギン: 寒さ",
+        "system": true
+      }
     },
     "tutorial_hunger_label": {
-      "Japanese": "フギン: 飢え"
+      "Japanese": {
+        "text": "フギン: 飢え",
+        "system": true
+      }
     },
     "tutorial_food_label": {
-      "Japanese": "フギン: 食物"
+      "Japanese": {
+        "text": "フギン: 食物",
+        "system": true
+      }
     },
     "tutorial_hammer_label": {
-      "Japanese": "フギン: ハンマー"
+      "Japanese": {
+        "text": "フギン: ハンマー",
+        "system": true
+      }
     },
     "tutorial_hoe_label": {
-      "Japanese": "フギン: 鍬"
+      "Japanese": {
+        "text": "フギン: 鍬",
+        "system": true
+      }
     },
     "tutorial_ore_label": {
-      "Japanese": "フギン: 鉱石"
+      "Japanese": {
+        "text": "フギン: 鉱石",
+        "system": true
+      }
     },
     "tutorial_ore_text": {
-      "Japanese": "鉱石の原石はまず<color=yellow>溶鉱炉</color>で製錬しないと、<color=yellow>鍛冶場</color>で扱えるようにならない。 \n\n溶鉱炉を作るには、<color=yellow>スルトリングの核</color>が必要だ。 地面の下の暗い場所で探すのだ。 "
+      "Japanese": {
+        "text": "鉱石の原石はまず<color=yellow>溶鉱炉</color>で製錬しないと、<color=yellow>鍛冶場</color>で扱えるようにならない。 \n\n溶鉱炉を作るには、<color=yellow>スルトリングの核</color>が必要だ。 地面の下の暗い場所で探すのだ。 ",
+        "adjust": true
+      }
     },
     "tutorial_workbench_label": {
-      "Japanese": "フギン: 作業台"
+      "Japanese": {
+        "text": "フギン: 作業台"
+      }
     },
     "tutorial_portal_label": {
-      "Japanese": "フギン: ポータル"
+      "Japanese": {
+        "text": "フギン: ポータル",
+        "system": true
+      }
     },
     "tutorial_altar_label": {
-      "Japanese": "フギン: 〈見捨てられしもの〉の祭壇"
+      "Japanese": {
+        "text": "フギン: 〈見捨てられしもの〉の祭壇",
+        "system": true
+      }
     },
     "tutorial_altar_text": {
-      "Japanese": "〈見捨てられしもの〉の一体を召喚する場所を見つけたな。 祭壇に正しい供物を捧げると呼び出すことができる。 \n\nただし気をつけろ。 〈見捨てられしもの〉はたやすく狩れる相手ではない。 戦いに望む前に、強い武器を作り、最上の防具を身に着け、栄養のあるものを食べておくのだ。 "
+      "Japanese": {
+        "text": "〈見捨てられしもの〉の一体を召喚する場所を見つけたな。 祭壇に正しい供物を捧げると呼び出すことができる。 \n\nただし気をつけろ。 〈見捨てられしもの〉はたやすく狩れる相手ではない。 戦いに望む前に、強い武器を作り、最上の防具を身に着け、栄養のあるものを食べておくのだ。 ",
+        "immersion": true
+      }
     },
     "tutorial_crypt_label": {
-      "Japanese": "フギン: ダンジョン"
+      "Japanese": {
+        "text": "フギン: ダンジョン",
+        "system": true
+      }
     },
     "tutorial_crypt_text": {
-      "Japanese": "〈第十の世界〉のあちこちに、洞穴やダンジョンがある。 それらは過去の遺物だ。 往々にして、長く失われた文明の富が多く残されている。  \n\n光源を持っていくことを忘れるな！"
+      "Japanese": {
+        "text": "〈第十の世界〉のあちこちに、洞穴やダンジョンがある。 それらは過去の遺物だ。 往々にして、長く失われた文明の富が多く残されている。  \n\n光源を持っていくことを忘れるな！",
+        "immersion": true
+      }
     },
     "tutorial_pickaxe_label": {
-      "Japanese": "フギン: つるはし"
+      "Japanese": {
+        "text": "フギン: つるはし",
+        "system": true
+      }
     },
     "tutorial_bosstrophy_label": {
-      "Japanese": "フギン: 〈見捨てられしもの〉のトロフィー"
+      "Japanese": {
+        "text": "フギン: 〈見捨てられしもの〉のトロフィー",
+        "system": true
+      }
     },
     "tutorial_bosstrophy_text": {
-      "Japanese": "〈見捨てられしもの〉のトロフィーを手に、犠牲の石に戻るのだ。 犠牲として捧げれば、神々が微笑んでくれることだろう。 "
+      "Japanese": {
+        "text": "〈見捨てられしもの〉のトロフィーを手に、犠牲の石に戻るのだ。 犠牲として捧げれば、神々が微笑んでくれることだろう。 ",
+        "immersion": true
+      }
     },
     "tutorial_wishbone_label": {
-      "Japanese": "フギン: 叉骨"
+      "Japanese": {
+        "text": "フギン: 叉骨",
+        "system": true
+      }
     },
     "tutorial_blackforest_label": {
-      "Japanese": "フギン: 黒い森"
+      "Japanese": {
+        "text": "フギン: 黒い森",
+        "system": true
+      }
     },
     "tutorial_guardstone_label": {
-      "Japanese": "フギン: 守護石"
+      "Japanese": {
+        "text": "フギン: 守護石",
+        "system": true
+      }
     },
     "tutorial_smelter_label": {
-      "Japanese": "フギン: 溶鉱炉"
+      "Japanese": {
+        "text": "フギン: 溶鉱炉",
+        "system": true
+      }
     },
     "tutorial_smelter_topic": {
-      "Japanese": "溶鉱炉を作った"
+      "Japanese": {
+        "text": "溶鉱炉を作った",
+        "adjust": true
+      }
     },
     "tutorial_smelter_text": {
-      "Japanese": "鉱石の原石をこの炉に入れれば、すべての不純物が溶け出し、あとには精錬された金属の塊だけが残る。 これを鍛冶場で使うことができる。 \n\n溶鉱炉の燃料として<color=yellow>炭</color>が必要だ。 これは窯を作り、木を入れて作ることができる。 "
+      "Japanese": {
+        "text": "鉱石の原石をこの炉に入れれば、すべての不純物が溶け出し、あとには精錬された金属の塊だけが残る。 これを鍛冶場で使うことができる。 \n\n溶鉱炉の燃料として<color=yellow>炭</color>が必要だ。 これは窯を作り、木を入れて作ることができる。 ",
+        "adjust": true
+      }
     },
     "tutorial_bed_label": {
-      "Japanese": "フギン: 住居"
+      "Japanese": {
+        "text": "フギン: 住居",
+        "system": true
+      }
     },
     "tutorial_bed_text": {
-      "Japanese": "ベッドで一晩眠れば、爽やかな気持ちで活力一杯の目覚めが迎えられる。 \n\nさらに、物を保管しておけるチェストをいくつか作れば家がより良い場所となる。 \n\n<color=yellow>装備には、常に予備を持つようにしておくといいだろう</color>。 探索中に不幸に見舞われることもあろうし..."
+      "Japanese": {
+        "text": "ベッドで一晩眠れば、爽やかな気持ちで活力一杯の目覚めが迎えられる。 \n\nさらに、物を保管しておけるチェストをいくつか作れば家がより良い場所となる。 \n\n<color=yellow>装備には、常に予備を持つようにしておくといいだろう</color>。 探索中に不幸に見舞われることもあろうし...",
+        "system": true
+      }
     },
     "tutorial_randomevent_label": {
-      "Japanese": "フギン: 侵略"
+      "Japanese": {
+        "text": "フギン: 侵略",
+        "system": true
+      }
     },
     "lore_greydwarfs_label": {
-      "Japanese": "伝説: 灰色ドワーフ"
+      "Japanese": {
+        "text": "伝説: 灰色ドワーフ",
+        "system": true
+      }
     },
     "lore_surtlings_label": {
-      "Japanese": "伝説: スルトリング"
+      "Japanese": {
+        "text": "伝説: スルトリング",
+        "system": true
+      }
     },
     "lore_wraith_label": {
-      "Japanese": "伝説: 死霊"
+      "Japanese": {
+        "text": "伝説: 死霊",
+        "system": true
+      }
     },
     "lore_draugr_label": {
-      "Japanese": "伝説: ドラウグル"
+      "Japanese": {
+        "text": "伝説: ドラウグル",
+        "system": true
+      }
     },
     "lore_drake_label": {
-      "Japanese": "伝説: ドレイク"
+      "Japanese": {
+        "text": "伝説: ドレイク",
+        "system": true
+      }
     },
     "lore_meadows_random02": {
-      "Japanese": "はるか昔、最高神たるオーディンはすべての世界をまとめ、ヴァン神族、巨人、さらに彼らよりも古い者たちを倒した。 中でも偉大な者たちは殺すことができず、彼らは〈見捨てられしもの〉となり、Valheimに永久に追放された。 \n\n彼らが地上を歩くと、卑しい生き物たちは太鼓の皮の上のごみくずのように飛び跳ねる。 見れば彼らとわかるであろう。 "
+      "Japanese": {
+        "text": "はるか昔、最高神たるオーディンはすべての世界をまとめ、ヴァン神族、巨人、さらに彼らよりも古い者たちを倒した。 中でも偉大な者たちは殺すことができず、彼らは〈見捨てられしもの〉となり、Valheimに永久に追放された。 \n\n彼らが地上を歩くと、卑しい生き物たちは太鼓の皮の上のごみくずのように飛び跳ねる。 見れば彼らとわかるであろう。 ",
+        "immersion": true
+      }
     },
     "lore_mountains_random07": {
-      "Japanese": "この石は、Valheimに住みて七年目、私、アストリッドによって置かれたものである。 ここで最高神より言葉をたまわった。 深い眠りより目覚めると、まわりの地面に神の言葉が深い寒さによって凍りつき、小石となって散らばっていた。 それを手で温めると、その言葉は溶け出し、ひとつひとつ、神の伝言となって語られた。 \n\n〈見捨てられしもの〉を倒せ。 その頭に鎖をかけよ。 我は来たる。 "
+      "Japanese": {
+        "text": "この石は、Valheimに住みて七年目、私、アストリッドによって置かれたものである。 ここで最高神より言葉をたまわった。 深い眠りより目覚めると、まわりの地面に神の言葉が深い寒さによって凍りつき、小石となって散らばっていた。 それを手で温めると、その言葉は溶け出し、ひとつひとつ、神の伝言となって語られた。 \n\n〈見捨てられしもの〉を倒せ。 その頭に鎖をかけよ。 我は来たる。 ",
+        "immersion": true
+      }
     },
     "lore_plains_random03": {
-      "Japanese": "旅人よ、心を落ち着けよ。 オーディンは耳を傾ける者に話す。 この不毛の地に〈見捨てられしもの〉がひとり棲む。 苦痛にねじれし古き魔術師、うちひしがれし身体を引きずり、砂地をわたる。 この憎むべきものを破りし戦士には、必ずやオーディンが微笑むであろう。 "
+      "Japanese": {
+        "text": "旅人よ、心を落ち着けよ。 オーディンは耳を傾ける者に話す。 この不毛の地に〈見捨てられしもの〉がひとり棲む。 苦痛にねじれし古き魔術師、うちひしがれし身体を引きずり、砂地をわたる。 この憎むべきものを破りし戦士には、必ずやオーディンが微笑むであろう。 ",
+        "immersion": true
+      }
     },
     "enemy_goblinbrute": {
-      "Japanese": "フューリングのベルセルク"
+      "Japanese": {
+        "text": "フューリングのベルセルク",
+        "immersion": true
+      }
     },
     "guardianstone_trophyplaced": {
-      "Japanese": "〈見捨てられしもの〉を捧げた"
+      "Japanese": {
+        "text": "〈見捨てられしもの〉を捧げた",
+        "immersion": true
+      }
     },
     "npc_haldor_smalltalk02": {
-      "Japanese": "〈見捨てられしもの〉を狩りに来たのか？こっちが手を出さなきゃ、向こうも何もしねぇのによ。 "
+      "Japanese": {
+        "text": "〈見捨てられしもの〉を狩りに来たのか？こっちが手を出さなきゃ、向こうも何もしねぇのによ。 ",
+        "immersion": true
+      }
     },
     "dream_random02": {
-      "Japanese": "また、父の斧を手にして戦士たちを率いていた。 \n\n目覚めた時、口にはときの声の名残があった..."
+      "Japanese": {
+        "text": "また、父の斧を手にして戦士たちを率いていた。 \n\n目覚めた時、口にはときの声の名残があった...",
+        "adjust": true
+      }
     },
     "npc_munin_general05": {
-      "Japanese": "クワァァ！使命を忘れるな、さすらい人！最高神になぜここに送られたか思い出せ。 〈見捨てられしもの〉は倒されねばならぬ。 覚えておけ！"
+      "Japanese": {
+        "text": "クワァァ！使命を忘れるな、さすらい人！最高神になぜここに送られたか思い出せ。 〈見捨てられしもの〉は倒されねばならぬ。 覚えておけ！",
+        "immersion": true
+      }
     },
     "npc_munin_general09": {
-      "Japanese": "クワァァ！とくと聞け。 もはや謎かけはせぬ。 我は偉大なるムニン、記憶の宝庫である。 我は最高神の左の肩に止まり、〈第十の世界〉で彼の命を成し遂げる。 多くの偉大なる戦士の栄光と没落を見てきたが、おまえは最高の戦士のひとりだ。 オーディンそのひとが見ていると知れ..."
+      "Japanese": {
+        "text": "クワァァ！とくと聞け。 もはや謎かけはせぬ。 我は偉大なるムニン、記憶の宝庫である。 我は最高神の左の肩に止まり、〈第十の世界〉で彼の命を成し遂げる。 多くの偉大なる戦士の栄光と没落を見てきたが、おまえは最高の戦士のひとりだ。 オーディンそのひとが見ていると知れ...",
+        "immersion": true
+      }
     },
     "npc_munin_general10": {
-      "Japanese": "クワァァ！最高神よりの言葉だ！大いなる橋に送り出さんとする知らせをお待ちである。 〈見捨てられしもの〉を倒し、道を開け！"
+      "Japanese": {
+        "text": "クワァァ！最高神よりの言葉だ！大いなる橋に送り出さんとする知らせをお待ちである。 〈見捨てられしもの〉を倒し、道を開け！",
+        "immersion": true
+      }
     },
     "lore_meadows_boartaming_label": {
-      "Japanese": "伝説: 猪"
+      "Japanese": {
+        "text": "伝説: 猪",
+        "system": true
+      }
     },
     "lore_mountains_fenring_label": {
-      "Japanese": "伝説: フェンリング"
+      "Japanese": {
+        "text": "伝説: フェンリング",
+        "system": true
+      }
     },
     "enemy_greydwarfbrute": {
-      "Japanese": "灰色ドワーフの暴漢"
+      "Japanese": {
+        "text": "灰色ドワーフの暴漢",
+        "consistency": true
+      }
     },
     "enemy_greydwarfshaman": {
-      "Japanese": "灰色ドワーフのシャーマン"
+      "Japanese": {
+        "text": "灰色ドワーフのシャーマン",
+        "consistency": true
+      }
     },
     "enemy_boarpiggy": {
-      "Japanese": "猪の仔"
+      "Japanese": {
+        "text": "猪の仔",
+        "adjust": true
+      }
     },
     "enemy_draugrelite": {
-      "Japanese": "ドラウグルの精鋭"
+      "Japanese": {
+        "text": "ドラウグルの精鋭",
+        "consistency": true
+      }
     },
     "enemy_serpent": {
-      "Japanese": "大海蛇"
+      "Japanese": {
+        "text": "大海蛇",
+        "correction": true
+      }
     },
     "enemy_skeletonpoison": {
-      "Japanese": "腐乱した骸"
+      "Japanese": {
+        "text": "腐乱した骸",
+        "adjust": true
+      }
     },
     "enemy_wolfcub": {
-      "Japanese": "狼の仔"
+      "Japanese": {
+        "text": "狼の仔",
+        "adjust": true
+      }
     },
     "enemy_goblinshaman": {
-      "Japanese": "フューリングのシャーマン"
+      "Japanese": {
+        "text": "フューリングのシャーマン",
+        "consistency": true
+      }
     },
     "enemy_blob": {
-      "Japanese": "ブロブ"
+      "Japanese": {
+        "text": "ブロブ",
+        "adjust": true
+      }
     },
     "enemy_blobelite": {
-      "Japanese": "ウーズ"
+      "Japanese": {
+        "text": "ウーズ",
+        "adjust": true
+      }
     },
     "piece_offerbowl_bonemass": {
-      "Japanese": "沸き立つ死"
+      "Japanese": {
+        "text": "沸き立つ死",
+        "correction": true
+      }
     },
     "menu_connecting": {
-      "Japanese": "接続中"
+      "Japanese": {
+        "text": "接続中",
+        "adjust": true
+      }
     },
     "enemy_blobtar": {
-      "Japanese": "グロウス"
+      "Japanese": {
+        "text": "グロウス",
+        "missing": true
+      }
     },
     "msg_worldsavewarning": {
-      "Japanese": "もうすぐ保存される:"
+      "Japanese": {
+        "text": "もうすぐ保存される:",
+        "missing": true
+      }
     },
     "lore_meadows_random07": {
-      "Japanese": "泥に塗れた青い目の這い回るもの、ネックは Valheim で生まれた小さなトカゲである。無愛想で陰険、目に入るや攻撃を仕掛ける奴らは害獣のように駆除しなければならない。地上の生き物は奴らを嫌いきっているので、奴らは水辺にとどまっている。\n\nだが取り柄のない生き物はいない。奴らの尻尾は美味だ。"
+      "Japanese": {
+        "text": "泥に塗れた青い目の這い回るもの、ネックは Valheim で生まれた小さなトカゲである。無愛想で陰険、目に入るや攻撃を仕掛ける奴らは害獣のように駆除しなければならない。地上の生き物は奴らを嫌いきっているので、奴らは水辺にとどまっている。\n\nだが取り柄のない生き物はいない。奴らの尻尾は美味だ。",
+        "missing": true
+      }
     },
     "lore_meadows_random08": {
-      "Japanese": "防壁のごとき姉妹と兄弟よ、心を奮い立たせよ! お前たちは偉大な戦士であり、最高神その御方から勇気と武勇によって選ばれし者たちである。今、お前たちは死によって、神々の寵愛と名誉を勝ち取り、自らを戦いと労苦の中で鍛え直す土地へと連れてこられた! お前たちの記憶は罪とともにミズガルズで腐らせてしまえ、お前たちの至高はここにある!"
+      "Japanese": {
+        "text": "防壁のごとき姉妹と兄弟よ、心を奮い立たせよ! お前たちは偉大な戦士であり、最高神その御方から勇気と武勇によって選ばれし者たちである。今、お前たちは死によって、神々の寵愛と名誉を勝ち取り、自らを戦いと労苦の中で鍛え直す土地へと連れてこられた! お前たちの記憶は罪とともにミズガルズで腐らせてしまえ、お前たちの至高はここにある!",
+        "missing": true
+      }
     },
     "lore_meadows_random09": {
-      "Japanese": "ここで木が頭上に落ちてきたので私は神々を呪った。そこで彼らを讃え、私の無礼な言葉を許してもらうためこの石を残しておく。"
+      "Japanese": {
+        "text": "ここで木が頭上に落ちてきたので私は神々を呪った。そこで彼らを讃え、私の無礼な言葉を許してもらうためこの石を残しておく。",
+        "missing": true
+      }
     },
     "lore_meadows_random10": {
-      "Japanese": "立ち止まれ、旅人よ。最後にして最も無法な〈第十の世界〉によくぞ来た。Valheim の空気は清浄で、水は深く澄み渡り、森の恵みは行き渡っている。冒険と、喜びと、栄光をここで手にする!"
+      "Japanese": {
+        "text": "立ち止まれ、旅人よ。最後にして最も無法な〈第十の世界〉によくぞ来た。Valheim の空気は清浄で、水は深く澄み渡り、森の恵みは行き渡っている。冒険と、喜びと、栄光をここで手にする!",
+        "missing": true
+      }
     },
     "lore_meadows_random11": {
-      "Japanese": "腹一杯で\n\n順風満帆で\n\n汝の手中には槍の重み\n\n汝の唇には歌\n\n全ての山を突き崩せ\n\n全ての海を沸かし塩にせよ\n\n今日一日は生き生きとしている"
+      "Japanese": {
+        "text": "腹一杯で\n\n順風満帆で\n\n汝の手中には槍の重み\n\n汝の唇には歌\n\n全ての山を突き崩せ\n\n全ての海を沸かし塩にせよ\n\n今日一日は生き生きとしている",
+        "missing": true
+      }
     },
     "lore_blackforest_random08": {
-      "Japanese": "\nミズガルズではトロルの存在を他の全ての種族が忘れつつあるように、お前の記憶からも消えているやもしれぬ。数も僅かとなった孤独な奴らは、じめじめした洞窟の中で身を屈め、弱く愚かな犠牲者の骨をかじっている。オーディンのご意思が奴らを暗黒の中に追いやったのだ。\n\nだがValheimで奴らは繁栄していた。ミズガルズで巨大なトロルが大地を踏み均し、戯れに木々をなぎ倒すのを誰もが見られたのは何百年も前のことだ。見知らぬ土地への放浪者よ、見よ、この偉大にして高貴な光景を! そして踵を返し一目散に逃げよ..."
+      "Japanese": {
+        "text": "\nミズガルズではトロルの存在を他の全ての種族が忘れつつあるように、お前の記憶からも消えているやもしれぬ。数も僅かとなった孤独な奴らは、じめじめした洞窟の中で身を屈め、弱く愚かな犠牲者の骨をかじっている。オーディンのご意思が奴らを暗黒の中に追いやったのだ。\n\nだがValheimで奴らは繁栄していた。ミズガルズで巨大なトロルが大地を踏み均し、戯れに木々をなぎ倒すのを誰もが見られたのは何百年も前のことだ。見知らぬ土地への放浪者よ、見よ、この偉大にして高貴な光景を! そして踵を返し一目散に逃げよ...",
+        "missing": true
+      }
     },
     "lore_blackforest_random09": {
-      "Japanese": "罪の種から森の老人に育てられし灰色ドワーフたちは、かつての記憶にある人間の似姿をまとっているが、その心にもはや温もりを持たぬ。奴らはただ森の長老に仕え、森を守るだけの存在である。奴らを打つ手をためらってはならぬ。"
+      "Japanese": {
+        "text": "罪の種から森の老人に育てられし灰色ドワーフたちは、かつての記憶にある人間の似姿をまとっているが、その心にもはや温もりを持たぬ。奴らはただ森の長老に仕え、森を守るだけの存在である。奴らを打つ手をためらってはならぬ。",
+        "missing": true
+      }
     },
     "lore_blackforest_random10": {
-      "Japanese": "お前たちの中に親殺しはいるか、反逆者はいるか? 兄の背に刃を突き立てた者はあるか? だれが母親の手から赤子を引き剥がし、略奪された家に火を放ったか? 何も思い出せぬは祝福と心得よ。お前たち一人一人は偉大な戦士であり、戦士の魂は決して清められることはない。\n\nだがオーディンは再び機会をくださった... 最高神を賛美せよ!"
+      "Japanese": {
+        "text": "お前たちの中に親殺しはいるか、反逆者はいるか? 兄の背に刃を突き立てた者はあるか? だれが母親の手から赤子を引き剥がし、略奪された家に火を放ったか? 何も思い出せぬは祝福と心得よ。お前たち一人一人は偉大な戦士であり、戦士の魂は決して清められることはない。\n\nだがオーディンは再び機会をくださった... 最高神を賛美せよ!",
+        "missing": true
+      }
     },
     "lore_blackforest_random11": {
-      "Japanese": "〈見捨てられしもの〉どもにこの気まぐれな世界に再び集うよう呼びかけられた、大いなるユグドラシルが枝を伸ばす天空を見よ。これは輝かしくも恐ろしい光景である。偉大な樹が虚空を横切るように折れ曲がり、枝はこわばりひび割れ、残された九つの世界では地震、大嵐、聖なる炎として現れる。〈見捨てられしもの〉たちは屠られ、均衡を戻さねばならない。"
+      "Japanese": {
+        "text": "〈見捨てられしもの〉どもにこの気まぐれな世界に再び集うよう呼びかけられた、大いなるユグドラシルが枝を伸ばす天空を見よ。これは輝かしくも恐ろしい光景である。偉大な樹が虚空を横切るように折れ曲がり、枝はこわばりひび割れ、残された九つの世界では地震、大嵐、聖なる炎として現れる。〈見捨てられしもの〉たちは屠られ、均衡を戻さねばならない。",
+        "missing": true
+      }
     },
     "lore_blackforest_random12": {
-      "Japanese": "アストリッドはもう私に振り向いてくれないだろう。偉大なるフレイアに敬意を表しこの石を残す。ああ女神よ、どうか彼女の心を掴めるよう、私にビョルンのような髭を授けてくれ!"
+      "Japanese": {
+        "text": "アストリッドはもう私に振り向いてくれないだろう。偉大なるフレイアに敬意を表しこの石を残す。ああ女神よ、どうか彼女の心を掴めるよう、私にビョルンのような髭を授けてくれ!",
+        "missing": true
+      }
     },
     "lore_blackforest_random13": {
-      "Japanese": "私はこの地で何度も蘇った。私は幾度となく死んだが、ただ自分の家で目覚めるだけであった。だがあとどれだけ、このようなことを繰り返せばよいのかわからない。\n\nフリダが大海蛇に丸呑みにされてから、彼女のベッドには誰もいない。ビャルニはトロルに半分かじられ、それからずっと残り半分だけになっている...\n\n我々より前に来た者たちの廃墟があちこちにあるが、これを建てた者たちの手は一体どこへ行ったというのか..."
+      "Japanese": {
+        "text": "私はこの地で何度も蘇った。私は幾度となく死んだが、ただ自分の家で目覚めるだけであった。だがあとどれだけ、このようなことを繰り返せばよいのかわからない。\n\nフリダが大海蛇に丸呑みにされてから、彼女のベッドには誰もいない。ビャルニはトロルに半分かじられ、それからずっと残り半分だけになっている...\n\n我々より前に来た者たちの廃墟があちこちにあるが、これを建てた者たちの手は一体どこへ行ったというのか...",
+        "missing": true
+      }
     },
     "lore_swamp_random08": {
-      "Japanese": "長きにわたり、Valheimはオーデンの目の届かぬところであった。しかし神々が打ち捨てている間に、生き物たちが這い寄り、割れ目からこの忘れ去られし世界に落ちていった。トロル、ゴブリン、そして人間たちはこの秘密の抜け道を見つけたのだ。この世界は浮き沈み、地中深くに埋もれていたのだ。\n\n死の中を歩く間は、お前は一歩ごとに墓を踏みつけているのだ。"
+      "Japanese": {
+        "text": "長きにわたり、Valheimはオーデンの目の届かぬところであった。しかし神々が打ち捨てている間に、生き物たちが這い寄り、割れ目からこの忘れ去られし世界に落ちていった。トロル、ゴブリン、そして人間たちはこの秘密の抜け道を見つけたのだ。この世界は浮き沈み、地中深くに埋もれていたのだ。\n\n死の中を歩く間は、お前は一歩ごとに墓を踏みつけているのだ。",
+        "missing": true
+      }
     },
     "lore_swamp_random09": {
-      "Japanese": "この地で俺は7つのドラウグルを殺し、奴らの長年の闘争と悲劇を終わらせた。じゃあ、俺を終わらせてくれるのは誰だ?"
+      "Japanese": {
+        "text": "この地で俺は7つのドラウグルを殺し、奴らの長年の闘争と悲劇を終わらせた。じゃあ、俺を終わらせてくれるのは誰だ?",
+        "missing": true
+      }
     },
     "lore_swamp_random10": {
-      "Japanese": "私の名はグズルーン。誰の妻でもなく、誰の娘でもない。名前だけが私を私たらしめる。だが時折、目覚めたときに胸の中に赤子の重みを感じて涙を流すのだ。偉大なるフレイアよ、私を憐れみたまえ。"
+      "Japanese": {
+        "text": "私の名はグズルーン。誰の妻でもなく、誰の娘でもない。名前だけが私を私たらしめる。だが時折、目覚めたときに胸の中に赤子の重みを感じて涙を流すのだ。偉大なるフレイアよ、私を憐れみたまえ。",
+        "missing": true
+      }
     },
     "lore_swamp_random11": {
-      "Japanese": "神にを見捨てられたと恐れるな。Valheimは世界樹から離れ、ヴァン神族は手をこまねくだけだが、はるか遠くからこの世界を見守っている。このことを忘れるな。お前の信仰が強いものなら、神々はしるしを見せるかもしれぬ。"
+      "Japanese": {
+        "text": "神にを見捨てられたと恐れるな。Valheimは世界樹から離れ、ヴァン神族は手をこまねくだけだが、はるか遠くからこの世界を見守っている。このことを忘れるな。お前の信仰が強いものなら、神々はしるしを見せるかもしれぬ。",
+        "missing": true
+      }
     },
     "lore_swamp_random12": {
-      "Japanese": "新たな生をもたらさぬ死はありえぬ。ウジ虫が戦場で腹を肥やすと、オーディンに敵した巨大な骸がValheimに新たな生をもたらす。下等な生き物が奴らの死体を餌とし、彼らを未だつなぎとめる太古の魔術によって肥え太る。奴らの霊魂は土を新たにするため大地に滴り落ち、あるいは自らの新たな肉体を探し求める。\n\n死者を軽んじてはならぬ。お前であるものが死者となるぞ。"
+      "Japanese": {
+        "text": "新たな生をもたらさぬ死はありえぬ。ウジ虫が戦場で腹を肥やすと、オーディンに敵した巨大な骸がValheimに新たな生をもたらす。下等な生き物が奴らの死体を餌とし、彼らを未だつなぎとめる太古の魔術によって肥え太る。奴らの霊魂は土を新たにするため大地に滴り落ち、あるいは自らの新たな肉体を探し求める。\n\n死者を軽んじてはならぬ。お前であるものが死者となるぞ。",
+        "missing": true
+      }
     },
     "lore_mountains_random08": {
-      "Japanese": "Valheimで最初に目覚めたとき、私はオーディンに姿を表すよう訴えた。彼はどこにおわすのか?なぜ私をお見捨てになったのか?\n\n月が何度も姿を変え、答えを求めて私は嵐と獰猛な獣に耐えてきた。神々はいないのか? これが報いだというのか? オーディンはどこにおわすのか?\n\nだが私は気づいたのだ。灰色ドワーフを畑の雑草のように引きちぎり、スルトリングを燃えがらのように踏みつけるとき、私はオーディンのために働いているのだ。大長虫と腕力を競い、一撃で頭を断ち切ったとき、私の内なるオーディンの喜びを深く誇りに感じるのだ。\n\n我ら一人一人がオーディンの御手であり、彼の意思のために働くことがこの生の意味なのだ。"
+      "Japanese": {
+        "text": "Valheimで最初に目覚めたとき、私はオーディンに姿を表すよう訴えた。彼はどこにおわすのか?なぜ私をお見捨てになったのか?\n\n月が何度も姿を変え、答えを求めて私は嵐と獰猛な獣に耐えてきた。神々はいないのか? これが報いだというのか? オーディンはどこにおわすのか?\n\nだが私は気づいたのだ。灰色ドワーフを畑の雑草のように引きちぎり、スルトリングを燃えがらのように踏みつけるとき、私はオーディンのために働いているのだ。大長虫と腕力を競い、一撃で頭を断ち切ったとき、私の内なるオーディンの喜びを深く誇りに感じるのだ。\n\n我ら一人一人がオーディンの御手であり、彼の意思のために働くことがこの生の意味なのだ。",
+        "missing": true
+      }
     },
     "lore_mountains_random09": {
-      "Japanese": "この場所において、オトとビョルンは誰が最も美しい髭の持ち主かを決める決闘をした。そして私、ビョルンはこの石に刻み記す、オトの髭は夏の小麦畑のように明るく美しいと。私が偽りを記したなら、全能のトールよ我が髭を引きちぎりたまえ。"
+      "Japanese": {
+        "text": "この場所において、オトとビョルンは誰が最も美しい髭の持ち主かを決める決闘をした。そして私、ビョルンはこの石に刻み記す、オトの髭は夏の小麦畑のように明るく美しいと。私が偽りを記したなら、全能のトールよ我が髭を引きちぎりたまえ。",
+        "missing": true
+      }
     },
     "lore_mountains_random10": {
-      "Japanese": "かつてミズガルズでは、ヴァン神族が彼らの母をValheimへ投げ落としたように、人の軍勢がドレイクを山から追いやった。だがここで奴らは強さと数を取り戻した。奴らの強力な羽ばたきは頂上までこだまする。\n\n奴らは獰猛で高貴な生き物であり、戦うに値する真の敵だ。奴らがお前の刃を侮るなら、挨拶代わりに矢をくれてやれ。"
+      "Japanese": {
+        "text": "かつてミズガルズでは、ヴァン神族が彼らの母をValheimへ投げ落としたように、人の軍勢がドレイクを山から追いやった。だがここで奴らは強さと数を取り戻した。奴らの強力な羽ばたきは頂上までこだまする。\n\n奴らは獰猛で高貴な生き物であり、戦うに値する真の敵だ。奴らがお前の刃を侮るなら、挨拶代わりに矢をくれてやれ。",
+        "missing": true
+      }
     },
     "lore_mountains_random11": {
-      "Japanese": "この山では、どう槍を投げても私を殺したい相手に命中する。だが山の高みから、もっと楽に暮らせそうな日当たりの良い平原が見える。これからあそこに家を建てよう。ウルフがここに記す。"
+      "Japanese": {
+        "text": "この山では、どう槍を投げても私を殺したい相手に命中する。だが山の高みから、もっと楽に暮らせそうな日当たりの良い平原が見える。これからあそこに家を建てよう。ウルフがここに記す。",
+        "missing": true
+      }
     },
     "lore_mountains_random12": {
-      "Japanese": "Valheimには友人がいるが、お前は敵の中で友人を探さなければならない。古き友よ、「火の兄弟」に「月の歌い手」よ。数百年もともに狩りをしてきて、今私はお前たちと一族との古き約束を思い出さねばならない。肉体は彼らの喜びであり、お前の供物でなければならない。"
+      "Japanese": {
+        "text": "Valheimには友人がいるが、お前は敵の中で友人を探さなければならない。古き友よ、「火の兄弟」に「月の歌い手」よ。数百年もともに狩りをしてきて、今私はお前たちと一族との古き約束を思い出さねばならない。肉体は彼らの喜びであり、お前の供物でなければならない。",
+        "missing": true
+      }
     },
     "lore_plains_random08": {
-      "Japanese": "山頂からは、この平原は平和で穏やかに見えた。だがここよりひどい場所など見たことがない。あの胸くそ悪い虫たちの羽音がいつも耳に入る。私の髭は雪のように白くなってしまった。船を作ることにしよう。"
+      "Japanese": {
+        "text": "山頂からは、この平原は平和で穏やかに見えた。だがここよりひどい場所など見たことがない。あの胸くそ悪い虫たちの羽音がいつも耳に入る。私の髭は雪のように白くなってしまった。船を作ることにしよう。",
+        "missing": true
+      }
     },
     "lore_plains_random09": {
-      "Japanese": "喜びたるやさまよい歩くこと\n\n髪の中に風をはらみ\n\n青い空は目の前に。\n\nそして喜びたるや\n\n敵の前に立ちふさがること\n\nそして世界にはっきりと語る。\n\nそして喜びたるや\n\n旅から家に帰ること\n\nそしてまだ煌々とした暖炉の火に気づくこと"
+      "Japanese": {
+        "text": "喜びたるやさまよい歩くこと\n\n髪の中に風をはらみ\n\n青い空は目の前に。\n\nそして喜びたるや\n\n敵の前に立ちふさがること\n\nそして世界にはっきりと語る。\n\nそして喜びたるや\n\n旅から家に帰ること\n\nそしてまだ煌々とした暖炉の火に気づくこと",
+        "missing": true
+      }
     },
     "lore_plains_random10": {
-      "Japanese": "この平原では我が言葉を読み、我が忠告に耳を傾けし者のみが偉大なる生還を遂げるであろう。さあ我に耳を傾けよ。\n\n偉大なオーディンは愛する父ではなく、寛容温和でもなく、甘い言葉も弄さぬ。冷厳なる君主でもなければ、腕を黄金で飾る者でもなく、死の痛みにて奴隷を使役する者でもない。 \n\n汝を送り出し敵と戦わせるのは愛や怒りのためでなく、敵はただ汝の敵であるというだけのこと。彼の喜びと誉れは汝のものでもある。彼がかつて行ったように、汝は戦い勝利する。\n\n オーディンの息子と娘たちよ、喜べ!"
+      "Japanese": {
+        "text": "この平原では我が言葉を読み、我が忠告に耳を傾けし者のみが偉大なる生還を遂げるであろう。さあ我に耳を傾けよ。\n\n偉大なオーディンは愛する父ではなく、寛容温和でもなく、甘い言葉も弄さぬ。冷厳なる君主でもなければ、腕を黄金で飾る者でもなく、死の痛みにて奴隷を使役する者でもない。 \n\n汝を送り出し敵と戦わせるのは愛や怒りのためでなく、敵はただ汝の敵であるというだけのこと。彼の喜びと誉れは汝のものでもある。彼がかつて行ったように、汝は戦い勝利する。\n\n オーディンの息子と娘たちよ、喜べ!",
+        "missing": true
+      }
     },
     "lore_plains_random11": {
-      "Japanese": "この地にはフューリングどもの棲家がある。奴らはオーディンにその高慢を罰せられるまで競って塔と都市を建てた古き種族である。彼はフューリングの軍勢を蹂躙し、その鎧をかたつむりの殻の如く足で踏み砕き、都市を打ち壊して見せた。\n\n大いなる魔術師、ヤグルスのみが彼の怒りに決して屈することをしなかった。そこでオーディンはヤグルスの体を真っ二つに引き裂き、骸を Valheim に投げ込んだ。彼は大地に自らの血を吸わせ、肉体は四分五裂し、残された手下は嘆き悲しんだ。\n\n今やフューリングは Valheim の平原を支配している。奴らは残忍野蛮であり、その心には憎しみと恐怖しかない。しかしヤグルスは未だ彼らとともにあり。シャーマンが歪な魔術に利する不可視の力は、手下が世界に広がるにつれ力を増している..."
+      "Japanese": {
+        "text": "この地にはフューリングどもの棲家がある。奴らはオーディンにその高慢を罰せられるまで競って塔と都市を建てた古き種族である。彼はフューリングの軍勢を蹂躙し、その鎧をかたつむりの殻の如く足で踏み砕き、都市を打ち壊して見せた。\n\n大いなる魔術師、ヤグルスのみが彼の怒りに決して屈することをしなかった。そこでオーディンはヤグルスの体を真っ二つに引き裂き、骸を Valheim に投げ込んだ。彼は大地に自らの血を吸わせ、肉体は四分五裂し、残された手下は嘆き悲しんだ。\n\n今やフューリングは Valheim の平原を支配している。奴らは残忍野蛮であり、その心には憎しみと恐怖しかない。しかしヤグルスは未だ彼らとともにあり。シャーマンが歪な魔術に利する不可視の力は、手下が世界に広がるにつれ力を増している...",
+        "missing": true
+      }
     },
     "lore_plains_random12": {
-      "Japanese": "ロックスは力強い生き物であり、〈見捨てられしもの〉たちがValheimに追放されるはるか前からこの地を歩き回っていた偉大な大地揺るがすものたちである。奴らは怒りっぽく、不用意に近づくほど愚かな者をみな押しつぶしてしまうだろう。だが奴らは人の手を知っている。再び愛することを教えることもできよう。"
+      "Japanese": {
+        "text": "ロックスは力強い生き物であり、〈見捨てられしもの〉たちがValheimに追放されるはるか前からこの地を歩き回っていた偉大な大地揺るがすものたちである。奴らは怒りっぽく、不用意に近づくほど愚かな者をみな押しつぶしてしまうだろう。だが奴らは人の手を知っている。再び愛することを教えることもできよう。",
+        "missing": true
+      }
     },
     "lore_plains_random13": {
-      "Japanese": "旅人よ、汝は Valheim の世界で死ぬことはできぬが、復活しないことも選べると知れ。汝の前にもオーディンの意思のためこの地に来たものは多くいたが、みな自らの過ちに気づくのみであった..."
+      "Japanese": {
+        "text": "旅人よ、汝は Valheim の世界で死ぬことはできぬが、復活しないことも選べると知れ。汝の前にもオーディンの意思のためこの地に来たものは多くいたが、みな自らの過ちに気づくのみであった...",
+        "missing": true
+      }
     },
     "dream_random06": {
-      "Japanese": "暗く輝く眠りの平原の中で、腕がぶつかり合い、あなたの目の前で歯をむき出してうなる顔が近づいてくる。盾を持ったあなたの腕は垂れ下がり、槍は折れている。あなたは迫りくる冷たい刃を受け入れた。\n\n死の夢からあなたは目覚め、死そのものになった。"
+      "Japanese": {
+        "text": "暗く輝く眠りの平原の中で、腕がぶつかり合い、あなたの目の前で歯をむき出してうなる顔が近づいてくる。盾を持ったあなたの腕は垂れ下がり、槍は折れている。あなたは迫りくる冷たい刃を受け入れた。\n\n死の夢からあなたは目覚め、死そのものになった。",
+        "missing": true
+      }
     },
     "dream_random07": {
-      "Japanese": "あなたは草原で仰向けに寝転ぶ夢を見た。雲の方を見つめている。あなたに名前はなく、あなたの心には何もない。しかしあたたかい手はあなたのものだ。\n\n夢の中であなたは笑っていた。だが目が覚めると、あなたは顔が涙で濡れていることに気づいた。"
+      "Japanese": {
+        "text": "あなたは草原で仰向けに寝転ぶ夢を見た。雲の方を見つめている。あなたに名前はなく、あなたの心には何もない。しかしあたたかい手はあなたのものだ。\n\n夢の中であなたは笑っていた。だが目が覚めると、あなたは顔が涙で濡れていることに気づいた。",
+        "missing": true
+      }
     },
     "dream_random08": {
-      "Japanese": "黒い木から切り出した小舟の上、ぼろぼろの帆の下で、あなたは胸の上で両手を組んで横たわる。闇の中で拇印のようにぼやけた顔の人々がよく知った歌を口ずさみながら、黒くガラスのように静かな海にあなたを浮かべようと押し出している。"
+      "Japanese": {
+        "text": "黒い木から切り出した小舟の上、ぼろぼろの帆の下で、あなたは胸の上で両手を組んで横たわる。闇の中で拇印のようにぼやけた顔の人々がよく知った歌を口ずさみながら、黒くガラスのように静かな海にあなたを浮かべようと押し出している。",
+        "missing": true
+      }
     },
     "dream_random09": {
-      "Japanese": "あなたは戦場に横たわり、煙に包まれた空を見上げる夢を見た。戦士たちが呼ぶ声は弱まり、あなたは目を再び閉じた。巨大な鉤爪があなたの下に滑り込むと、赤ん坊がベッドから抱きかかえられるように自分の体が持ち上がるのを感じた..."
+      "Japanese": {
+        "text": "あなたは戦場に横たわり、煙に包まれた空を見上げる夢を見た。戦士たちが呼ぶ声は弱まり、あなたは目を再び閉じた。巨大な鉤爪があなたの下に滑り込むと、赤ん坊がベッドから抱きかかえられるように自分の体が持ち上がるのを感じた...",
+        "missing": true
+      }
     },
     "dream_random10": {
-      "Japanese": "あなたは井戸のように深い眠りに落ち、ただただ闇が広がるだけの夢を見た。"
+      "Japanese": {
+        "text": "あなたは井戸のように深い眠りに落ち、ただただ闇が広がるだけの夢を見た。",
+        "missing": true
+      }
     },
     "dream_random11": {
-      "Japanese": "あなたは優雅な戦士と見目麗しい乙女たちの集う、まばゆく輝く広間の夢を見た。空気は歌声を響かせ、食卓は皿の重みで軋めき、蜂蜜酒は水のように流れ出てきた。\n\n笑い声を耳に響かせながら、あなたはゆっくりと目覚めた。"
+      "Japanese": {
+        "text": "あなたは優雅な戦士と見目麗しい乙女たちの集う、まばゆく輝く広間の夢を見た。空気は歌声を響かせ、食卓は皿の重みで軋めき、蜂蜜酒は水のように流れ出てきた。\n\n笑い声を耳に響かせながら、あなたはゆっくりと目覚めた。",
+        "missing": true
+      }
     },
     "dream_random12": {
-      "Japanese": "あなたは急速に眠りに落ち、恐ろしい夢を見た。夢魔があなたの胸の上に重々しくのしかかった。朝になると、あなたは安心して朝の挨拶をした。"
+      "Japanese": {
+        "text": "あなたは急速に眠りに落ち、恐ろしい夢を見た。夢魔があなたの胸の上に重々しくのしかかった。朝になると、あなたは安心して朝の挨拶をした。",
+        "missing": true
+      }
     },
     "dream_random13": {
-      "Japanese": "眠りとは川で、夢とはそこに生きる魚である。朝になってあなたの網が空になると目が覚めた。"
+      "Japanese": {
+        "text": "眠りとは川で、夢とはそこに生きる魚である。朝になってあなたの網が空になると目が覚めた。",
+        "missing": true
+      }
     },
     "dream_random14": {
-      "Japanese": "あなたは仲間たちと狩りをする夢を見た。緑の丘や霧に包まれた谷を興奮して駆け抜けた。あなたの目の前で獲物がよろめき、あなたは飛びかかり、あなたの歯が温かい肉に沈みこむ。\n\nあなたが目覚めると、口の中に鉄の味が残っていた。"
+      "Japanese": {
+        "text": "あなたは仲間たちと狩りをする夢を見た。緑の丘や霧に包まれた谷を興奮して駆け抜けた。あなたの目の前で獲物がよろめき、あなたは飛びかかり、あなたの歯が温かい肉に沈みこむ。\n\nあなたが目覚めると、口の中に鉄の味が残っていた。",
+        "missing": true
+      }
     },
     "dream_random15": {
-      "Japanese": "あなたは雪の積もる森を歩いていると、裸の子供を見つける夢を見た。子供は向こうの木にもたれかかっている。その目は閉じられているが、胸から息遣いを感じる。彼のそばにかがむと、彼があなたを待つために何百年もこの場で眠っていたことを悟った。彼の肩に手を触れると、あなたと彼は同時に目を覚ました。"
+      "Japanese": {
+        "text": "あなたは雪の積もる森を歩いていると、裸の子供を見つける夢を見た。子供は向こうの木にもたれかかっている。その目は閉じられているが、胸から息遣いを感じる。彼のそばにかがむと、彼があなたを待つために何百年もこの場で眠っていたことを悟った。彼の肩に手を触れると、あなたと彼は同時に目を覚ました。",
+        "missing": true
+      }
     },
     "dream_random16": {
-      "Japanese": "あなたは冬の世界で屈強な熊となって地の底で眠る夢を見た。熊が眠りに落ちると、毛皮と肉のたるみの中へと体を折り曲げた。頭も手足もなくなり、無慈悲なまでに静かな巨大な熊の肉塊となった。"
+      "Japanese": {
+        "text": "あなたは冬の世界で屈強な熊となって地の底で眠る夢を見た。熊が眠りに落ちると、毛皮と肉のたるみの中へと体を折り曲げた。頭も手足もなくなり、無慈悲なまでに静かな巨大な熊の肉塊となった。",
+        "missing": true
+      }
     },
     "dream_random17": {
-      "Japanese": "あなたが明日の仕事の予定を考えながら眠りに落ちると、夢の中でそれを成し遂げていた。材木を作り、食料を探し、すばやい鹿の後を追った。あなたが疲れながらも満足して家に帰ったところで、目を覚まし今日がまだ始まっていないことを悟った。"
+      "Japanese": {
+        "text": "あなたが明日の仕事の予定を考えながら眠りに落ちると、夢の中でそれを成し遂げていた。材木を作り、食料を探し、すばやい鹿の後を追った。あなたが疲れながらも満足して家に帰ったところで、目を覚まし今日がまだ始まっていないことを悟った。",
+        "missing": true
+      }
     }
   },
   "localization_extra-resources.assets-100-TextAsset.json": {
     "piece_cookingstation_iron": {
-      "Japanese": "鉄の調理設備"
+      "Japanese": {
+        "text": "鉄の調理設備",
+        "adjust": true
+      }
     },
     "piece_cauldron_ext1_spice": {
-      "Japanese": "スパイス掛け"
+      "Japanese": {
+        "text": "スパイス掛け",
+        "adjust": true
+      }
     },
     "piece_woodfinestack": {
-      "Japanese": "積み上げた上質な木"
+      "Japanese": {
+        "text": "積み上げた上質な木",
+        "adjust": true
+      }
     },
     "piece_woodcorestack": {
-      "Japanese": "積み上げた木の芯"
+      "Japanese": {
+        "text": "積み上げた木の芯",
+        "adjust": true
+      }
     },
     "piece_treasure_pile": {
-      "Japanese": "積み上げたコイン"
+      "Japanese": {
+        "text": "積み上げたコイン",
+        "adjust": true
+      }
     },
     "piece_chesttreasure": {
-      "Japanese": "宝箱"
+      "Japanese": {
+        "text": "宝箱",
+        "adjust": true
+      }
     },
     "item_onionseeds": {
-      "Japanese": "タマネギの種"
+      "Japanese": {
+        "text": "タマネギの種",
+        "adjust": true
+      }
     },
     "msg_mapsaved": {
-      "Japanese": "発見したものをテーブルに書き込んだ"
+      "Japanese": {
+        "text": "発見したものをテーブルに書き込んだ",
+        "adjust": true
+      }
     },
     "msg_mapsynced": {
-      "Japanese": "発見したものをテーブルから書き写した"
+      "Japanese": {
+        "text": "発見したものをテーブルから書き写した",
+        "adjust": true
+      }
     },
     "piece_readmap": {
-      "Japanese": "地図を読む"
+      "Japanese": {
+        "text": "地図を読む",
+        "adjust": true
+      }
     },
     "tutorial_shield_label": {
-      "Japanese": "フギン: 盾"
+      "Japanese": {
+        "text": "フギン: 盾",
+        "system": true
+      }
     },
     "tutorial_shield_text": {
-      "Japanese": "盾を使えば受けるダメージを防ぐことができる。\nもし完璧なタイミングで防ぐことができたのなら、敵を<color=yellow>パリィ状態</color>することもできる。\nしかし、あまりにも多くの攻撃を防ぎすぎてしまうと、自分が<color=yellow>前後不覚状態</color>になってしまうので注意が必要だ。 \n\nどれだけのダメージを防ぐと「前後不覚」状態になるかは、体力の上限に比例する。大量のダメージを浴びるつもりなら、体力を底上げする食物を使用しておくといいだろう。\n重い盾ほどダメージを多く防ぐが、歩く速度が遅くなる。"
+      "Japanese": {
+        "text": "盾を使えば受けるダメージを防ぐことができる。\nもし完璧なタイミングで防ぐことができたのなら、敵を<color=yellow>パリィ状態</color>することもできる。\nしかし、あまりにも多くの攻撃を防ぎすぎてしまうと、自分が<color=yellow>前後不覚状態</color>になってしまうので注意が必要だ。 \n\nどれだけのダメージを防ぐと「前後不覚」状態になるかは、体力の上限に比例する。大量のダメージを浴びるつもりなら、体力を底上げする食物を使用しておくといいだろう。\n重い盾ほどダメージを多く防ぐが、歩く速度が遅くなる。",
+        "system": true,
+        "consistency": true
+      }
     },
     "tutorial_maptable_text": {
-      "Japanese": "このテーブルがあれば、〈第十の世界〉における自分の足取りを記録し、共用することができる。 \n\n発見を記録したい時は道具箱を使用し、他者の記録を書き写したい時は巨大なマップを見てみるといい。"
+      "Japanese": {
+        "text": "このテーブルがあれば、〈第十の世界〉における自分の足取りを記録し、共用することができる。 \n\n発見を記録したい時は道具箱を使用し、他者の記録を書き写したい時は巨大なマップを見てみるといい。",
+        "system": true,
+        "immersion": true
+      }
     },
     "tutorial_food2_text": {
-      "Japanese": "軽食を見つけたな。それを食べて体力とスタミナを増やすのだ。食物の中には「体力」を上げるものがあって、 \n「前後不覚状態」になるまでに防ぐことができるダメージ量が間接的に増加するぞ。また、「スタミナ」を増強させるものや、2つの効果を併せ持つ食物だってある！\n\nそれほど時間が経たないうちに、また空腹になるだろう。常に、少なくとも二、三個、さまざまな種類の食物を手元に持っておくことだ。"
+      "Japanese": {
+        "text": "軽食を見つけたな。それを食べて体力とスタミナを増やすのだ。食物の中には「体力」を上げるものがあって、 \n「前後不覚状態」になるまでに防ぐことができるダメージ量が間接的に増加するぞ。また、「スタミナ」を増強させるものや、2つの効果を併せ持つ食物だってある！\n\nそれほど時間が経たないうちに、また空腹になるだろう。常に、少なくとも二、三個、さまざまな種類の食物を手元に持っておくことだ。",
+        "system": true
+      }
     },
     "piece_coalpile": {
-      "Japanese": "積み上げた炭"
+      "Japanese": {
+        "text": "積み上げた炭",
+        "adjust": true
+      }
     },
     "settings_cameratilt": {
-      "Japanese": "没入感のあるカメラ"
+      "Japanese": {
+        "text": "没入感のあるカメラ",
+        "adjust": true
+      }
     },
     "item_trophy_growth_lore": {
-      "Japanese": "黒く粘つく汚物。"
+      "Japanese": {
+        "text": "黒く粘つく汚物。",
+        "missing": true
+      }
     }
   }
 }
