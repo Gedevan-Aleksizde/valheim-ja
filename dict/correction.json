@@ -1409,6 +1409,12 @@
         "immersion": true
       }
     },
+    "prop_dragonsummoningbowl_name": {
+      "Japanese": {
+        "text": "生贄の祭壇",
+        "immersion": true
+      }
+    },
     "guardianstone_trophyplaced": {
       "Japanese": {
         "text": "〈見捨てられしもの〉を捧げた",
