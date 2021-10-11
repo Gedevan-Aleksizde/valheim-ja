@@ -33,3 +33,8 @@ If you want to edit the text on your own, you need the following programs:
 
 * [dict/](dict/) には修正テキストがjson形式で含まれています.
 * [terms.json](terms.json) はPythonスクリプトでは使用していません. 翻訳テキストの一貫性のための個人的な作業メモです.
+
+
+## See Also / 関連
+
+Mod の日本語化はこちら: https://github.com/Gedevan-Aleksizde/valheim-mod-jp
