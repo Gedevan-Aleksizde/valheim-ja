@@ -523,7 +523,7 @@
     },
     "item_armor": {
       "Japanese": {
-        "text": "装甲",
+        "text": "アーマー値",
         "adjust": true
       }
     },
@@ -561,6 +561,12 @@
       "Japanese": {
         "text": "作成者: ",
         "adjust": true
+      }
+    },
+    "item_trophy_dragonqueen_lore": {
+      "Japanese": {
+        "text": "数々の古傷に彩られたこの頭は、無数の戦士たちが最期に見たものとなった。 ",
+        "immersion": true
       }
     },
     "item_trophy_goblinking_description": {
@@ -737,6 +743,12 @@
         "immersion": true
       }
     },
+    "item_sledge_iron": {
+      "Japanese": {
+        "text": "大鉄鎚",
+        "immersion": true
+      }
+    },
     "item_shield_banded": {
       "Japanese": {
         "text": "縁取りのある盾",
@@ -897,6 +909,11 @@
       "Japanese": {
         "text": "丸砥石",
         "adjust": true
+      }
+    },
+    "item_roundlog": {
+      "Japanese": {
+        "text": "丸太"
       }
     },
     "item_wolffang_description": {
@@ -1333,7 +1350,7 @@
     },
     "tutorial_smelter_text": {
       "Japanese": {
-        "text": "鉱石の原石をこの炉に入れれば、すべての不純物が溶け出し、あとには精錬された金属の塊だけが残る。 これを鍛冶場で使うことができる。 \n\n溶鉱炉の燃料として<color=yellow>炭</color>が必要だ。 これは窯を作り、木を入れて作ることができる。 ",
+        "text": "鉱物の原石をこの炉に入れれば、すべての不純物が溶け出し、  あとには精錬された金属の塊だけが残る。これを鍛冶場で使うことができる。 \n溶鉱炉の燃料として<color=yelow>炭</color>が必要だ。 これは窯を作り、木を入れて作ることができる。 ",
         "adjust": true
       }
     },
@@ -1353,6 +1370,18 @@
       "Japanese": {
         "text": "フギン: 侵略",
         "system": true
+      }
+    },
+    "lore_eikthyr": {
+      "Japanese": {
+        "text": "彼の一族を狩れ",
+        "immersion": true
+      }
+    },
+    "lore_dragonqueen": {
+      "Japanese": {
+        "text": "彼女の子を供物にせよ",
+        "immersion": true
       }
     },
     "lore_greydwarfs_label": {
@@ -1415,6 +1444,11 @@
         "immersion": true
       }
     },
+    "loadscreen_tip01": {
+      "Japanese": {
+        "text": "作成設備、武器、防具をアップグレードするのを忘れずに。 "
+      }
+    },
     "guardianstone_trophyplaced": {
       "Japanese": {
         "text": "〈見捨てられしもの〉を捧げた",
@@ -1461,6 +1495,12 @@
       "Japanese": {
         "text": "伝説: フェンリング",
         "system": true
+      }
+    },
+    "settings_langchange_community": {
+      "Japanese": {
+        "text": "*有志による翻訳",
+        "adjust": true
       }
     },
     "enemy_greydwarfbrute": {
@@ -1783,6 +1823,18 @@
     }
   },
   "localization_extra-resources.assets-100-TextAsset.json": {
+    "piece_darkwoodpole": {
+      "Japanese": {
+        "text": "黒い木の柱2m",
+        "adjust": true
+      }
+    },
+    "piece_darkwoodpole4": {
+      "Japanese": {
+        "text": "黒い木の柱4m",
+        "adjust": true
+      }
+    },
     "piece_cookingstation_iron": {
       "Japanese": {
         "text": "鉄の調理設備",
@@ -1795,6 +1847,18 @@
         "adjust": true
       }
     },
+    "piece_woodwallroof_upsidedown": {
+      "Japanese": {
+        "text": "木の壁26°（天地逆）",
+        "adjust": true
+      }
+    },
+    "piece_woodwallroof45_upsidedown": {
+      "Japanese": {
+        "text": "木の壁45°（天地逆）",
+        "adjust": true
+      }
+    },
     "piece_woodfinestack": {
       "Japanese": {
         "text": "積み上げた上質な木",
@@ -1803,7 +1867,7 @@
     },
     "piece_woodcorestack": {
       "Japanese": {
-        "text": "積み上げた木の芯",
+        "text": "積み上げた丸太",
         "adjust": true
       }
     },
@@ -1819,10 +1883,45 @@
         "adjust": true
       }
     },
+    "piece_darkwooddecowall": {
+      "Japanese": {
+        "text": "彫りこまれた黒い木のしきり",
+        "adjust": true
+      }
+    },
     "item_onionseeds": {
       "Japanese": {
         "text": "タマネギの種",
         "adjust": true
+      }
+    },
+    "item_onionseeds_description": {
+      "Japanese": {
+        "text": "これを植えて体よいタマネギを育てよう。",
+        "immersion": true
+      }
+    },
+    "piece_sapling_seedonion": {
+      "Japanese": {
+        "text": "ネギ坊主",
+        "system": true
+      }
+    },
+    "item_blockarmor": {
+      "Japanese": {
+        "text": "ブロック時アーマー値"
+      }
+    },
+    "piece_sapling_seedonion_description": {
+      "Japanese": {
+        "text": "タマネギの球根を植え、種をもっと手に入れる。",
+        "system": true
+      }
+    },
+    "enemy_loxcalf": {
+      "Japanese": {
+        "text": "仔ロックス",
+        "immersion": true
       }
     },
     "msg_mapsaved": {
