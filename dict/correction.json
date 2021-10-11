@@ -1449,6 +1449,12 @@
         "text": "作成設備、武器、防具をアップグレードするのを忘れずに。 "
       }
     },
+    "loadscreen_tip04": {
+      "Japanese": {
+        "text": "基本的なクラフトは、木工、石工、鍛冶、料理の4種類。 ",
+        "immersion": true
+      }
+    },
     "guardianstone_trophyplaced": {
       "Japanese": {
         "text": "〈見捨てられしもの〉を捧げた",
