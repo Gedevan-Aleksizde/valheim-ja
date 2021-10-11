@@ -161,6 +161,11 @@
         "adjust": true
       }
     },
+    "inventory_immune": {
+      "Japanese": {
+        "text": "無効"
+      }
+    },
     "inventory_selectedgp": {
       "Japanese": {
         "text": "選択中の〈見捨てられしもの〉の力",
