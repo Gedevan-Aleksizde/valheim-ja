@@ -23,10 +23,11 @@ if not output.parent.exists():
 
 with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath('tools')).joinpath('params.json').open('r') as fp:
     params = json.load(fp)
-    print("""Valheim version: {VALHEIM_VERSION}\r\nTarget Language: {LANG}""".format(**params))
+    print("""Valheim version: {LATEST_VERSION}\r\nTarget Language: {LANG}""".format(**params))
 
-original = pd.read_excel(input, sheet_name=f"""v{params['VALHEIM_VERSION']}""")[[' ', params['LANG'], 'OriginalFileName']].fillna('')
-mod = pd.read_excel(input, sheet_name=args.sheet)[[' ', params['LANG'], 'OriginalFileName', 'SYSTEM', 'CORRECTION', 'MISSING', 'CONSISTENCY', 'ADJUST', 'IMMERSION']]
+original = pd.read_excel(input, sheet_name=f"""v{params['LATEST_VERSION']}""")[[' ', params['LANG'], 'OriginalFileName']].fillna('')
+mod = pd.read_excel(input, sheet_name=args.sheet)
+mod = mod[[mod.columns[0]] + [params['LANG'], 'OriginalFileName', 'SYSTEM', 'CORRECTION', 'MISSING', 'CONSISTENCY', 'ADJUST', 'IMMERSION']]
 mod[params['LANG']] = mod[params['LANG']].fillna('')
 correct = mod.loc[lambda d: d[params['LANG']]!=original[params['LANG']]]
 d = {
