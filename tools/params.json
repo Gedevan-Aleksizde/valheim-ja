@@ -1,4 +1,6 @@
 {
-    "VALHEIM_VERSION": "0.203.11",
-    "LANG": "Japanese"
+    "LATEST_VERSION": "0.204.4",
+    "PREVIOUS_VERSION": "0.203.11",
+    "LANG": "Japanese",
+    "l10n-olds": "l10n-olds.xlsx"
 }
