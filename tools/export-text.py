@@ -14,9 +14,9 @@ parser.add_argument('--dictdir', type=Path, help='file path(s) to parse', defaul
 parser.add_argument('--outdir', type=Path, help='output directory', default=None)
 args = parser.parse_args(None if __name__ == '__main__' else '')
 
-with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath('tools')).joinpath('params.json').open('r') as fp:
+with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath('tools')).joinpath('params.json').open('r', encoding='utf-8') as fp:
     params = json.load(fp)
-    print("""Valheim version: {VALHEIM_VERSION}\r\nTarget Language: {LANG}""".format(**params))
+    print("""Valheim version: {LATEST_VERSION}\r\nTarget Language: {LANG}""".format(**params))
 
 rootdir = Path().cwd()
 textfiles = rootdir.glob('original-text/*.json') if args.textdir is None else Path(args.dictdir).glob('*.json')
@@ -29,13 +29,13 @@ if not outdir.exists():
 
 dicts = {}
 for x in dictfiles:
-    with x.open("r") as f:
+    with x.open("r", encoding='utf-8') as f:
         dicts.update(json.load(f))
 
 for x in textfiles:
     out_fname = x.with_suffix('.txt').name
     out_entry = x.with_suffix('').name.split('-')[0]     
-    with x.open("r") as basefile:
+    with x.open("r", encoding='utf-8') as basefile:
         tmp = pd.read_csv(StringIO(json.load(basefile)['0 TextAsset Base']['1 string m_Script']), encoding="utf-8").fillna('').rename(columns={'Context': ' '})
     count_without_blank = tmp.loc[lambda d: d['Japanese'].str.match('\$[0-9a-zA-Z]+')].shape[0]
     print(f"{x}: {tmp.shape[0]} entries included; {count_without_blank} blank-omitted entries are modified.")
@@ -47,7 +47,7 @@ for x in textfiles:
             str.replace('\s{2,}', ' ', regex=True)
             )
         )
-        tmp = tmp.set_index(' ')
+        tmp = tmp.set_index(tmp.columns[0])
         tmp_dict = pd.DataFrame([(k, v[params['LANG']]['text']) for k, v in dicts[x.name].items()], columns=[' ', params['LANG']]).set_index(' ')
         tmp[params['LANG']].update(tmp_dict[params['LANG']])
         tmp = tmp.reset_index() # What a messy API!
@@ -60,5 +60,5 @@ for x in textfiles:
         1 string m_Name = "{out_entry}"
         """ + f' 1 string m_Script = "{raw_text}"\n'
         with outdir.joinpath(out_fname) as writeto:
-            writeto.open('w').writelines(txt)
+            writeto.open('w', encoding='utf-8').writelines(txt)
             print(f'{out_entry} has {tmp.shape[0]} entries and is saved at {writeto}')

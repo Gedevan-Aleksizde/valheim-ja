@@ -13,7 +13,7 @@ import argparse
 
 with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath('tools')).joinpath('params.json').open('r') as fp:
     params = json.load(fp)
-    print("""Valheim version: {VALHEIM_VERSION}\r\nTarget Language: {LANG}""".format(**params))
+    print("""Valheim version: {LATEST_VERSION}\r\nTarget Language: {LANG}""".format(**params))
 
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--filenames', type=Path, nargs='+', help='file path(s) to parse', default=None)
@@ -29,7 +29,7 @@ excelpath = rootdir.joinpath('l10n.xlsx').expanduser() if args.outdir is None el
 csvpath = rootdir.joinpath('l10n-native.csv').expanduser() if args.outdir is None else Path(args.outdir).joinpath('l10n-native.csv')
 csvs = []
 for x in l10n_jsonpath:
-    with x.open("r") as f:
+    with x.open("r", encoding="utf-8") as f:
         tmp = pd.read_csv(StringIO(json.load(f)['0 TextAsset Base']['1 string m_Script']), encoding="utf-8").fillna('').rename(columns={'Context': ' '})
         count_without_blank = tmp.loc[lambda d: d[params['LANG']].str.match('\$[0-9a-zA-Z]+')].shape[0]
         print(f"{x}: {tmp.shape[0]} entries included; {count_without_blank} blank-omitted entries are found.")
@@ -52,6 +52,6 @@ tab_l10n_blank.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 # 手動編集の簡易さからエクセルに書く
 # TODO: libre が重すぎるので PO ファイルとして出力したほうがいいか?
 with pd.ExcelWriter(excelpath) as writer: 
-    tab_l10n.to_excel(writer, sheet_name = f"v{params['VALHEIM_VERSION']}", index=False)
-    tab_l10n_blank.to_excel(writer, sheet_name = "mod", index=False)
+    tab_l10n.to_excel(writer, sheet_name = f"v{params['LATEST_VERSION']}", index=False, encoding="utf-8")
+    tab_l10n_blank.to_excel(writer, sheet_name = "mod", index=False, encoding="utf-8")
     
