@@ -39,6 +39,7 @@ If you want to edit the text on your own, you need the following programs:
 1. 手動で編集する
     * 以前のバージョンのテキストがあるのなら, `python tools/update-and-merge.py` を使うと更新差分がわかる
     * 元のテキストの ID がユニークではないことがあるので直接マージはしない仕様にした
+    * `CORRECTED`, `MISSING`, といった列は変更理由を表すフラグ. 編集管理をしやすくするために用意しただけで必須ではない. 
 1. `python tools/make-dict.py` で上記 XLSX での変更差分を dict 形式に出力する
 1. `python tools/export-text.py` で UABE用の TXT ファイルに変換し, UABE で上書きする
     * "Import Raw" ボタンで上書き
