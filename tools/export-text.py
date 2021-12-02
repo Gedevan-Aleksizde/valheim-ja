@@ -19,7 +19,7 @@ with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath
     print("""Valheim version: {LATEST_VERSION}\r\nTarget Language: {LANG}""".format(**params))
 
 rootdir = Path().cwd()
-textfiles = rootdir.glob('original-text/*.json') if args.textdir is None else Path(args.dictdir).glob('*.json')
+textfiles = rootdir.glob(f"original-text/v{params['LATEST_VERSION']}/*.json") if args.textdir is None else Path(args.dictdir).glob('*.json')
 dictfiles = rootdir.glob('dict/*.json') if args.dictdir is None else Path(args.dictdir).glob('*.json')
 outdir = rootdir.joinpath('output') if args.outdir is None else Path(args.outdir)
 
@@ -34,7 +34,7 @@ for x in dictfiles:
 
 for x in textfiles:
     out_fname = x.with_suffix('.txt').name
-    out_entry = x.with_suffix('').name.split('-')[0]     
+    out_entry = x.with_suffix('').name.split('-')[0]
     with x.open("r", encoding='utf-8') as basefile:
         tmp = pd.read_csv(StringIO(json.load(basefile)['0 TextAsset Base']['1 string m_Script']), encoding="utf-8").fillna('').rename(columns={'Context': ' '})
     count_without_blank = tmp.loc[lambda d: d['Japanese'].str.match('\$[0-9a-zA-Z]+')].shape[0]
@@ -52,7 +52,7 @@ for x in textfiles:
         tmp[params['LANG']].update(tmp_dict[params['LANG']])
         tmp = tmp.reset_index() # What a messy API!
         if out_entry=='localization_extra':
-            tmp = tmp.rename(columns={' ': 'Content'})
+            tmp = tmp.rename(columns={' ': 'Context'})
         print(f'{tmp_dict.shape[0]} entries updated.')
         raw_text = tmp.to_csv(index=False, encoding="utf-8", quoting=1, line_terminator=r"\n")
         raw_text = raw_text.replace('\r', r'\r').replace('\n', r'\n')

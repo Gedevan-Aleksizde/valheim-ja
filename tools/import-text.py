@@ -20,12 +20,12 @@ parser.add_argument('--filenames', type=Path, nargs='+', help='file path(s) to p
 parser.add_argument('--outdir', type=Path, help='output directory', default=None)
 args = parser.parse_args(None if __name__ == '__main__' else '')
 rootdir = Path().cwd()
-l10n_jsonpath = [rootdir.joinpath(f'original-text/{x}').expanduser() for x in [
+l10n_jsonpath = [rootdir.joinpath(f'original-text/v{params["LATEST_VERSION"]}/{x}').expanduser() for x in [
     'localization-resources.assets-99-TextAsset.json',
     'localization_extra-resources.assets-100-TextAsset.json'
     ]
 ] if args.filenames is None else args.filenames
-excelpath = rootdir.joinpath('l10n.xlsx').expanduser() if args.outdir is None else Path(args.outdir).joinpath('l10n.xlsx')
+excelpath = rootdir.joinpath(params['l10n']).expanduser() if args.outdir is None else Path(args.outdir).joinpath(params['l10n'])
 csvpath = rootdir.joinpath('l10n-native.csv').expanduser() if args.outdir is None else Path(args.outdir).joinpath('l10n-native.csv')
 csvs = []
 for x in l10n_jsonpath:
