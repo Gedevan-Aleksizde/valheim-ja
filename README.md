@@ -26,6 +26,25 @@ If you want to edit the text on your own, you need the following programs:
     * pandas
     * openpyxl
 
+## Usage / 使い方
+
+* Valheim 本体が開発中なのでアップデートで動作しなくなる可能性がある
+* 個人作業用スクリプトなので使用方法が複雑
+
+1. UABE などで `resources.assets` ファイルの `localization`, `localization_extra` アセットをjson形式で取り出す.
+1.  `python tools/import-text.py` で XLSX ファイルに出力
+    * ファイルパスは引数で指定するか, `params.json` に書いておく
+    * `$1` のような変数は正規表現で自動で検知し前後でスペースを挿入するので, 変数が文字化けする問題はほとんど自動的に解決される
+    * `LATEST_VERSION`, `mod` シートは上書きされる
+1. 手動で編集する
+    * 以前のバージョンのテキストがあるのなら, `python tools/update-and-merge.py` を使うと更新差分がわかる
+    * 元のテキストの ID がユニークではないことがあるので直接マージはしない仕様にした
+1. `python tools/make-dict.py` で上記 XLSX での変更差分を dict 形式に出力する
+1. `python tools/export-text.py` で UABE用の TXT ファイルに変換し, UABE で上書きする
+    * "Import Raw" ボタンで上書き
+    * UABE 以外を使っている場合は適当に変換プログラムを自作する
+
+
 ## Note / 注記
 
 * [dict/](dict/) contains retranslated text as json
