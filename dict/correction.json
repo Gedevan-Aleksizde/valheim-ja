@@ -3848,5 +3848,91 @@
         "missing": true
       }
     }
+  },
+  "localization_extra-resources.assets-100-TextAsset.json": {
+    "enemy_abomination": {
+      "Japanese": {
+        "text": "忌まわしきもの",
+        "missing": true
+      }
+    },
+    "item_root": {
+      "Japanese": {
+        "text": "木の根",
+        "missing": true
+      }
+    },
+    "item_root_description": {
+      "Japanese": {
+        "text": "太古の木の切り株から取った根。しなやかさと頑丈さをあわせ持つ。",
+        "missing": true
+      }
+    },
+    "item_chest_root": {
+      "Japanese": {
+        "text": "根のハルネスク",
+        "missing": true
+      }
+    },
+    "item_chest_root_description": {
+      "Japanese": {
+        "text": "太古の木の根と皮が奇妙に絡み合った軽い鎧。",
+        "missing": true
+      }
+    },
+    "item_legs_root": {
+      "Japanese": {
+        "text": "根のレギンス",
+        "missing": true
+      }
+    },
+    "item_legs_root_description": {
+      "Japanese": {
+        "text": "太古の木の根と皮が奇妙に絡み合った軽い鎧。",
+        "missing": true
+      }
+    },
+    "item_helmet_root": {
+      "Japanese": {
+        "text": "根の仮面",
+        "missing": true
+      }
+    },
+    "item_helmet_root_description": {
+      "Japanese": {
+        "text": "あなたの頭はこの木の根と皮のもつれた塊に完璧にフィットする。",
+        "missing": true
+      }
+    },
+    "se_rootseteffect_name": {
+      "Japanese": {
+        "text": "根の鎧",
+        "missing": true
+      }
+    },
+    "se_rootseteffect_tooltip": {
+      "Japanese": {
+        "text": "太古の木の根が弓の狙いを定めるのを助けてくれる。",
+        "missing": true
+      }
+    },
+    "item_trophy_abomination": {
+      "Japanese": {
+        "text": "忌まわしきもののトロフィー",
+        "missing": true
+      }
+    },
+    "item_trophy_abomination_description": {
+      "Japanese": {
+        "text": "死んでからあまりにも長い時間が経ったので、こいつは再び動き出したのだった。",
+        "missing": true
+      }
+    },
+    "item_trophy_abomination_lore": {
+      "Japanese": {
+        "text": "死んでからあまりにも長い時間が経ったので、こいつは再び動き出したのだった。",
+        "missing": true
+      }
+    }
   }
 }
