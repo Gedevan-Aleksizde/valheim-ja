@@ -3847,6 +3847,54 @@
         "text": "はしご",
         "missing": true
       }
+    },
+    "piece_armorstand": {
+      "Japanese": {
+        "text": "鎧掛け",
+        "missing": true
+      }
+    },
+    "piece_armorstand_cantattach": {
+      "Japanese": {
+        "text": "このアイテムをここに置くことはできない。",
+        "missing": true
+      }
+    },
+    "piece_horizontal": {
+      "Japanese": {
+        "text": "水平",
+        "missing": true
+      }
+    },
+    "piece_vertical": {
+      "Japanese": {
+        "text": "垂直",
+        "missing": true
+      }
+    },
+    "piece_yuletree": {
+      "Japanese": {
+        "text": "ユールの木",
+        "missing": true
+      }
+    },
+    "piece_yuleklapp": {
+      "Japanese": {
+        "text": "ユールクラップ",
+        "missing": true
+      }
+    },
+    "piece_maypole": {
+      "Japanese": {
+        "text": "メイポール",
+        "missing": true
+      }
+    },
+    "piece_jackoturnip": {
+      "Japanese": {
+        "text": "カブのジャック・オー・ランタン",
+        "missing": true
+      }
     }
   },
   "localization_extra-resources.assets-100-TextAsset.json": {
