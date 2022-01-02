@@ -41,6 +41,7 @@ If you want to edit the text on your own, you need the following programs:
     * 元のテキストの ID がユニークではないことがあるので直接マージはしない仕様にした
     * `CORRECTED`, `MISSING`, といった列は変更理由を表すフラグ. 編集管理をしやすくするために用意しただけで必須ではない. 
 1. `python tools/make-dict.py` で上記 XLSX での変更差分を dict 形式に出力する
+	* 現状これ自体は作業に必要ではないが, 変更していない全テキストをgithubに上げるのは著作権的に良くないと思うので
 1. `python tools/export-text.py` で UABE用の TXT ファイルに変換し, UABE で上書きする
     * "Import Raw" ボタンで上書き
     * UABE 以外を使っている場合は適当に変換プログラムを自作する
