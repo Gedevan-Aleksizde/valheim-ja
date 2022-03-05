@@ -62,7 +62,7 @@
     },
     "settings_shipcameratilt": {
       "Japanese": {
-        "text": "没入感のある船カメラ",
+        "text": "乗船時に没入感のあるカメラ",
         "adjust": true
       }
     },
@@ -168,11 +168,6 @@
         "immersion": true
       }
     },
-    "msg_noteleportarea": {
-      "Japanese": {
-        "text": "ストーンサークルの内側にだけ建設できる。 "
-      }
-    },
     "msg_invalidplacement": {
       "Japanese": {
         "text": "そこには配置できない",
@@ -189,6 +184,12 @@
       "Japanese": {
         "text": "$1 を修理した",
         "system": true
+      }
+    },
+    "msg_cantconsume": {
+      "Japanese": {
+        "text": "今は消費できない",
+        "adjust": true
       }
     },
     "msg_nomore": {
@@ -303,6 +304,12 @@
       "Japanese": {
         "text": "$1 が壊れた",
         "system": true
+      }
+    },
+    "biome_ashlands": {
+      "Japanese": {
+        "text": "灰の地",
+        "missing": true
       }
     },
     "location_exit": {
@@ -585,6 +592,11 @@
         "adjust": true
       }
     },
+    "item_trophy_eikthyr_description": {
+      "Japanese": {
+        "text": "切り落とされたこの首は力を発している。 \n\n犠牲の石に捧げよう。 "
+      }
+    },
     "item_trophy_eikthyr_lore": {
       "Japanese": {
         "text": "かつては森の王であった。 角の大きさには感嘆するしかない。 "
@@ -592,17 +604,19 @@
     },
     "item_trophy_elder_lore": {
       "Japanese": {
-        "text": "死して尚、秘密の知識を隠してほくそ笑んでいるように見える。 "
+        "text": "死して尚、秘密の知識を隠して ほくそ笑んでいるように見える。 "
       }
     },
     "item_trophy_bonemass_lore": {
       "Japanese": {
-        "text": "黒土と古い骨をごちゃ混ぜにしたもの、ありがたいことに今は静か。 "
+        "text": "黒土と古い骨をごちゃ混ぜにしたもの、 ありがたいことに今は静か。 ",
+        "system": true
       }
     },
     "item_trophy_dragonqueen_lore": {
       "Japanese": {
-        "text": "数々の古傷に彩られたこの頭は、無数の戦士たちが最後に見たものとなった。 ",
+        "text": "数々の古傷に彩られたこの頭は、 数多の戦士たちが最後に見たものとなった。 ",
+        "system": true,
         "immersion": true
       }
     },
@@ -614,35 +628,41 @@
     },
     "item_trophy_boar_description": {
       "Japanese": {
-        "text": "この猪の頭は、どの家に置いてもすばらしい装飾となる。 "
+        "text": "この猪の頭は、 どの家に置いてもすばらしい装飾となる。 ",
+        "system": true
       }
     },
     "item_trophy_boar_lore": {
       "Japanese": {
-        "text": "この猪の頭は、どの家に置いてもすばらしい装飾となる。 "
+        "text": "この猪の頭は、 どの家に置いてもすばらしい装飾となる。 ",
+        "system": true
       }
     },
     "item_trophy_neck_description": {
       "Japanese": {
-        "text": "小さな目と鋭い歯が、この小さなトカゲのおとなしさは表面的なものに過ぎないことを物語っている。 ",
+        "text": "小さな目と鋭い歯が、 この小さなトカゲのおとなしさは 表面的なものに過ぎないことを物語っている。 ",
+        "system": true,
         "correction": true
       }
     },
     "item_trophy_neck_lore": {
       "Japanese": {
-        "text": "小さな目と鋭い歯が、この小さなトカゲのおとなしさは表面的なものに過ぎないことを物語っている。 ",
+        "text": "小さな目と鋭い歯が、 この小さなトカゲのおとなしさは 表面的なものに過ぎないことを物語っている。 ",
+        "system": true,
         "correction": true
       }
     },
     "item_trophy_deer_description": {
       "Japanese": {
-        "text": "見事なはく製だが、鹿を殺した程度ではヴァルハラには入れない。 ",
+        "text": "見事なはく製だが、 鹿を殺した程度ではヴァルハラには入れない。 ",
+        "system": true,
         "correction": true
       }
     },
     "item_trophy_deer_lore": {
       "Japanese": {
-        "text": "見事なはく製だが、鹿を殺した程度ではヴァルハラには入れない。 ",
+        "text": "見事なはく製だが、 鹿を殺した程度ではヴァルハラには入れない。 ",
+        "system": true,
         "correction": true
       }
     },
@@ -658,47 +678,67 @@
     },
     "item_trophy_greydwarfbrute_description": {
       "Japanese": {
-        "text": "このゴツゴツした生首を胴体から切り離すには7回も叩き切る必要があった。 "
+        "text": "このゴツゴツした生首を胴体から切り離すには、 7回も叩き切る必要があった。 ",
+        "system": true
       }
     },
     "item_trophy_greydwarfbrute_lore": {
       "Japanese": {
-        "text": "このゴツゴツした生首を胴体から切り離すには7回も叩き切る必要があった。 "
+        "text": "このゴツゴツした生首を胴体から切り離すには、 7回も叩き切る必要があった。 ",
+        "system": true
+      }
+    },
+    "item_trophy_greydwarfshaman_description": {
+      "Japanese": {
+        "text": "万が一にも蘇らないよう、 時々新芽を摘み取りに来た方がいいだろう…",
+        "system": true
+      }
+    },
+    "item_trophy_greydwarfshaman_lore": {
+      "Japanese": {
+        "text": "万が一にも蘇らないよう、 時々新芽を摘み取りに来た方がいいだろう…",
+        "system": true
       }
     },
     "item_trophy_foresttroll_description": {
       "Japanese": {
-        "text": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 ",
+        "text": "革のような肌には、 消えかけた古代の紋章の 痕跡が並んでいる。 ",
+        "system": true,
         "adjust": true
       }
     },
     "item_trophy_foresttroll_lore": {
       "Japanese": {
-        "text": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 ",
+        "text": "革のような肌には、 消えかけた古代の紋章の 痕跡が並んでいる。 ",
+        "system": true,
         "adjust": true
       }
     },
     "item_trophy_troll_description": {
       "Japanese": {
-        "text": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 ",
+        "text": "革のような肌には、 消えかけた古代の紋章の 痕跡が並んでいる。 ",
+        "system": true,
         "adjust": true
       }
     },
     "item_trophy_troll_lore": {
       "Japanese": {
-        "text": "革のような肌には消えかけた古代の紋章の痕跡が並んでいる。 ",
+        "text": "革のような肌には、 消えかけた古代の紋章の 痕跡が並んでいる。 ",
+        "system": true,
         "adjust": true
       }
     },
     "item_trophy_skeleton_description": {
       "Japanese": {
-        "text": "この頭蓋骨の生気を感じない笑顔は、死が避けられないものであることを思い出させてくれる。 ",
+        "text": "この頭蓋骨の生気を感じない笑顔は、 死が避けられないものであることを 思い出させてくれる。 ",
+        "system": true,
         "adjust": true
       }
     },
     "item_trophy_skeleton_lore": {
       "Japanese": {
-        "text": "この頭蓋骨の生気を感じない笑顔は、死が避けられないものであることを思い出させてくれる。 ",
+        "text": "この頭蓋骨の生気を感じない笑顔は、 死が避けられないものであることを 思い出させてくれる。 ",
+        "system": true,
         "adjust": true
       }
     },
@@ -710,12 +750,14 @@
     },
     "item_trophy_wraith_description": {
       "Japanese": {
-        "text": "死霊から剥ぎ取られた皮、月光の下でだけ見える、たなびくローブ。 "
+        "text": "死霊から剥ぎ取られた皮、 月光の下でだけ見える、 たなびくローブ。 ",
+        "system": true
       }
     },
     "item_trophy_wraith_lore": {
       "Japanese": {
-        "text": "死霊から剥ぎ取られた皮、月光の下でだけ見える、たなびくローブ。 "
+        "text": "死霊から剥ぎ取られた皮、 月光の下でだけ見える、 たなびくローブ。 ",
+        "system": true
       }
     },
     "item_trophy_blob": {
@@ -734,6 +776,18 @@
         "text": "悪臭のする、べとつく物質の塊。 "
       }
     },
+    "item_trophy_draugr_description": {
+      "Japanese": {
+        "text": "夜中にささやき始めたら 口を縫い合わせよう…",
+        "system": true
+      }
+    },
+    "item_trophy_draugr_lore": {
+      "Japanese": {
+        "text": "夜中にささやき始めたら 口を縫い合わせよう…",
+        "system": true
+      }
+    },
     "item_trophy_draugrelite": {
       "Japanese": {
         "text": "ドラウグルの精鋭のトロフィー",
@@ -742,32 +796,38 @@
     },
     "item_trophy_draugrelite_description": {
       "Japanese": {
-        "text": "光る赤い目の死の凝視を見ると、背筋に悪寒が走る。 "
+        "text": "光る赤い目の死の凝視を見ると、 背筋に悪寒が走る。 ",
+        "system": true
       }
     },
     "item_trophy_draugrelite_lore": {
       "Japanese": {
-        "text": "光る赤い目の死の凝視を見ると、背筋に悪寒が走る。 "
+        "text": "光る赤い目の死の凝視を見ると、 背筋に悪寒が走る。 ",
+        "system": true
       }
     },
     "item_trophy_leech_description": {
       "Japanese": {
-        "text": "ネバネバしているが、皮膚には赤と黒の美しい模様がある。 "
+        "text": "ネバネバしているが、 皮膚には赤と黒の美しい模様がある。 ",
+        "system": true
       }
     },
     "item_trophy_leech_lore": {
       "Japanese": {
-        "text": "ネバネバしているが、皮膚には赤と黒の美しい模様がある。 "
+        "text": "ネバネバしているが、 皮膚には赤と黒の美しい模様がある。 ",
+        "system": true
       }
     },
     "item_trophy_wolf_description": {
       "Japanese": {
-        "text": "死に凍りつき、毛皮は血まみれで、音のない吠え声がのどにつかえている。 "
+        "text": "死に凍りつき、 毛皮は血まみれで、 音のない吠え声がのどにつかえている。 ",
+        "system": true
       }
     },
     "item_trophy_wolf_lore": {
       "Japanese": {
-        "text": "死に凍りつき、毛皮は血まみれで、音のない吠え声がのどにつかえている。 "
+        "text": "死に凍りつき、 毛皮は血まみれで、 音のない吠え声がのどにつかえている。 ",
+        "system": true
       }
     },
     "item_trophy_hatchling_description": {
@@ -782,12 +842,14 @@
     },
     "item_trophy_sgolem_description": {
       "Japanese": {
-        "text": "この結晶化した石の構造は、すばらしい床の装飾になりそうだ。 "
+        "text": "この結晶化した石の構造は、 すばらしい床の装飾になりそうだ。 ",
+        "system": true
       }
     },
     "item_trophy_sgolem_lore": {
       "Japanese": {
-        "text": "この結晶化した石の構造は、すばらしい床の装飾になりそうだ。 "
+        "text": "この結晶化した石の構造は、 すばらしい床の装飾になりそうだ。 ",
+        "system": true
       }
     },
     "item_trophy_fenring_description": {
@@ -802,12 +864,14 @@
     },
     "item_trophy_goblin_description": {
       "Japanese": {
-        "text": "暗い憎しみを宿した両目の周囲に集まった、たるんだひだを持つ緑がかった皮膚。 "
+        "text": "暗い憎しみを宿した両目の周囲に集まった、 たるんだひだを持つ緑がかった皮膚。 ",
+        "system": true
       }
     },
     "item_trophy_goblin_lore": {
       "Japanese": {
-        "text": "暗い憎しみを宿した両目の周囲に集まった、たるんだひだを持つ緑がかった皮膚。 "
+        "text": "暗い憎しみを宿した両目の周囲に集まった、 たるんだひだを持つ緑がかった皮膚。 ",
+        "system": true
       }
     },
     "item_trophy_goblinbrute": {
@@ -828,12 +892,14 @@
     },
     "item_trophy_surtling_description": {
       "Japanese": {
-        "text": "淡い炎に包まれ、今でも燠のように燻っている。 "
+        "text": "淡い炎に包まれ、 今でも燠のように燻っている。 ",
+        "system": true
       }
     },
     "item_trophy_surtling_lore": {
       "Japanese": {
-        "text": "淡い炎に包まれ、今でも燠のように燻っている。 "
+        "text": "淡い炎に包まれ、 今でも燠のように燻っている。 ",
+        "system": true
       }
     },
     "item_trophy_serpent": {
@@ -876,6 +942,18 @@
       "Japanese": {
         "text": "フューリングのシャーマンのトロフィー",
         "consistency": true
+      }
+    },
+    "item_trophy_goblinshaman_description": {
+      "Japanese": {
+        "text": "死んでいてもなお、 歪んだ唇の笑みは消し去れない...",
+        "system": true
+      }
+    },
+    "item_trophy_goblinshaman_lore": {
+      "Japanese": {
+        "text": "死んでいてもなお、 歪んだ唇の笑みは消し去れない...",
+        "system": true
       }
     },
     "item_club_description": {
@@ -2930,107 +3008,6 @@
         "immersion": true
       }
     },
-    "loadscreen_tip01": {
-      "Japanese": {
-        "text": "作成設備、武器、アーマーをアップグレードするのを忘れずに。 "
-      }
-    },
-    "loadscreen_tip02": {
-      "Japanese": {
-        "text": "食べ物を食べると体力やスタミナが増える。 3つの食物スロットのバランスを取るように気をつけよう。 "
-      }
-    },
-    "loadscreen_tip03": {
-      "Japanese": {
-        "text": "設備をアップグレードすると作成できるものの種類が増え、装備を充実させられる。 "
-      }
-    },
-    "loadscreen_tip04": {
-      "Japanese": {
-        "text": "基本的な作成の種類は、木工、石工、鍛冶、料理の4つ。 ",
-        "immersion": true
-      }
-    },
-    "loadscreen_tip05": {
-      "Japanese": {
-        "text": "敵は、プレイヤーが作った建造物（作成テーブルや焚き火など）のそばには出現しない。 "
-      }
-    },
-    "loadscreen_tip06": {
-      "Japanese": {
-        "text": "船で旅をしている時は、座っているのが最も安全だ。 "
-      }
-    },
-    "loadscreen_tip07": {
-      "Japanese": {
-        "text": "Valheimに到着した時は地面に落ちている石や枝を見つけ、最初の武器を作ろう。 "
-      }
-    },
-    "loadscreen_tip09": {
-      "Japanese": {
-        "text": "飛び道具で鹿を狩ると、良い肉と皮が手に入る。 "
-      }
-    },
-    "loadscreen_tip11": {
-      "Japanese": {
-        "text": "敵によって、与えやすいダメージのタイプは違う。 例えば灰色ドワーフは火が苦手だ。 "
-      }
-    },
-    "loadscreen_tip12": {
-      "Japanese": {
-        "text": "ベッドを作ったら、確保しておくのを忘れずに。 "
-      }
-    },
-    "loadscreen_tip13": {
-      "Japanese": {
-        "text": "忍び歩きをしている時にナイフや弓で攻撃すると、大きなボーナスダメージを与えられる。 "
-      }
-    },
-    "loadscreen_tip14": {
-      "Japanese": {
-        "text": "鳥からは羽根が手に入る。 鳥は天気が悪い時には地面の近くにいる。 "
-      }
-    },
-    "loadscreen_tip15": {
-      "Japanese": {
-        "text": "鴉のフギンは役に立つヒントを教えてくれる。 "
-      }
-    },
-    "loadscreen_tip16": {
-      "Japanese": {
-        "text": "資源の中には、より良い装備がないと採れないものがある。 "
-      }
-    },
-    "loadscreen_tip17": {
-      "Japanese": {
-        "text": "休息すると、スタミナと体力が回復する速度が上がる。 "
-      }
-    },
-    "loadscreen_tip18": {
-      "Japanese": {
-        "text": "黄色いダメージの数字は弱点を、灰色の数字は耐性があることを示す。 "
-      }
-    },
-    "loadscreen_tip19": {
-      "Japanese": {
-        "text": "鍬があると地面を平らにできる。 そのため、建物を建てやすくなる。 "
-      }
-    },
-    "loadscreen_tip20": {
-      "Japanese": {
-        "text": "荷車を作ると、重いものを遠くまで運べる。 "
-      }
-    },
-    "loadscreen_tip21": {
-      "Japanese": {
-        "text": "船は、舵取りオールで操作することができる。 "
-      }
-    },
-    "loadscreen_tip22": {
-      "Japanese": {
-        "text": "黒い森ではスズや銅が見つかる。 "
-      }
-    },
     "loadscreen_tip23": {
       "Japanese": {
         "text": "ベリーやキノコを探そう。 空腹を防ぐ役に立つ。 ",
@@ -3043,82 +3020,6 @@
         "immersion": true
       }
     },
-    "npc_haldor_goodbye01": {
-      "Japanese": {
-        "text": "あんまり遠くへ行くな。 おまえが死んだ時に、その持ち物をもらいたいからな。 "
-      }
-    },
-    "npc_haldor_goodbye02": {
-      "Japanese": {
-        "text": "行っちまえ。 俺にはやることがある。 "
-      }
-    },
-    "npc_haldor_goodbye03": {
-      "Japanese": {
-        "text": "それじゃあな。 "
-      }
-    },
-    "npc_haldor_trade02": {
-      "Japanese": {
-        "text": "よし、取引しよう。 "
-      }
-    },
-    "npc_haldor_trade03": {
-      "Japanese": {
-        "text": "俺の気分が良くて、運が良かったな。 さあ取引だ。 "
-      }
-    },
-    "npc_haldor_buy01": {
-      "Japanese": {
-        "text": "こいつは上等なモンだ。 そこらで拾えるようなのとはわけが違うぞ。 "
-      }
-    },
-    "npc_haldor_buy02": {
-      "Japanese": {
-        "text": "金を払うつもりがないんなら、触るんじゃねぇ。 "
-      }
-    },
-    "npc_haldor_buy03": {
-      "Japanese": {
-        "text": "その目でじっくり品物を見るといい。 だが手は出すな。 "
-      }
-    },
-    "npc_haldor_buy04": {
-      "Japanese": {
-        "text": "ここに並んでるもののおかげで、ちょっぴり長生きできるだろうよ。 おまえにはどうでもいいことだと思うがな。 "
-      }
-    },
-    "npc_haldor_sell04": {
-      "Japanese": {
-        "text": "見せてみな。 "
-      }
-    },
-    "npc_haldor_smalltalk01": {
-      "Japanese": {
-        "text": "俺らはみんな、ここで捨てられたのよ。 神々はずっと前に、Valheimに目も向けなくなっちまった。 "
-      }
-    },
-    "npc_haldor_smalltalk02": {
-      "Japanese": {
-        "text": "〈見捨てられしもの〉を狩りに来たのか？こっちが手を出さなきゃ、向こうも何もしねぇのによ。 ",
-        "immersion": true
-      }
-    },
-    "npc_haldor_smalltalk03": {
-      "Japanese": {
-        "text": "戦って、何か建てて、そこらを探し回る。 結局は墓に入って終わりさ。 "
-      }
-    },
-    "npc_haldor_smalltalk04": {
-      "Japanese": {
-        "text": "戦士よ、おまえも前に来たヤツらと変わりねぇ。 同じ末路を迎えるだろうさ。 "
-      }
-    },
-    "npc_haldor_smalltalk05": {
-      "Japanese": {
-        "text": "俺たちと獣の違いはただ一つ。 商売するかしねぇかだ。 "
-      }
-    },
     "dream_random02": {
       "Japanese": {
         "text": "また、父の斧を手にして戦士たちを率いていた。 \n\n目覚めた時、口にはときの声の名残があった...",
@@ -3127,17 +3028,14 @@
     },
     "dream_random05": {
       "Japanese": {
-        "text": "夜を突き抜けて伸びる大きな木の夢を見た。 その枝々の半数は音を立てて燃え、あとの半数は緑の葉を茂らせている。 "
+        "text": "夜を突き抜けて伸びる大きな木の夢を見た。 その枝々の半数は音を立てて燃え、あとの半数は緑の葉を茂らせている。 ",
+        "system": true
       }
     },
     "dream_bonemass01": {
       "Japanese": {
-        "text": "夢の中で、無数の幽霊たちがベッドのまわりを取り囲み、温かみと命を求めてのぞきこむ。 不意に地中でどすんという音が聞こえ、幽霊は太鼓の皮の上のパンくずのように跳び上がって消える。 "
-      }
-    },
-    "deadspeak_yagluth": {
-      "Japanese": {
-        "text": "ちっぽけな者よ、これで満足か？私がどれほど何度も殺され、滅ぼされ、消され、焼かれ、埋められたか知っているか？おまえは最初ではないし、最後でもない。 "
+        "text": "夢の中で、無数の幽霊たちがベッドのまわりを取り囲み、温かみと命を求めてのぞきこむ。 不意に地中でどすんという音が聞こえ、幽霊は太鼓の皮の上のパンくずのように跳び上がって消える。 ",
+        "system": true
       }
     },
     "npc_munin_general01": {
@@ -3645,7 +3543,8 @@
     },
     "item_loxpie_uncooked": {
       "Japanese": {
-        "text": "生のロックスパイ"
+        "text": "生のロックスパイ",
+        "adjust": true
       }
     },
     "piece_sapling_seedonion_description": {
@@ -3724,7 +3623,7 @@
     },
     "settings_cameratilt": {
       "Japanese": {
-        "text": "没入感のあるカメラ",
+        "text": "乗船時のカメラの没入感",
         "adjust": true
       }
     },
@@ -3904,7 +3803,7 @@
     },
     "se_rootseteffect_name": {
       "Japanese": {
-        "text": "根の鎧",
+        "text": "弓術スキル上昇",
         "missing": true
       }
     },
@@ -3922,13 +3821,13 @@
     },
     "item_trophy_abomination_description": {
       "Japanese": {
-        "text": "死んでからあまりにも長い時間が経ったので、こいつは再び動き出したのだった。",
+        "text": "死んでからあまりにも長い時間が経ったので、 こいつは再び動き出したのだった。",
         "missing": true
       }
     },
     "item_trophy_abomination_lore": {
       "Japanese": {
-        "text": "死んでからあまりにも長い時間が経ったので、こいつは再び動き出したのだった。",
+        "text": "死んでからあまりにも長い時間が経ったので、 こいつは再び動き出したのだった。",
         "missing": true
       }
     },
@@ -3977,6 +3876,380 @@
     "piece_jackoturnip": {
       "Japanese": {
         "text": "カブのジャック・オー・ランタン",
+        "missing": true
+      }
+    },
+    "settings_look": {
+      "Japanese": {
+        "text": "視点",
+        "missing": true
+      }
+    },
+    "settings_menu": {
+      "Japanese": {
+        "text": "メニュー",
+        "missing": true
+      }
+    },
+    "settings_move": {
+      "Japanese": {
+        "text": "移動",
+        "missing": true
+      }
+    },
+    "settings_altkeys": {
+      "Japanese": {
+        "text": "(Alt キー)",
+        "missing": true
+      }
+    },
+    "settings_camzoomin": {
+      "Japanese": {
+        "text": "視点のズームイン",
+        "missing": true
+      }
+    },
+    "settings_camzoomout": {
+      "Japanese": {
+        "text": "視点のズームアウト",
+        "missing": true
+      }
+    },
+    "settings_hotbarright": {
+      "Japanese": {
+        "text": "ホットバーの選択切り替え",
+        "missing": true
+      }
+    },
+    "settings_hotbaruse": {
+      "Japanese": {
+        "text": "ホットバーのアイテム使用",
+        "missing": true
+      }
+    },
+    "settings_rotate": {
+      "Japanese": {
+        "text": "回転",
+        "missing": true
+      }
+    },
+    "settings_invertcamera": {
+      "Japanese": {
+        "text": "カメラの反転",
+        "missing": true
+      }
+    },
+    "settings_chat": {
+      "Japanese": {
+        "text": "チャット",
+        "missing": true
+      }
+    },
+    "settings_showgamepadmap": {
+      "Japanese": {
+        "text": "ゲームパッドを表示",
+        "missing": true
+      }
+    },
+    "settings_fpslimit": {
+      "Japanese": {
+        "text": "フレームレートの制限",
+        "missing": true
+      }
+    },
+    "settings_glyphs_ps": {
+      "Japanese": {
+        "text": "代替文字",
+        "missing": true
+      }
+    },
+    "settings_bigpicturetext": {
+      "Japanese": {
+        "text": "* ゲームパッドでの文字入力及びチャットは Steam Big Picture モードでのみ有効です。",
+        "missing": true
+      }
+    },
+    "settings_reducebg": {
+      "Japanese": {
+        "text": "バックグラウンドパフォーマンスを削減",
+        "missing": true
+      }
+    },
+    "chat_entermessage": {
+      "Japanese": {
+        "text": "チャットメッセージを送る",
+        "missing": true
+      }
+    },
+    "hud_namepin": {
+      "Japanese": {
+        "text": "ピンに名前をつける",
+        "missing": true
+      }
+    },
+    "location_mountaincave": {
+      "Japanese": {
+        "text": "氷の洞窟",
+        "missing": true
+      }
+    },
+    "enemy_ulv": {
+      "Japanese": {
+        "text": "ウールヴ",
+        "missing": true
+      }
+    },
+    "event_caves_start": {
+      "Japanese": {
+        "text": "奥底から遠吠えがこだまする",
+        "missing": true
+      }
+    },
+    "event_caves_end": {
+      "Japanese": {
+        "text": "遠吠えがやんだ",
+        "missing": true
+      }
+    },
+    "lore_cavepainting_label": {
+      "Japanese": {
+        "text": "太古の洞窟壁画",
+        "missing": true
+      }
+    },
+    "item_meat_rotten": {
+      "Japanese": {
+        "text": "腐った肉",
+        "missing": true
+      }
+    },
+    "item_meat_rotten_description": {
+      "Japanese": {
+        "text": "表面にウジ虫が這っている。ひどい臭いだ。",
+        "missing": true
+      }
+    },
+    "item_pickable_meatpile": {
+      "Japanese": {
+        "text": "肉の山",
+        "missing": true
+      }
+    },
+    "item_pickable_hairstrands": {
+      "Japanese": {
+        "text": "フェンリスの髪",
+        "missing": true
+      }
+    },
+    "item_wolfclaw": {
+      "Japanese": {
+        "text": "フェンリスの鉤爪",
+        "missing": true
+      }
+    },
+    "item_wolfclaw_description": {
+      "Japanese": {
+        "text": "鉄のように固くて鋭い",
+        "missing": true
+      }
+    },
+    "item_wolfhairbundle": {
+      "Japanese": {
+        "text": "フェンリスの髪",
+        "missing": true
+      }
+    },
+    "item_wolfhairbundle_description": {
+      "Japanese": {
+        "text": "太く乱れた髪の束。臭いがきつい。",
+        "missing": true
+      }
+    },
+    "item_chest_fenris": {
+      "Japanese": {
+        "text": "フェンリスのコート",
+        "missing": true
+      }
+    },
+    "item_chest_fenris_description": {
+      "Japanese": {
+        "text": "この獣は深く息を吸い込めるので、その吠え声ははるか遠くの地まで響き渡る。",
+        "missing": true
+      }
+    },
+    "item_legs_fenris": {
+      "Japanese": {
+        "text": "フェンリスのすね当て",
+        "missing": true
+      }
+    },
+    "item_legs_fenris_description": {
+      "Japanese": {
+        "text": "この獣の足はしなやかで力強いので、躍進することができる。",
+        "missing": true
+      }
+    },
+    "item_helmet_fenris": {
+      "Japanese": {
+        "text": "フェンリスのフード",
+        "missing": true
+      }
+    },
+    "item_helmet_fenris_description": {
+      "Japanese": {
+        "text": "この獣の目は思慮深く知性があるので、一目で戦士の強さを推し量ることができる。",
+        "missing": true
+      }
+    },
+    "item_fistweapon_fenris": {
+      "Japanese": {
+        "text": "肉裂き",
+        "missing": true
+      }
+    },
+    "item_fistweapon_fenris_description": {
+      "Japanese": {
+        "text": "狼が鉤爪を使いこなせるなら、ヴァイキングにできないはずがないだろう?",
+        "missing": true
+      }
+    },
+    "enemy_fenringcultist": {
+      "Japanese": {
+        "text": "教信者",
+        "missing": true
+      }
+    },
+    "enemy_bat": {
+      "Japanese": {
+        "text": "コウモリ",
+        "missing": true
+      }
+    },
+    "piece_brazierfloor01": {
+      "Japanese": {
+        "text": "直立した火鉢",
+        "missing": true
+      }
+    },
+    "piece_clothdoor": {
+      "Japanese": {
+        "text": "赤い黄麻のカーテン",
+        "missing": true
+      }
+    },
+    "piece_jute_carpet": {
+      "Japanese": {
+        "text": "赤い黄麻の敷物",
+        "missing": true
+      }
+    },
+    "item_jutered": {
+      "Japanese": {
+        "text": "赤い黄麻",
+        "missing": true
+      }
+    },
+    "item_jutered_description": {
+      "Japanese": {
+        "text": "丈夫でざらざらした布",
+        "missing": true
+      }
+    },
+    "item_trophy_ulv": {
+      "Japanese": {
+        "text": "ウールヴのトロフィー",
+        "missing": true
+      }
+    },
+    "item_trophy_ulv_description": {
+      "Japanese": {
+        "text": "あまりよくない子供から取った、荒々しいしっぽ",
+        "missing": true
+      }
+    },
+    "item_trophy_ulv_lore": {
+      "Japanese": {
+        "text": "あまりよくない子供から取った、荒々しいしっぽ",
+        "missing": true
+      }
+    },
+    "item_trophy_cultist": {
+      "Japanese": {
+        "text": "教信者のトロフィー",
+        "missing": true
+      }
+    },
+    "item_trophy_cultist_description": {
+      "Japanese": {
+        "text": "瞳に宿る炎は未だ燃え尽きていない。",
+        "missing": true
+      }
+    },
+    "item_trophy_cultist_lore": {
+      "Japanese": {
+        "text": "瞳に宿る炎は未だ燃え尽きていない。",
+        "missing": true
+      }
+    },
+    "lore_caveman01": {
+      "Japanese": {
+        "text": "洞窟の奥底には富が約束されている。\n降りていけばわかる、登るよりも簡単であることに。\n私は湖に最大限に助けられたが、それもここまでだ。\n疲れ果てた旅人にも私と得たのと同じチャンスを残すため、力を振り絞って使い切らないようにしておいた。\nお前には私と違いよく準備してからここに来てほしい。\nもし準備がまだなら、すぐ隣の部屋で、横になって休むといい...",
+        "missing": true
+      }
+    },
+    "lore_caveman02": {
+      "Japanese": {
+        "text": "この崖を登れば出られると願っている。\n惜しくもこの洞穴はあまりに深すぎたいのだ。\n…\n思い切って飛び降りようかとも思った。\nああ、臆病者の私は崖にしがみつき這い戻ってきたのだ。",
+        "missing": true
+      }
+    },
+    "se_fenringseteffect_name": {
+      "Japanese": {
+        "text": "フェンリスの祝福",
+        "missing": true
+      }
+    },
+    "se_fenringseteffect_tooltip": {
+      "Japanese": {
+        "text": "フェンリスの鎧があなたの両足に速さを与え、火の上を駆け抜けられるようになる。そしてあなたの拳には獣の力が宿る。",
+        "missing": true
+      }
+    },
+    "wolf_statue": {
+      "Japanese": {
+        "text": "フェンリスの神殿",
+        "missing": true
+      }
+    },
+    "event_bats_start": {
+      "Japanese": {
+        "text": "大釜をかき混ぜている",
+        "missing": true
+      }
+    },
+    "event_bats_end": {
+      "Japanese": {
+        "text": "大釜が静まった",
+        "missing": true
+      }
+    },
+    "settings_place": {
+      "Japanese": {
+        "text": "配置",
+        "missing": true
+      }
+    }
+  },
+  "localization_extra-resources.assets-100-TextAsset.json": {
+    "item_tankard_anniversary": {
+      "Japanese": {
+        "text": "祝祭の角笛",
+        "missing": true
+      }
+    },
+    "item_tankard_anniversary_description": {
+      "Japanese": {
+        "text": "リリースから一周年に...スコール (乾杯)！",
         "missing": true
       }
     }
