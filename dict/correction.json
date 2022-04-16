@@ -126,12 +126,6 @@
         "system": true
       }
     },
-    "inventory_upgrade": {
-      "Japanese": {
-        "text": "$1 の品質を $2 にアップグレード",
-        "system": true
-      }
-    },
     "inventory_blunt": {
       "Japanese": {
         "text": "打撃",
@@ -180,22 +174,10 @@
         "adjust": true
       }
     },
-    "msg_repaired": {
-      "Japanese": {
-        "text": "$1 を修理した",
-        "system": true
-      }
-    },
     "msg_cantconsume": {
       "Japanese": {
         "text": "今は消費できない",
         "adjust": true
-      }
-    },
-    "msg_nomore": {
-      "Japanese": {
-        "text": "これ以上 $1 を食べられない",
-        "system": true
       }
     },
     "msg_added": {
@@ -216,39 +198,15 @@
         "system": true
       }
     },
-    "msg_cantuseon": {
-      "Japanese": {
-        "text": "$1 は $2 には使えない",
-        "system": true
-      }
-    },
-    "msg_useonwhat": {
-      "Japanese": {
-        "text": "$1 を何に使う？",
-        "system": true
-      }
-    },
     "msg_spawnpointset": {
       "Japanese": {
         "text": "スポーン地点に設定",
         "adjust": true
       }
     },
-    "msg_cantaddmore": {
-      "Japanese": {
-        "text": "これ以上 $1 を追加できない",
-        "system": true
-      }
-    },
     "msg_fireadding": {
       "Japanese": {
         "text": "火に $1 を加えた",
-        "system": true
-      }
-    },
-    "msg_throwinfire": {
-      "Japanese": {
-        "text": "$1 を火にくべた",
         "system": true
       }
     },
@@ -282,27 +240,9 @@
         "system": true
       }
     },
-    "msg_sold": {
-      "Japanese": {
-        "text": "$1 を $2 で売った",
-        "system": true
-      }
-    },
     "msg_newday": {
       "Japanese": {
         "text": "$1 日目",
-        "system": true
-      }
-    },
-    "msg_newtext": {
-      "Japanese": {
-        "text": "コンペンディウムに $1 が追加された",
-        "system": true
-      }
-    },
-    "msg_broke": {
-      "Japanese": {
-        "text": "$1 が壊れた",
         "system": true
       }
     },
@@ -4238,9 +4178,7 @@
         "text": "配置",
         "missing": true
       }
-    }
-  },
-  "localization_extra-resources.assets-100-TextAsset.json": {
+    },
     "item_tankard_anniversary": {
       "Japanese": {
         "text": "祝祭の角笛",
@@ -4250,6 +4188,56 @@
     "item_tankard_anniversary_description": {
       "Japanese": {
         "text": "リリースから一周年に...スコール (乾杯)！",
+        "missing": true
+      }
+    },
+    "enemy_boss_bonemass_spawnmessage": {
+      "Japanese": {
+        "text": "巨塊が動いている",
+        "missing": true
+      }
+    },
+    "enemy_boss_bonemass_deathmessage": {
+      "Japanese": {
+        "text": "巨塊はもう動かない",
+        "missing": true
+      }
+    },
+    "enemy_boss_dragon_spawnmessage": {
+      "Japanese": {
+        "text": "モデルが姿を現す",
+        "missing": true
+      }
+    },
+    "enemy_boss_dragon_deathmessage": {
+      "Japanese": {
+        "text": "モデルは慟哭した",
+        "missing": true
+      }
+    },
+    "enemy_boss_goblinking_spawnmessage": {
+      "Japanese": {
+        "text": "ヤグルスのよじれた魂が召喚された",
+        "missing": true
+      }
+    },
+    "enemy_boss_goblinking_deathmessage": {
+      "Japanese": {
+        "text": "ヤグルスの魂は打ち砕かれた",
+        "missing": true
+      }
+    }
+  },
+  "localization_extra-resources.assets-100-TextAsset.json": {
+    "inventory_drop": {
+      "Japanese": {
+        "text": "捨てる",
+        "missing": true
+      }
+    },
+    "inventory_tabs": {
+      "Japanese": {
+        "text": "操作ウィンドウ変更",
         "missing": true
       }
     }
