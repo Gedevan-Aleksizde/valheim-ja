@@ -43,7 +43,7 @@ If you want to edit the text on your own, you need the following programs:
 1. `python tools/make-dict.py` で上記 XLSX での変更差分を dict 形式に出力する
 	* 現状これ自体は作業に必要ではないが, 変更していない全テキストをgithubに上げるのは著作権的に良くないと思うので
 1. `python tools/export-text.py` で UABE用の TXT ファイルに変換し, UABE で上書きする
-    * "Import Raw" ボタンで上書き
+    * "Import Dump" ボタンで上書き (Import Raw だと機能しない?)
     * UABE 以外を使っている場合は適当に変換プログラムを自作する
 
 
