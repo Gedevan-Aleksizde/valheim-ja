@@ -36,7 +36,9 @@ for x in textfiles:
     out_fname = x.with_suffix('.txt').name
     out_entry = x.with_suffix('').name.split('-')[0]
     with x.open("r", encoding='utf-8') as basefile:
-        tmp = pd.read_csv(StringIO(json.load(basefile)['0 TextAsset Base']['1 string m_Script']), encoding="utf-8").fillna('').rename(columns={'Context': ' '})
+        tmp = pd.read_csv(StringIO(json.load(basefile)['0 TextAsset Base']['1 string m_Script']), encoding="utf-8", index_col=False).rename(
+            columns={'Context': '', 'Unnamed: 0': ' '}
+        ).fillna('')
     count_without_blank = tmp.loc[lambda d: d['Japanese'].str.match('\$[0-9a-zA-Z]+')].shape[0]
     print(f"{x}: {tmp.shape[0]} entries included; {count_without_blank} blank-omitted entries are modified.")
     if(tmp.shape[0] > 0):

@@ -30,7 +30,13 @@ csvpath = rootdir.joinpath('l10n-native.csv').expanduser() if args.outdir is Non
 csvs = []
 for x in l10n_jsonpath:
     with x.open("r", encoding="utf-8") as f:
-        tmp = pd.read_csv(StringIO(json.load(f)['0 TextAsset Base']['1 string m_Script']), encoding="utf-8").fillna('').rename(columns={'Context': ' '})
+        tmp = json.load(f)['0 TextAsset Base']
+        field_name = tmp['1 string m_Name']
+        tmp = pd.read_csv(StringIO(tmp['1 string m_Script']), index_col=False)  # [,]"English","Swedish",...
+        tmp = tmp.rename(
+            columns={'Context': '', 'Unnamed: 0': ' '}
+        ).fillna('')
+        # tmp = pd.read_csv(StringIO(json.load(f)['0 TextAsset Base']['1 string m_Script']), encoding="utf-8").fillna('').rename(columns={'Context': ' '})
         count_without_blank = tmp.loc[lambda d: d[params['LANG']].str.match('\$[0-9a-zA-Z]+')].shape[0]
         print(f"{x}: {tmp.shape[0]} entries included; {count_without_blank} blank-omitted entries are found.")
         csvs += [tmp.assign(OriginalFileName=x.name)]
@@ -54,4 +60,3 @@ tab_l10n_blank.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 with pd.ExcelWriter(excelpath) as writer: 
     tab_l10n.to_excel(writer, sheet_name = f"v{params['LATEST_VERSION']}", index=False, encoding="utf-8")
     tab_l10n_blank.to_excel(writer, sheet_name = "mod", index=False, encoding="utf-8")
-    
