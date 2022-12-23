@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValheimJP", "ValheimJP.csproj", "{D359D9FB-E6D8-48F3-8ECB-2508E72C0D48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D359D9FB-E6D8-48F3-8ECB-2508E72C0D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D359D9FB-E6D8-48F3-8ECB-2508E72C0D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D359D9FB-E6D8-48F3-8ECB-2508E72C0D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D359D9FB-E6D8-48F3-8ECB-2508E72C0D48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC3EA2DC-9CCF-4A73-B3B8-549081D30ABB}
+	EndGlobalSection
+EndGlobal
