@@ -19,8 +19,10 @@ with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath
 
 with args.dict.open("r", encoding="utf-8") as f:
     dict_with_metadata = json.load(f)
+    print(f"json file is loaded from {args.dict}")
 
 dict1 = {k:v[params["LANG"]]["text"] for l in dict_with_metadata.values() for (k, v) in l.items()}
 
 with args.out.open("w", encoding="utf-8") as f:
     json.dump(dict1, f, ensure_ascii=False, indent=2)
+    print(f"json file is exported at {args.out}")

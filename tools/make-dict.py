@@ -24,8 +24,13 @@ input = Path(params['l10n']) if args.filename is None else args.filename
 output = Path().cwd().joinpath('dict/correction.json') if args.output is None else args.output
 if not output.parent.exists():
     output.parent.mkdir(parents=True, exist_ok=True)
-original = pd.read_excel(input, sheet_name=f"""v{params['LATEST_VERSION']}""")[[' ', params['LANG'], 'OriginalFileName']].fillna('')
+original = pd.read_excel(input, sheet_name=f"""v{params['LATEST_VERSION']}""")
+if('OriginalFileName' not in original.columns):
+    original['OriginalFileName'] = ""
+original = original [[' ', params['LANG'], 'OriginalFileName']].fillna('')
 mod = pd.read_excel(input, sheet_name=args.sheet)
+if('OriginalFileName' not in mod.columns):
+    mod['OriginalFileName'] = ""
 mod = mod[[mod.columns[0]] + [params['LANG'], 'OriginalFileName', 'SYSTEM', 'CORRECTION', 'MISSING', 'CONSISTENCY', 'ADJUST', 'IMMERSION']]
 mod[params['LANG']] = mod[params['LANG']].fillna('')
 correct = mod.loc[lambda d: d[params['LANG']]!=original[params['LANG']]]
