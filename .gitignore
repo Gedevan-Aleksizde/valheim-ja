@@ -5,3 +5,7 @@
 l10n.xlsx
 original-text/*
 output/*
+valheimjp/obj
+valheimjp/.vs
+valheimjp/bin
+valheimjp/mods
