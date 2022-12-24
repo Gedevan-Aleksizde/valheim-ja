@@ -53,10 +53,25 @@ if(tab_l10n.shape[0] > 0):
         str.replace('\s{2,}', ' ', regex=True)
         })
     )
+output_cols = [' ', 'English', 'Swedish', 'Japanese', 'OriginalFileName']
 # quoting=1: csv.QUOTE_ALL
-tab_l10n_blank.to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
+tab_l10n_blank[output_cols].to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 # 手動編集の簡易さからエクセルに書く
 # TODO: libre が重すぎるので PO ファイルとして出力したほうがいいか?
 with pd.ExcelWriter(excelpath) as writer: 
-    tab_l10n.to_excel(writer, sheet_name = f"v{params['LATEST_VERSION']}", index=False, encoding="utf-8")
-    tab_l10n_blank.to_excel(writer, sheet_name = "mod", index=False, encoding="utf-8")
+    tab_l10n[output_cols].to_excel(writer, sheet_name = f"v{params['LATEST_VERSION']}", index=False, encoding="utf-8")
+    tab_l10n_blank[output_cols].to_excel(writer, sheet_name = "mod", index=False, encoding="utf-8")
+
+with Path(f'''Valheim_{params['LATEST_VERSION']}@{params['LANG']}.po''').open('w', encoding='utf-8') as f:
+    f.write(
+        '''
+"Last-Translator: Katagiri, Satoshi <katagiri.stsh@gmail.com>"
+"Language-Team: None"
+"Language: ja"
+"MIME-Version: 1.0"
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+    ''');
+    for row in tab_l10n.iterrows():
+        f.write(f'''msgid "{row[1]['English']}"\n''')
+        f.write(f'''msgstr "{row[1][params['LANG'].capitalize()]}"\n\n''')
