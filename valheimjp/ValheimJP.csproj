@@ -82,8 +82,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /S/E/Y $(SolutionDir)Assets $(SolutionDir)mods\ValheimJP-minimal\bepInEx\plugins\ValheimJP\Assets
-xcopy /S/E/Y $(SolutionDir)Assets $(SolutionDir)mods\ValheimJP-standalone\bepInEx\plugins\ValheimJP\Assets
+    <PostBuildEvent>xcopy /S/E/Y $(SolutionDir)..\Unity\AssetBundles\StandaloneWindows\correctedtext_japanese $(SolutionDir)mods\ValheimJP-minimal\bepInEx\plugins\ValheimJP\Assets
+xcopy /S/E/Y $(SolutionDir)..\Unity\AssetBundles\StandaloneWindows\correctedtext_japanese $(SolutionDir)mods\ValheimJP-standalone\bepInEx\plugins\ValheimJP\Assets
 copy /Y $(TargetPath) $(SolutionDir)mods\ValheimJP-minimal\bepInEx\plugins\ValheimJP\
 copy /Y $(TargetPath) $(SolutionDir)mods\ValheimJP-standalone\bepInEx\plugins\ValheimJP\
 
