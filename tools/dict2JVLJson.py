@@ -15,7 +15,7 @@ with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath
         args.out = Path(f"dict/CorrectedText_{params['LANG']}.json")
     else:
         if(args.out is None):
-            args.out = Path(f"output/CorretedText_{params['LANG']}.json")
+            args.out = Path(f"output/CorrectedText_{params['LANG']}.json")
 
 with args.dict.open("r", encoding="utf-8") as f:
     dict_with_metadata = json.load(f)
