@@ -53,6 +53,7 @@ if(tab_l10n.shape[0] > 0):
         str.replace('\s{2,}', ' ', regex=True)
         })
     )
+tab_l10n = tab_l10n.loc[lambda d: d[' '] != ""]  # 空白行は不要
 output_cols = [' ', 'English', 'Swedish', 'Japanese', 'OriginalFileName']
 # quoting=1: csv.QUOTE_ALL
 tab_l10n_blank[output_cols].to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
