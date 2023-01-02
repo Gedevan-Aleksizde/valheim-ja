@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\JotunnLib.2.10.1\build\JotunnLib.props" Condition="Exists('packages\JotunnLib.2.10.1\build\JotunnLib.props')" />
+  <Import Project="packages\JotunnLib.2.10.2\build\JotunnLib.props" Condition="Exists('packages\JotunnLib.2.10.2\build\JotunnLib.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -38,52 +38,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\HarmonyX.2.9.0\lib\net45\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="BepInEx">
-      <HintPath>..\..\..\..\..\Saved Game\Valheim-mods\BepInEx-latest\BepInExPack_Valheim\BepInEx\core\BepInEx.dll</HintPath>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\Saved Game\Valheim-mods\BepInEx-latest\BepInExPack_Valheim\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Jotunn, Version=2.6.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\JotunnLib.Debug.2.6.2\lib\net462\Jotunn.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Mono.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
-      <HintPath>packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Mdb, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
-      <HintPath>packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Pdb, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
-      <HintPath>packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Rocks, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
-      <HintPath>packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoMod, Version=21.9.19.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\MonoMod.21.9.19.1\lib\net40\MonoMod.exe</HintPath>
-    </Reference>
-    <Reference Include="MonoMod.RuntimeDetour, Version=22.1.29.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\MonoMod.RuntimeDetour.22.1.29.1\lib\net452\MonoMod.RuntimeDetour.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoMod.Utils, Version=22.1.29.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\MonoMod.Utils.22.1.29.1\lib\net452\MonoMod.Utils.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Assets\Translations\Japanese\Correct.json" />
-    <None Include="packages.config" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /S/E/Y $(SolutionDir)..\Unity\AssetBundles\StandaloneWindows\correctedtext_japanese $(SolutionDir)mods\ValheimJP-minimal\bepInEx\plugins\ValheimJP\Assets
-xcopy /S/E/Y $(SolutionDir)..\Unity\AssetBundles\StandaloneWindows\correctedtext_japanese $(SolutionDir)mods\ValheimJP-standalone\bepInEx\plugins\ValheimJP\Assets
+    <PostBuildEvent>xcopy /S/E/Y $(SolutionDir)..\Unity\AssetBundles\StandaloneWindows\correcttext_japanese $(SolutionDir)mods\ValheimJP-minimal\bepInEx\plugins\ValheimJP\Assets
+xcopy /S/E/Y $(SolutionDir)..\Unity\AssetBundles\StandaloneWindows\correcttext_japanese $(SolutionDir)mods\ValheimJP-standalone\bepInEx\plugins\ValheimJP\Assets
 copy /Y $(TargetPath) $(SolutionDir)mods\ValheimJP-minimal\bepInEx\plugins\ValheimJP\
 copy /Y $(TargetPath) $(SolutionDir)mods\ValheimJP-standalone\bepInEx\plugins\ValheimJP\
 
@@ -95,6 +73,6 @@ xcopy /S/E/Y $(SolutionDir)mods\ValheimJP-minimal "D:\User\Saved Game\mod-organi
     <PropertyGroup>
       <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('packages\JotunnLib.2.10.1\build\JotunnLib.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\JotunnLib.2.10.1\build\JotunnLib.props'))" />
+    <Error Condition="!Exists('packages\JotunnLib.2.10.2\build\JotunnLib.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\JotunnLib.2.10.2\build\JotunnLib.props'))" />
   </Target>
 </Project>
