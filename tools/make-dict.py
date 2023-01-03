@@ -9,7 +9,6 @@ from pathlib import Path
 import pandas as pd
 import argparse
 
-
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--filename', type=Path, help='file path(s) to parse', default=None)
 parser.add_argument('--sheet', type=str, help='sheet name to read', default='mod')
@@ -31,7 +30,7 @@ original = original [[' ', params['LANG'], 'OriginalFileName']].fillna('')
 mod = pd.read_excel(input, sheet_name=args.sheet)
 if('OriginalFileName' not in mod.columns):
     mod['OriginalFileName'] = ""
-mod = mod[[mod.columns[0]] + [params['LANG'], 'OriginalFileName', 'SYSTEM', 'CORRECTION', 'MISSING', 'CONSISTENCY', 'ADJUST', 'IMMERSION']]
+mod = mod[[mod.columns[0]] + [params['LANG'], 'OriginalFileName', 'SYSTEM', 'CORRECTION', 'MISSING', 'CONSISTENCY', 'ADJUST', 'IMMERSION', 'ADDED']]
 mod[params['LANG']] = mod[params['LANG']].fillna('')
 correct = mod.loc[lambda d: d[params['LANG']]!=original[params['LANG']]]
 d = {

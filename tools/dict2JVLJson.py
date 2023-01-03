@@ -12,10 +12,10 @@ with (Path(__file__).parent if '__file__' in locals() else Path().cwd().joinpath
     params = json.load(fp)
     print("""Valheim version: {LATEST_VERSION}\r\nTarget Language: {LANG}""".format(**params))
     if( "out" not in vars(args)):
-        args.out = Path(f"dict/CorrectedText_{params['LANG']}.json")
+        args.out = Path(f"dict/CorrectText_{params['LANG']}.json")
     else:
         if(args.out is None):
-            args.out = Path(f"output/CorrectedText_{params['LANG']}.json")
+            args.out = Path(f"output/CorrectText_{params['LANG']}.json")
 
 with args.dict.open("r", encoding="utf-8") as f:
     dict_with_metadata = json.load(f)
