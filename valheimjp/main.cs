@@ -153,7 +153,7 @@ namespace ValheimJP
             {
                 if (text.text.Contains("塞がっている") || text.text.Contains("blocked") || text.text.Contains("Cargo"))
                 {
-                    TextCorrector.Logger.LogDebug($"text={text.text}, go={text.gameObject.name}(root={text.gameObject.transform.root}), font={text.font.name}");
+                    if(TextCorrector.debugMode.Value) TextCorrector.Logger.LogDebug($"text={text.text}, go={text.gameObject.name}(root={text.gameObject.transform.root}), font={text.font.name}");
                     
                 }
                 if (text.font != null)
@@ -169,7 +169,7 @@ namespace ValheimJP
                     }
                     if (text.font.fontNames != newFontNames)
                     {
-                        TextCorrector.Logger.LogDebug($"new fallbacks for '{text.font.name}' = {string.Join(", ", newFontNames)}");
+                        if (TextCorrector.debugMode.Value)  TextCorrector.Logger.LogDebug($"new fallbacks for '{text.font.name}' = {string.Join(", ", newFontNames)}");
                         text.font.fontNames = newFontNames;
                     }
                 }
@@ -195,13 +195,13 @@ namespace ValheimJP
         private static void TweakLocalizationSettings(Localization __instance)
         {
             __instance.m_endChars = __instance.m_endChars.Concat<char>(new char[] { '、', '。' }).ToArray<char>();
-            TextCorrector.Logger.LogDebug($"m_endChars={__instance.m_endChars}");
+            if (TextCorrector.debugMode.Value) TextCorrector.Logger.LogDebug($"m_endChars={__instance.m_endChars}");
         }
         [HarmonyPatch(typeof(FejdStartup), "SetupGui")]
         [HarmonyPostfix]
         private static void HarmonyTest()
         {
-            TextCorrector.Logger.LogDebug("----- Harmony Test: FejdStartup.SetupGui called ----");
+            if (TextCorrector.debugMode.Value) TextCorrector.Logger.LogDebug("----- Harmony Test: FejdStartup.SetupGui called ----");
         }
         //TODO: Jotunn なしの場合は LoadCSV で割り込めば簡単か?
     }
