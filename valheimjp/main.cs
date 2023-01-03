@@ -71,7 +71,7 @@ namespace ValheimJP
             // Why dare you use CP932, Windows
             // We can write multibyte chars if change MO2 plugin source code, but Idk its precice influence
             correctFont = Config.Bind<bool>("General", "CorrectFont", true, "Enable to replace to the correct fonts");
-            debugMode = Config.Bind<bool>("General", "DebugMode", true, "Enable to output verbose log");
+            debugMode = Config.Bind<bool>("General", "DebugMode", false, "Enable to output verbose log");
             textOverflow = Config.Bind<bool>("General", "TextOverflow", false, "Enable to overflow all texts");
             howToReplace = Config.Bind<string>("General", "HowToReplace", "Override", "'Override', or 'Fallback' ");
             foreach (KeyValuePair<string, string> kv in defaultFontCorrespondence)
