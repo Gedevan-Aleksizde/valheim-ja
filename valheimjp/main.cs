@@ -12,6 +12,9 @@ using Jotunn.Configs;
 using BepInEx.Configuration;
 using HarmonyLib;
 using System.Linq;
+using System.IO;
+using System.Text.RegularExpressions;
+
 
 namespace ValheimJP
 {
@@ -45,7 +48,7 @@ namespace ValheimJP
         public static ConfigEntry<bool> correctFont;
         public static ConfigEntry<bool> debugMode;
         public static ConfigEntry<bool> textOverflow;
-        public static ConfigEntry<string> fontPreset;
+        public static ConfigEntry<string> howToReplace;
         public static Dictionary<string, ConfigEntry<string>> newFontNames = new Dictionary<string, ConfigEntry<string>>();
         internal static new ManualLogSource Logger;
 
@@ -58,6 +61,10 @@ namespace ValheimJP
             if (correctFont.Value) Harmony.CreateAndPatchAll(typeof(CorrectFontPatch));
             AddLocalizationText();
         }
+        private void Start()
+        {
+            Localization.instance.m_endChars = Localization.instance.m_endChars.Concat<char>(new char[] { '、', '。', '〈', '〉', '「', '」', '『', '』', '《', '》' }).ToArray<char>();
+        }
         private void LoadCfg()
         {
             Config.SaveOnConfigSet = true;
@@ -66,7 +73,7 @@ namespace ValheimJP
             correctFont = Config.Bind<bool>("General", "CorrectFont", true, "Enable to replace to the correct fonts");
             debugMode = Config.Bind<bool>("General", "DebugMode", true, "Enable to output verbose log");
             textOverflow = Config.Bind<bool>("General", "TextOverflow", false, "Enable to overflow all texts");
-            fontPreset = Config.Bind<string>("General", "FontPreset", "Yu", "Font Preset, 'Yu', 'Native', or 'Custom' ");
+            howToReplace = Config.Bind<string>("General", "HowToReplace", "Override", "'Override', or 'Fallback' ");
             foreach (KeyValuePair<string, string> kv in defaultFontCorrespondence)
             {
                 ConfigEntry<string> fontName = Config.Bind<string>("NewFonts", kv.Key, kv.Value, $"font name which is replaced with {kv.Key}");
@@ -93,7 +100,7 @@ namespace ValheimJP
         {
             private static CorrectFontPatch _instance;
             public List<string> defaultFontNames = new List<string>();
-            public Dictionary<string, string> newFontNamesStr = new Dictionary<string, string>();
+            public Dictionary<string, string[]> newFontNamesStr = new Dictionary<string, string[]>();
             public Dictionary<(string, int), Font> FontAssets = new Dictionary<(string, int), Font>();
 
             public static CorrectFontPatch Instance
@@ -111,45 +118,10 @@ namespace ValheimJP
             public CorrectFontPatch()
             {
                 TextCorrector.Logger.LogInfo("Correct Font Patch Instance Created.");
-                foreach(KeyValuePair<string, ConfigEntry<string>> kv in TextCorrector.newFontNames) // why cant write in one-liner
+                foreach(KeyValuePair<string, ConfigEntry<string>> kv in TextCorrector.newFontNames) // why cant write in one-liner?
                 {
-                    this.newFontNamesStr.Add(kv.Key, kv.Value.Value);
+                    this.newFontNamesStr.Add(kv.Key, Regex.Split(kv.Value.Value, ",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))").Concat<string>(new string[] { TextCorrector.fallbackFont.Value }).ToArray<string>() );
                 }
-            }
-            [HarmonyPatch(typeof(Localization), "Localize", typeof(Transform))]
-            [HarmonyPostfix]
-            // [HarmonyWrapSafe]
-            private static void CorrectFont(Transform root)
-            {
-                TextCorrector.Logger.LogDebug("Localization.Localize called");
-                Text[] aho = root.gameObject.GetComponentsInChildren<Text>(includeInactive: true);
-                foreach (Text text in aho)
-                {
-                    ChangeFont(text);
-                }
-            }
-            [HarmonyPatch(typeof(Localization), "ReLocalizeVisible", typeof(Transform))]
-            [HarmonyPostfix]
-            // [HarmonyWrapSafe]
-            private static void CorrectFontVisible(Transform root)
-            {
-                // TODO: Why so frequently called?
-                // TextCorrector.Logger.LogDebug("Localization.ReLocalizeVisible called");
-                foreach (Text text in root.gameObject.GetComponentsInChildren<Text>(includeInactive: true))
-                {
-                    if (text.gameObject.activeInHierarchy)
-                    {
-                        // TODO: what's the Localization.instance.textStrings?
-                        ChangeFont(text);
-                    }
-                }
-                
-            }
-            [HarmonyPatch(typeof(Sign), "Awake")]
-            [HarmonyPrefix]
-            private static void CorrectFontSign(Sign __instance)
-            {
-                ChangeFont(__instance.m_textWidget);
             }
             [HarmonyPatch(typeof(Text), "OnEnable")]
             [HarmonyPostfix]
@@ -157,58 +129,48 @@ namespace ValheimJP
             {
                 ChangeFont(__instance);
             }
-            [HarmonyPatch(typeof(Text), "AssignDefaultFont")]
-            [HarmonyPostfix]
-            private static void ChangeDefaultFont(Text __instance)
+            
+            // [HarmonyPatch(typeof(TextViewer), "ShowText", new Type[] { typeof(TextViewer.Style), typeof(string), typeof(string), typeof(bool) })]
+            // [HarmonyPrefix]
+            private static void KeepOriginalFontOnRune(TextViewer __instance, bool __runOriginal, TextViewer.Style style, string topic, string text, bool autoHide)
             {
-                if (!Instance.defaultFontNames.Contains(__instance.font.name))
+
+                if(style == TextViewer.Style.Rune)
                 {
-                    TextCorrector.Logger.LogDebug($"NEW FONT FOUND: {__instance.font.name}");
-                    Instance.defaultFontNames.Add(__instance.font.name);
+                    string _text = Localization.instance.Localize(text);
+                    __runOriginal = false;
+                    __instance.m_topic.text = topic;
+                    __instance.m_text.text = _text;
+                    __instance.m_runeText.text = _text;
+                    __instance.m_animator.SetBool(TextViewer.m_visibleID, value: true);
+                    __instance.m_autoHide = true;
+                    __instance.m_openPlayerPos = Player.m_localPlayer.transform.position;
+                    __instance.m_showTime = 0f;
+                    ZLog.Log("Show text " + topic + ":" + text);
                 }
-                __instance.font.name = TextCorrector.fallbackFont.Value;
-                ChangeFont(__instance);
             }
             private static void ChangeFont(Text text)
             {
+                if (text.text.Contains("塞がっている") || text.text.Contains("blocked") || text.text.Contains("Cargo"))
+                {
+                    TextCorrector.Logger.LogDebug($"text={text.text}, go={text.gameObject.name}(root={text.gameObject.transform.root}), font={text.font.name}");
+                    
+                }
                 if (text.font != null)
                 {
-                    if (!Instance.defaultFontNames.Contains(text.font.name))
+                    string[] newFontNames;
+                    if (!Instance.newFontNamesStr.TryGetValue(text.font.name, out newFontNames))
                     {
-                        TextCorrector.Logger.LogDebug($"NEW FONT FOUND: {text.font.name}");
-                        Instance.defaultFontNames.Add(text.font.name);
+                        newFontNames = new string[] { TextCorrector.fallbackFont.Value };
                     }
-                    if (!Instance.newFontNamesStr.TryGetValue(text.font.name, out string newFontName))
+                    if (TextCorrector.howToReplace.Value != "Override" )
                     {
-                        if (Instance.newFontNamesStr.Values.Contains<string>(text.font.name))
-                        {
-                            newFontName = text.font.name;
-                        }
-                        else
-                        {
-                            if (TextCorrector.debugMode.Value)
-                            {
-                                TextCorrector.Logger.LogWarning($"substitute font for '{text.font.name}' not found");
-                            }
-                            newFontName = TextCorrector.fallbackFont.Value;
-                        }
+                      newFontNames = (new string[] { text.font.fontNames[0] }).Concat<string>(newFontNames).ToArray<string>();
                     }
-                    if (!Instance.FontAssets.ContainsKey((newFontName, text.font.fontSize)) && text.font.name != newFontName)
+                    if (text.font.fontNames != newFontNames)
                     {
-
-                        Font newFont = Font.CreateDynamicFontFromOSFont(newFontName, text.font.fontSize);
-                        Instance.FontAssets.Add((newFontName, text.font.fontSize), newFont);
-                    }
-                    if (newFontName != text.font.name)
-                    {
-                        TextCorrector.Logger.LogDebug($"FONT CHANGE: {text.font.name} (style:{text.fontStyle}) to {newFontName}: {text.text}");
-                        text.font = Instance.FontAssets[(newFontName, text.font.fontSize)];
-                    }
-                    // Localize
-                    if (TextCorrector.textOverflow.Value)
-                    {
-                        text.horizontalOverflow = HorizontalWrapMode.Wrap;
-                        text.verticalOverflow = VerticalWrapMode.Overflow;
+                        TextCorrector.Logger.LogDebug($"new fallbacks for '{text.font.name}' = {string.Join(", ", newFontNames)}");
+                        text.font.fontNames = newFontNames;
                     }
                 }
             }
@@ -228,6 +190,13 @@ namespace ValheimJP
                 }
             }
         }*/
+        //[HarmonyPatch(typeof(Localization), MethodType.Constructor)]
+        //[HarmonyPostfix]
+        private static void TweakLocalizationSettings(Localization __instance)
+        {
+            __instance.m_endChars = __instance.m_endChars.Concat<char>(new char[] { '、', '。' }).ToArray<char>();
+            TextCorrector.Logger.LogDebug($"m_endChars={__instance.m_endChars}");
+        }
         [HarmonyPatch(typeof(FejdStartup), "SetupGui")]
         [HarmonyPostfix]
         private static void HarmonyTest()
