@@ -1,3 +1,8 @@
+#! /usr/bin/env python3
+# -*- encoding: utf-8 -*-
+
+# make-dict2.py で変換したものを再変換.
+#
 import json
 from pathlib import Path
 import pandas as pd

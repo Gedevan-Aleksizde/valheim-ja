@@ -56,7 +56,7 @@
     },
     "settings_secondaryattack": {
       "Japanese": {
-        "text": "サブ攻撃",
+        "text": "特殊攻撃",
         "adjust": true
       }
     },
@@ -408,6 +408,18 @@
         "adjust": true
       }
     },
+    "piece_stonecutter": {
+      "Japanese": {
+        "text": "石切り台",
+        "adjust": true
+      }
+    },
+    "piece_workbench_ext3": {
+      "Japanese": {
+        "text": "手斧(ちょうな)",
+        "adjust": true
+      }
+    },
     "piece_artisanstation": {
       "Japanese": {
         "text": "職人の机",
@@ -422,14 +434,14 @@
     },
     "piece_sapling_seedturnip": {
       "Japanese": {
-        "text": "種まき – カブ",
+        "text": "種を作る – カブ",
         "system": true,
         "adjust": true
       }
     },
     "piece_sapling_seedcarrot": {
       "Japanese": {
-        "text": "種まき- ニンジン",
+        "text": "種を作る- ニンジン",
         "system": true,
         "adjust": true
       }
@@ -518,15 +530,16 @@
         "adjust": true
       }
     },
-    "item_armor": {
+    "item_backstab": {
       "Japanese": {
-        "text": "装甲",
+        "text": "不意打ち",
         "adjust": true
       }
     },
-    "item_blockpower": {
+    "item_armor": {
       "Japanese": {
         "text": "防御力",
+        "consistency": true,
         "adjust": true
       }
     },
@@ -2030,6 +2043,12 @@
         "immersion": true
       }
     },
+    "loadscreen_tip01": {
+      "Japanese": {
+        "text": "作成設備、武器、防具をアップグレードするのを忘れずに。",
+        "consistency": true
+      }
+    },
     "loadscreen_tip10": {
       "Japanese": {
         "text": "雨風を避けるための簡素なシェルターをできるだけ早く作ろう！",
@@ -2648,6 +2667,12 @@
         "adjust": true
       }
     },
+    "item_blockarmor": {
+      "Japanese": {
+        "text": "ブロック防御力",
+        "consistency": true
+      }
+    },
     "piece_sapling_seedonion_description": {
       "Japanese": {
         "text": "タマネギの苗を植え、種をもっと手に入れる。",
@@ -2699,8 +2724,9 @@
     },
     "tutorial_shield_text": {
       "Japanese": {
-        "text": "盾を使えば受けるダメージを防ぐことができる。\nもし完璧なタイミングで防ぐことができたのなら、 敵を<color=yellow>パリィ状態</color>することもできる。\nしかし、あまりにも多くの攻撃を防ぎすぎてしまうと、 自分が<color=yellow>前後不覚状態</color>になってしまうので注意が必要だ。\nどれだけのダメージを防ぐと「前後不覚」状態になるかは、 体力の上限に比例する。\n大量のダメージを浴びるつもりなら、 体力を底上げする食物を使用しておくといいだろう。\n重い盾ほどダメージを多く防ぐが、 歩く速度が遅くなる。",
+        "text": "盾を使えば受けるダメージを防御することができる。\nもし完璧なタイミングで防ぐことができたのなら、 敵の攻撃を<color=yellow>パリィ</color>することもできる。\nしかし、あまりにも多くの攻撃を防ぎすぎてしまうと、 自分が<color=yellow>よろめき状態</color>になってしまうので注意が必要だ。\nどれだけのダメージを防ぐと「よろめき」状態になるかは、 体力の上限に比例する。\n大量のダメージを浴びるつもりなら、 体力を底上げする食物を使用しておくといいだろう。\n重い盾ほどダメージを多く防ぐが、 歩く速度が遅くなる。",
         "system": true,
+        "correction": true,
         "consistency": true
       }
     },
@@ -3210,8 +3236,7 @@
     },
     "item_tankard_anniversary": {
       "Japanese": {
-        "text": "祝祭の角笛",
-        "adjust": true
+        "text": "祝祭の角杯"
       }
     },
     "item_tankard_anniversary_description": {
@@ -3734,6 +3759,17 @@
       "Japanese": {
         "text": "Tettå",
         "missing": true
+      }
+    },
+    "npc_dvergrrogue_random_aggravated2": {
+      "Japanese": {
+        "text": "北人をぶちのめせ！",
+        "immersion": true
+      }
+    },
+    "npc_dvergrmage_random_private_area_alarm5": {
+      "Japanese": {
+        "text": "お前は長居しすぎたな、北人。"
       }
     },
     "piece_eitrrefinery": {

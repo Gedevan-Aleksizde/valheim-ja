@@ -1,4 +1,5 @@
-#! /usr/bin/env python 
+#! /usr/bin/env python3
+# -*- encoding: utf-8 -*-
 #
 # make json dictionary by comparing the original text corrected text from the excel file
 # l10n.xlsx のオリジナルテキストのシートと, mod シートを比べ, 変更のあるものを抜き出しjsonにする
