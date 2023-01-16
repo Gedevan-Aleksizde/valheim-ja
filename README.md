@@ -4,7 +4,22 @@ https://www.nexusmods.com/valheim/mods/1511/
 
 ## Installation / インストール
 
-Go to the above link or read the followings
+1. install the latest [BepInExPack Valheim](https://valheim.thunderstore.io/package/denikson/BepInExPack_Valheim/)
+2. install the latest [Jotunn](https://www.nexusmods.com/valheim/mods/1138)
+3. install this mod. You can find and download the latest binary from [Releases](https://github.com/Gedevan-Aleksizde/valheim-ja/releases)
+
+You can also downlaod the standalone version which includes both of the two above dependencies. 
+
+------
+
+1. 最新の [BepInExPack Valheim](https://valheim.thunderstore.io/package/denikson/BepInExPack_Valheim/) をインストールしてください
+2. 最新の [Jotunn](https://www.nexusmods.com/valheim/mods/1138) をインストールしてください.
+3. この mod をインストールしてください. 右の [Releases](https://github.com/Gedevan-Aleksizde/valheim-ja/releases) から最新バージョンのバイナリを見つけることができます.
+
+あるいは, 上記2つの依存mod を同梱した Standalone 版も用意しています. こちらは手順1, 2は不要です.
+
+The following paragraph is the instruction for older versions (<1.0).  
+以下は v1.0 より古いバージョンでのインストール方法です
 
 1. Download the latest `resources.assets` file from [Release page](https://github.com/Gedevan-Aleksizde/valheim-ja/releases)
 2. Overwrite the file with the downloaded one in  `valheim_Data/` in your Valheim installed directory.
@@ -14,7 +29,7 @@ Go to the above link or read the followings
 1. 最新の `resources.assets` ファイルを[Release page](https://github.com/Gedevan-Aleksizde/valheim-ja/releases)からダウンロードする
 2. Valheim インストールフォルダの `valheim_Data/` 内の同名のファイルを上書きする
 
-## Dependencies / 依存関係
+## Dependencies for editor tools / 編集ツールの依存ソフト
 
 If you want to edit the text on your own, you need the following programs:
 
