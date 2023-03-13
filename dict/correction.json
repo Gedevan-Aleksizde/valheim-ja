@@ -1,5 +1,5 @@
 {
-  "localization-resources.assets-99.json": {
+  "localization-resources.assets-506.json": {
     "menu_new": {
       "Japanese": {
         "text": "新規",
@@ -4357,7 +4357,7 @@
         "added": true
       }
     },
-    "error_crossplayprivilege": {
+    "xbox_error_crossplayprivilege": {
       "Japanese": {
         "text": "あなたのプラットフォームの権限では、他のプラットフォームのプレイヤーと同じサーバで遊ぶことができません。",
         "missing": true
@@ -4393,70 +4393,102 @@
         "missing": true
       }
     },
-    "piece_hexagonalgate": {
+    "settings_quality_mode_performance": {
       "Japanese": {
-        "text": "六角形の門",
+        "text": "パフォーマンス重視",
         "missing": true
+      }
+    },
+    "settings_quality_mode_quality": {
+      "Japanese": {
+        "text": "クオリティ重視",
+        "missing": true
+      }
+    },
+    "menu_manualsave": {
+      "Japanese": {
+        "text": "保存",
+        "missing": true
+      }
+    },
+    "xbox_menu_resolve_privilege": {
+      "Japanese": {
+        "text": "権限の問題を解決しますか?",
+        "missing": true
+      }
+    },
+    "menu_kick_player_title": {
+      "Japanese": {
+        "text": "プレイヤーをキックしますか?",
+        "missing": true
+      }
+    },
+    "menu_kick_player": {
+      "Japanese": {
+        "text": "本当に「 $1 」をキックしますか?",
+        "missing": true
+      }
+    },
+    "menu_manualsavetime": {
+      "Japanese": {
+        "text": "最後のセーブ: $1 分前"
+      }
+    },
+    "loading_healthwarningtitle": {
+      "Japanese": {
+        "text": "光過敏性発作に関する警告: プレイする前にご一読ください"
+      }
+    },
+    "rotate_build_mode": {
+      "Japanese": {
+        "text": "回転 (ビルドモード)"
+      }
+    },
+    "hud_zoom_in_out": {
+      "Japanese": {
+        "text": "拡大・縮小"
       }
     },
     "item_helmet_fishinghat": {
       "Japanese": {
         "text": "釣り人の帽子",
-        "missing": true
+        "adjust": true
       }
     },
     "item_helmet_fishinghat_description": {
       "Japanese": {
         "text": "この気まぐれな帽子は最も円熟した冒険者によってのみ釣り上げられるだろう。",
-        "missing": true
+        "adjust": true
       }
     },
     "se_fishinghat_description": {
       "Japanese": {
         "text": "ヴァイキングはあなたを求める。魚はあなたを恐れる。",
-        "missing": true
-      }
-    },
-    "piece_turret_target": {
-      "Japanese": {
-        "text": "標的:",
-        "missing": true
+        "adjust": true
       }
     },
     "piece_turret_target_everything": {
       "Japanese": {
         "text": "全て",
-        "missing": true
-      }
-    },
-    "piece_turret_target_set": {
-      "Japanese": {
-        "text": "トロフィー",
-        "missing": true
-      }
-    },
-    "piece_turret_target_set_msg": {
-      "Japanese": {
-        "text": "バリスタの標的",
-        "missing": true
-      }
-    },
-    "settings_reduceflashinglights": {
-      "Japanese": {
-        "text": "フラッシュを減らす",
-        "missing": true
+        "adjust": true
       }
     },
     "settings_tutorialsenabled": {
       "Japanese": {
         "text": "カラスのヒントを有効にする",
-        "missing": true
+        "adjust": true
       }
     },
-    "enemy_dvergrs": {
+    "text_player_arrived": {
       "Japanese": {
-        "text": "ドヴェルグ",
-        "missing": true
+        "text": "来たぞ!",
+        "consistency": true
+      }
+    },
+    "settings_distantshadows": {
+      "Japanese": {
+        "text": "遠くの影",
+        "consistency": true
       }
     }
   }
