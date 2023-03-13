@@ -21,8 +21,8 @@ parser.add_argument('--outdir', type=Path, help='output directory', default=None
 args = parser.parse_args(None if __name__ == '__main__' else '')
 rootdir = Path().cwd()
 l10n_jsonpath = [rootdir.joinpath(f'original-text/v{params["LATEST_VERSION"]}/{x}').expanduser() for x in [
-    'localization-resources.assets-99.json',
-    'localization_extra-resources.assets-100.json'
+    'localization-resources.assets-506.json',
+    'localization_extra-resources.assets-508.json'
     ]
 ] if args.filenames is None else args.filenames
 excelpath = rootdir.joinpath(params['l10n']).expanduser() if args.outdir is None else Path(args.outdir).joinpath(params['l10n'])
@@ -45,7 +45,7 @@ for x in l10n_jsonpath:
     # automaticalyy tagging
 
 tab_l10n = pd.concat(csvs)
-if(tab_l10n.shape[0] > 0):
+if tab_l10n.shape[0] > 0:
     tab_l10n_blank = (
         tab_l10n.assign(**{params['LANG']: lambda d: d[params['LANG']].str.replace('(\$[0-9a-zA-Z]+)', ' \\1 ', regex=True).
         str.replace('^\s', '', regex=True).
@@ -56,12 +56,12 @@ if(tab_l10n.shape[0] > 0):
 tab_l10n = tab_l10n.loc[lambda d: d[' '] != ""]  # 空白行は不要
 output_cols = [' ', 'English', 'Swedish', 'Japanese', 'OriginalFileName']
 # quoting=1: csv.QUOTE_ALL
-tab_l10n_blank[output_cols].to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
+tab_l10n_blank[output_cols].loc[lambda d: d[' '] != ""].to_csv(csvpath, index=False, encoding="utf-8", quoting=1)
 # 手動編集の簡易さからエクセルに書く
 # TODO: libre が重すぎるので PO ファイルとして出力したほうがいいか?
 with pd.ExcelWriter(excelpath) as writer: 
     tab_l10n[output_cols].to_excel(writer, sheet_name = f"v{params['LATEST_VERSION']}", index=False, encoding="utf-8")
-    tab_l10n_blank[output_cols].to_excel(writer, sheet_name = "mod", index=False, encoding="utf-8")
+    tab_l10n_blank[output_cols].loc[lambda d: d[' '] != ""].to_excel(writer, sheet_name = "mod", index=False, encoding="utf-8")
 
 with Path(f'''Valheim_{params['LATEST_VERSION']}@{params['LANG']}.po''').open('w', encoding='utf-8') as f:
     f.write(
