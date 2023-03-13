@@ -1,5 +1,5 @@
 {
-  "": {
+  "localization-resources.assets-99.json": {
     "menu_new": {
       "Japanese": {
         "text": "新規",
@@ -34,6 +34,12 @@
       "Japanese": {
         "text": "了解",
         "adjust": true
+      }
+    },
+    "menu_resettutorial": {
+      "Japanese": {
+        "text": "カラスのヒントをリセット",
+        "missing": true
       }
     },
     "feedback_text": {
@@ -405,6 +411,24 @@
     "piece_chest": {
       "Japanese": {
         "text": "強化チェスト",
+        "adjust": true
+      }
+    },
+    "piece_groundtorch": {
+      "Japanese": {
+        "text": "直立型鉄製松明",
+        "adjust": true
+      }
+    },
+    "piece_groundtorchgreen": {
+      "Japanese": {
+        "text": "直立型緑炎鉄製松明",
+        "adjust": true
+      }
+    },
+    "piece_groundtorchwood": {
+      "Japanese": {
+        "text": "直立型木製松明",
         "adjust": true
       }
     },
@@ -1884,8 +1908,9 @@
     },
     "lore_blackforest_random05": {
       "Japanese": {
-        "text": "古き者に気をつけよ。 鴉たちによれば、 その昔、 彼は大いなるユグドラシルそのものの木の芽であり、 人々と木々が友であった頃の知識の力であった。 今、 彼は斧を嘲笑い、 神々の創造物に敵対している。 オーディンはその自尊心のために彼を追放したが、 その根は深い。",
-        "system": true
+        "text": "古き者に気をつけよ。 鴉たちによれば、 その昔、 彼は大いなる世界樹ユグドラシルそのものの木の芽であり、 人々と木々が友であった頃の知識の力であった。 今、 彼は斧を嘲笑い、 神々の創造物に敵対している。 オーディンはその自尊心のために彼を追放したが、 その根は深い。",
+        "system": true,
+        "consistency": true
       }
     },
     "lore_blackforest_random06": {
@@ -2029,6 +2054,12 @@
       "Japanese": {
         "text": "夢にオーディンが現れた。 彼はつばの広い旅人の帽子をかぶり、 杖によりかかる老人の姿であった。 彼は、 その言葉を伝える鴉を信じ、 彼の意思を他の者に伝えるよう、 この石にそれを彫れと命じた。 ヴァルハラのオーディンの間に迎えられるためには、 〈見捨てられしもの〉を倒さねばならない。",
         "system": true
+      }
+    },
+    "prop_birch": {
+      "Japanese": {
+        "text": "白樺",
+        "adjust": true
       }
     },
     "enemy_goblinbrute": {
@@ -2345,9 +2376,10 @@
     },
     "lore_blackforest_random11": {
       "Japanese": {
-        "text": "〈見捨てられしもの〉どもにこの気まぐれな世界に再び集うよう呼びかけられた、 大いなるユグドラシルが枝を伸ばす天空を見よ。 これは輝かしくも恐ろしい光景である。 偉大な樹が虚空を横切るように折れ曲がり、 枝はこわばりひび割れ、 残された九つの世界では地震、 大嵐、 聖なる炎として現れる。 〈見捨てられしもの〉たちは屠られ、 均衡は取り戻されねばならない。",
+        "text": "〈見捨てられしもの〉どもにこの気まぐれな世界に再び集うよう呼びかけられた、 大いなる世界樹が枝を伸ばす天空を見よ。 これは輝かしくも恐ろしい光景である。 偉大な樹が虚空を横切るように折れ曲がり、 枝はこわばりひび割れ、 残された九つの世界では地震、 大嵐、 聖なる炎として現れる。 〈見捨てられしもの〉たちは屠られ、 均衡は取り戻されねばならない。",
         "system": true,
-        "missing": true
+        "missing": true,
+        "consistency": true
       }
     },
     "lore_blackforest_random12": {
@@ -2639,8 +2671,20 @@
     },
     "item_deer_meat_cooked": {
       "Japanese": {
-        "text": "鹿の焼肉",
+        "text": "調理された鹿肉",
         "immersion": true
+      }
+    },
+    "item_boarjerky": {
+      "Japanese": {
+        "text": "猪肉のジャーキー",
+        "adjust": true
+      }
+    },
+    "item_boarjerky_description": {
+      "Japanese": {
+        "text": "歯ごたえがあり塩っぱい。",
+        "adjust": true
       }
     },
     "item_onionseeds": {
@@ -2698,6 +2742,24 @@
         "adjust": true
       }
     },
+    "item_battleaxe_crystal_description": {
+      "Japanese": {
+        "text": "斧はスケスケ、敵はバラバラ。",
+        "adjust": true
+      }
+    },
+    "piece_groundtorchblue": {
+      "Japanese": {
+        "text": "直立型青炎鉄製松明",
+        "adjust": true
+      }
+    },
+    "piece_cartographytable": {
+      "Japanese": {
+        "text": "製図台",
+        "adjust": true
+      }
+    },
     "msg_mapsaved": {
       "Japanese": {
         "text": "発見したものをテーブルに書き込んだ",
@@ -2738,8 +2800,9 @@
     },
     "tutorial_maptable_text": {
       "Japanese": {
-        "text": "このテーブルがあれば、〈第十の世界〉における自分の足取りを記録し、 共用することができる。 発見を記録したい時は道具箱を使用し、 他者の記録を書き写したい時は巨大なマップを見てみるといい。",
-        "system": true
+        "text": "このテーブルがあれば、〈第十の世界〉における自分の足取りを記録し、 共用することができる。 発見を記録したい時は道具箱を使用し、 他者の記録を書き写したい時は巨大な地図を見てみるといい。",
+        "system": true,
+        "adjust": true
       }
     },
     "loadscreen_tip24": {
@@ -3018,6 +3081,18 @@
         "adjust": true
       }
     },
+    "button_ls": {
+      "Japanese": {
+        "text": "左 スティック",
+        "system": true
+      }
+    },
+    "button_rs": {
+      "Japanese": {
+        "text": "右 スティック",
+        "system": true
+      }
+    },
     "chat_entermessage": {
       "Japanese": {
         "text": "チャットメッセージを送信",
@@ -3105,6 +3180,12 @@
     "item_helmet_fenris_description": {
       "Japanese": {
         "text": "この獣の目は思慮深く知性があるので、一目で戦士の強さを推し量ることができる。",
+        "adjust": true
+      }
+    },
+    "item_fistweapon_fenris": {
+      "Japanese": {
+        "text": "〈肉裂き〉",
         "adjust": true
       }
     },
@@ -3236,7 +3317,8 @@
     },
     "item_tankard_anniversary": {
       "Japanese": {
-        "text": "祝祭の角杯"
+        "text": "祝祭の角杯",
+        "adjust": true
       }
     },
     "item_tankard_anniversary_description": {
@@ -3611,6 +3693,12 @@
         "adjust": true
       }
     },
+    "se_shield_damage": {
+      "Japanese": {
+        "text": "ダメージ吸収量 (スキル依存):",
+        "system": true
+      }
+    },
     "dvergr_buff_description": {
       "Japanese": {
         "text": "筋力を増強させるドヴェルグの不思議な力が流れ込む",
@@ -3639,6 +3727,24 @@
       "Japanese": {
         "text": "片面焼きだ！",
         "immersion": true
+      }
+    },
+    "item_chicken_egg_stacked": {
+      "Japanese": {
+        "text": "（積み重ね状態では育たない）",
+        "system": true
+      }
+    },
+    "item_trophy_seekerqueen_description": {
+      "Japanese": {
+        "text": "クイーンはもううんざりしていた。",
+        "adjust": true
+      }
+    },
+    "item_trophy_seekerqueen_lore": {
+      "Japanese": {
+        "text": "クイーンはもううんざりしていた。",
+        "adjust": true
       }
     },
     "deadspeak_hive": {
@@ -3743,6 +3849,18 @@
         "adjust": true
       }
     },
+    "prop_yggashoot": {
+      "Japanese": {
+        "text": "世界樹の若枝",
+        "consistency": true
+      }
+    },
+    "item_yggdrasilwood": {
+      "Japanese": {
+        "text": "世界樹の枝",
+        "consistency": true
+      }
+    },
     "npc_dvergrrogue_random_greet2": {
       "Japanese": {
         "text": "北人か。",
@@ -3761,6 +3879,12 @@
         "missing": true
       }
     },
+    "npc_dvergrrogue_random_talk9": {
+      "Japanese": {
+        "text": "この土地すべてがひとつの大きな戦場だったなんて考えると、ちょっと変な気分になるな...",
+        "adjust": true
+      }
+    },
     "npc_dvergrrogue_random_aggravated2": {
       "Japanese": {
         "text": "北人をぶちのめせ！",
@@ -3769,13 +3893,20 @@
     },
     "npc_dvergrmage_random_private_area_alarm5": {
       "Japanese": {
-        "text": "お前は長居しすぎたな、北人。"
+        "text": "お前は長居しすぎたな、北人。",
+        "immersion": true
       }
     },
     "piece_eitrrefinery": {
       "Japanese": {
         "text": "エイトル精製機",
         "adjust": true
+      }
+    },
+    "item_yggdrasilporridge": {
+      "Japanese": {
+        "text": "世界樹の粥",
+        "consistency": true
       }
     },
     "item_scalehide": {
@@ -3853,6 +3984,12 @@
     "piece_juteblue_carpet": {
       "Japanese": {
         "text": "青い亜麻の絨毯",
+        "correction": true
+      }
+    },
+    "piece_yggdrasilstack": {
+      "Japanese": {
+        "text": "世界樹の枝束",
         "correction": true
       }
     },
@@ -4022,12 +4159,18 @@
     "event_seekerarmy_start": {
       "Japanese": {
         "text": "あなたは奴らに追跡されていた",
-        "adjust": true
+        "correction": true
       }
     },
     "event_seekerarmy_end": {
       "Japanese": {
         "text": "追跡が終わった",
+        "correction": true
+      }
+    },
+    "item_honeyglazedchickenuncooked": {
+      "Japanese": {
+        "text": "未調理の蜂蜜かけ鶏肉",
         "adjust": true
       }
     },
@@ -4035,6 +4178,18 @@
       "Japanese": {
         "text": "完璧な焼き加減。口からも目からもよだれが出てくる。",
         "adjust": true
+      }
+    },
+    "item_magicallystuffedmushroomuncooked": {
+      "Japanese": {
+        "text": "未調理の魔法キノコ詰め",
+        "adjust": true
+      }
+    },
+    "tutorial_eitr": {
+      "Japanese": {
+        "text": "ユグドラシルの枝から樹液を手に入れたようだな。 きっと気に入ることだろう。\n身体の周囲を回っている面白い色付きの光のことなんて、 もうどうでもよくなってるかもしれないな。\n癖にならないようにしろよ。 魔法以外ではあり得ない長期にわたる効果があるかもしれない。",
+        "system": true
       }
     },
     "tutorial_yggroot_text": {
@@ -4124,12 +4279,6 @@
         "missing": true
       }
     },
-    "piece_mistletoe": {
-      "Japanese": {
-        "text": "ヤドリギ",
-        "missing": true
-      }
-    },
     "tutorial_eitr_label": {
       "Japanese": {
         "text": "フギン: エイトル",
@@ -4202,10 +4351,112 @@
         "missing": true
       }
     },
-    "tool_cargo": {
+    "error_platformexcluded": {
       "Japanese": {
-        "text": "積荷",
+        "text": "このサーバの所有者は、他のプラットフォームのプレイヤーの参加を許可していません。",
         "added": true
+      }
+    },
+    "error_crossplayprivilege": {
+      "Japanese": {
+        "text": "あなたのプラットフォームの権限では、他のプラットフォームのプレイヤーと同じサーバで遊ぶことができません。",
+        "missing": true
+      }
+    },
+    "menu_loginheader": {
+      "Japanese": {
+        "text": "バックエンドサービスにログイン中…",
+        "missing": true
+      }
+    },
+    "menu_logintext": {
+      "Japanese": {
+        "text": "ログイン中…",
+        "missing": true
+      }
+    },
+    "menu_loginfailedtext": {
+      "Japanese": {
+        "text": "ログインに失敗しました。インターネットに接続していることを確認してください。",
+        "missing": true
+      }
+    },
+    "menu_loginretrycountdowntext": {
+      "Japanese": {
+        "text": "$1 秒後に再試行します…",
+        "missing": true
+      }
+    },
+    "menu_addserverfaileddnslookup": {
+      "Japanese": {
+        "text": "DNSルックアップに失敗しました!",
+        "missing": true
+      }
+    },
+    "piece_hexagonalgate": {
+      "Japanese": {
+        "text": "六角形の門",
+        "missing": true
+      }
+    },
+    "item_helmet_fishinghat": {
+      "Japanese": {
+        "text": "釣り人の帽子",
+        "missing": true
+      }
+    },
+    "item_helmet_fishinghat_description": {
+      "Japanese": {
+        "text": "この気まぐれな帽子は最も円熟した冒険者によってのみ釣り上げられるだろう。",
+        "missing": true
+      }
+    },
+    "se_fishinghat_description": {
+      "Japanese": {
+        "text": "ヴァイキングはあなたを求める。魚はあなたを恐れる。",
+        "missing": true
+      }
+    },
+    "piece_turret_target": {
+      "Japanese": {
+        "text": "標的:",
+        "missing": true
+      }
+    },
+    "piece_turret_target_everything": {
+      "Japanese": {
+        "text": "全て",
+        "missing": true
+      }
+    },
+    "piece_turret_target_set": {
+      "Japanese": {
+        "text": "トロフィー",
+        "missing": true
+      }
+    },
+    "piece_turret_target_set_msg": {
+      "Japanese": {
+        "text": "バリスタの標的",
+        "missing": true
+      }
+    },
+    "settings_reduceflashinglights": {
+      "Japanese": {
+        "text": "フラッシュを減らす",
+        "missing": true
+      }
+    },
+    "settings_tutorialsenabled": {
+      "Japanese": {
+        "text": "カラスのヒントを有効にする",
+        "missing": true
+      }
+    },
+    "enemy_dvergrs": {
+      "Japanese": {
+        "text": "ドヴェルグ",
+        "missing": true
       }
     }
   }
